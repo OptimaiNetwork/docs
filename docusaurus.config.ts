@@ -43,6 +43,7 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: 'optimai',
           sidebarPath: './sidebars.ts',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
