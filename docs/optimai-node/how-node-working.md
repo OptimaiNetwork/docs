@@ -1,0 +1,48 @@
+---
+sidebar_position: 2
+---
+
+# How OptimAI Node Works?
+## Mining Data
+### How It Works:
+- The integrated browser node collects data as you navigate the web.
+- It captures valuable insights, including:
+  - Content from public and authenticated websites.
+  - User interaction data (clicks, scrolls, navigation paths).
+  - Sequential actions for advanced AI training.
+### Your Role:
+- Simply use your device as you normally would.
+- Optionally participate in specific data collection tasks or missions.
+- Ensure your node remains active to maximize contributions.
+
+### Earning Rewards (OPI Tokens)
+- Earning Mechanism:
+  - Rewards are based on the volume and quality of data contributed.
+  - Completing tasks and missions can earn you bonus tokens.
+- Tracking Earnings:
+  - Use your dashboard to monitor accumulated OPI Tokens.
+  - View detailed reports on your contributions and rewards.
+
+## Node Management
+- Settings:
+  - Adjust data collection preferences.
+  - Set bandwidth and resource usage limits.
+- Updates:
+  - Keep your node software updated for optimal performance.
+  - Enable automatic updates if available.
+- Notifications:
+  - Receive alerts for important updates, tasks, or issues.
+- Security:
+  - Regularly check your account security settings.
+  - Update your password and 2FA as needed.
+
+## Common Tasks and Missions
+- Daily Tasks:
+  - Simple activities like visiting certain websites or engaging with content.
+- Missions:
+  - Longer-term tasks that may involve data labeling or validation.
+- Quests:
+  - Special events or challenges with higher reward potentials.
+- Participation:
+  - Opt-in to tasks that interest you.
+  - Complete tasks to earn additional rewards and bonuses.

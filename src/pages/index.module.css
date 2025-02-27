@@ -1,0 +1,81 @@
+.heroBanner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.fullscreenVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentFrame {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px); /* Adds a blur effect */
+  border-radius: 16px;
+  padding: 3rem 4rem;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.heroSubtitle {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #a6e22e;
+  margin-bottom: 1rem;
+}
+
+.heroDescription {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customButton {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.customButton:hover {
+  background: rgba(255, 255, 255, 0.4);
+  color: #000;
+  transform: translateY(-3px);
+}
