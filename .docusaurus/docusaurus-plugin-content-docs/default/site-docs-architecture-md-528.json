@@ -1,0 +1,27 @@
+{
+  "id": "architecture",
+  "title": "🏗️ OptimAI Network Architecture",
+  "description": "OptimAI is a decentralized ecosystem designed for efficient, secure, and scalable AI data collection and development. It integrates advanced technologies to address modern challenges while remaining adaptable for future advancements. Its architecture is built on four core pillars: OptimAI DePIN Network, OptimAI Browser Nodes, OptimAI Reinforcement Data Layer and OptimAI OP-Stack Layer 2 Blockchain.",
+  "source": "@site/docs/architecture.md",
+  "sourceDirName": ".",
+  "slug": "/architecture",
+  "permalink": "/docs/architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/architecture.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The OptimAI Solution",
+    "permalink": "/docs/introduction/solution"
+  },
+  "next": {
+    "title": "💻 OptimAI Node",
+    "permalink": "/docs/category/-optimai-node"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "index",
+  "title": "👋 Welcome to OptimAI Network",
+  "description": "OptimAI Network is a decentralized Reinforcement Data Network that seamlessly integrates an EVM Layer-2 blockchain, DePIN (Decentralized Physical Infrastructure Network), and a community-driven data mining and validation framework to revolutionize the learning process of AI Agents. By leveraging a decentralized network of contributors, OptimAI enables real-time data collection, validation, and reinforcement learning, ensuring AI models evolve continuously with high-quality, diverse, and contextually rich datasets.",
+  "source": "@site/docs/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/docs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "🌐 Overview",
+    "permalink": "/docs/category/-overview"
+  }
+}

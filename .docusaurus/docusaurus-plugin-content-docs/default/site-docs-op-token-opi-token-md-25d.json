@@ -1,0 +1,27 @@
+{
+  "id": "op-token/opi-token",
+  "title": "The OPI Token",
+  "description": "At the heart of the OptimAI Network is the OPI Token, a versatile utility token designed to drive the ecosystem's growth, incentivize active participation, and support decentralized governance. Its well-crafted tokenomics ensure a transparent, equitable, and sustainable economic framework that aligns the interests of users, developers, clients, and the network as a whole.",
+  "source": "@site/docs/op-token/opi-token.md",
+  "sourceDirName": "op-token",
+  "slug": "/op-token/opi-token",
+  "permalink": "/docs/op-token/opi-token",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/op-token/opi-token.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The OPI Token",
+    "permalink": "/docs/category/the-opi-token"
+  },
+  "next": {
+    "title": "OptimAI Intelligence Services",
+    "permalink": "/docs/services"
+  }
+}

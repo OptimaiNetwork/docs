@@ -1,0 +1,27 @@
+{
+  "id": "intelligence-services/services",
+  "title": "The OptimAI Intelligence Services",
+  "description": "The OptimAI Network Intelligence Services is a comprehensive suite of interconnected components designed to create a dynamic and robust environment for AI development. By seamlessly integrating data collection, processing, computation, and deployment, we provide a holistic platform that empowers users, developers, and organizations to harness the full potential of AI. This ecosystem not only addresses the current challenges in AI but also lays the groundwork for future advancements, making it a compelling proposition for our community and investors.",
+  "source": "@site/docs/intelligence-services/services.md",
+  "sourceDirName": "intelligence-services",
+  "slug": "/intelligence-services/services",
+  "permalink": "/docs/intelligence-services/services",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/packages/create-docusaurus/templates/shared/docs/intelligence-services/services.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "OptimAI Intelligence Services",
+    "permalink": "/docs/category/optimai-intelligence-services"
+  },
+  "next": {
+    "title": "Development Roadmap",
+    "permalink": "/docs/roadmap"
+  }
+}

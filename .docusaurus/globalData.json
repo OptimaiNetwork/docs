@@ -1,0 +1,118 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "architecture",
+              "path": "/docs/architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "faqs",
+              "path": "/docs/faqs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "index",
+              "path": "/docs/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction/intro",
+              "path": "/docs/introduction/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction/problem",
+              "path": "/docs/introduction/problem",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction/solution",
+              "path": "/docs/introduction/solution",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "litepaper",
+              "path": "/docs/litepaper",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "opi-token",
+              "path": "/docs/opi-token",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "optimai-node/built-in-browser",
+              "path": "/docs/optimai-node/built-in-browser",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "optimai-node/how-node-working",
+              "path": "/docs/optimai-node/how-node-working",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "optimai-node/how-node-working",
+              "path": "/docs/optimai-node/how-node-working",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "optimai-node/node-intro",
+              "path": "/docs/optimai-node/node-intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "optimai-node/platforms-versions",
+              "path": "/docs/optimai-node/platforms-versions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "optimai-node/setup-requirements",
+              "path": "/docs/optimai-node/setup-requirements",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "roadmap",
+              "path": "/docs/roadmap",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "services",
+              "path": "/docs/services",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/-overview",
+              "path": "/docs/category/-overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/-optimai-node",
+              "path": "/docs/category/-optimai-node",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/",
+                "label": "index"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

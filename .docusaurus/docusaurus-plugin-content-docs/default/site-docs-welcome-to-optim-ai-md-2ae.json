@@ -1,0 +1,20 @@
+{
+  "id": "Welcome to OptimAI",
+  "title": "Welcome to OptimAI",
+  "description": "",
+  "source": "@site/docs/Welcome to OptimAI.md",
+  "sourceDirName": ".",
+  "slug": "/Welcome to OptimAI",
+  "permalink": "/docs/Welcome to OptimAI",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/packages/create-docusaurus/templates/shared/docs/Welcome to OptimAI.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Translate your site",
+    "permalink": "/docs/tutorial-extras/translate-your-site"
+  }
+}

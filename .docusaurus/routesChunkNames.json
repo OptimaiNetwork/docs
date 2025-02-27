@@ -1,0 +1,130 @@
+{
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    },
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/docs-06c": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docsaba-d7c"
+    }
+  },
+  "/docs-1e2": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-005-788"
+  },
+  "/docs-c6a": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/-4a8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-c-37-4d0"
+  },
+  "/docs/architecture-4b2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-architecture-528-86f"
+  },
+  "/docs/category/-optimai-node-240": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-optimai-nodeafd-b39"
+  },
+  "/docs/category/-overview-4ca": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-overviewe-99-e69"
+  },
+  "/docs/faqs-e7d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-faqs-1-ff-cad"
+  },
+  "/docs/introduction/intro-51d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-introduction-intro-01-a-a2f"
+  },
+  "/docs/introduction/problem-d88": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-introduction-problem-20-e-d70"
+  },
+  "/docs/introduction/solution-b1f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-introduction-solution-167-bfa"
+  },
+  "/docs/litepaper-c84": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-litepaper-207-825"
+  },
+  "/docs/opi-token-666": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-opi-tokene-55-838"
+  },
+  "/docs/optimai-node/built-in-browser-e49": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-optimai-node-built-in-browserba-5-a26"
+  },
+  "/docs/optimai-node/how-node-working-5bf": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-optimai-node-how-node-working-144-082"
+  },
+  "/docs/optimai-node/how-node-working-9f7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-optimai-node-how-node-working-656-84c"
+  },
+  "/docs/optimai-node/node-intro-0f3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-optimai-node-node-introa-4-c-4e0"
+  },
+  "/docs/optimai-node/platforms-versions-7d7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-optimai-node-platforms-versionsed-6-fdc"
+  },
+  "/docs/optimai-node/setup-requirements-4c6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-optimai-node-setup-requirements-490-a26"
+  },
+  "/docs/roadmap-ced": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-roadmap-0-df-a69"
+  },
+  "/docs/services-86e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-services-989-1e2"
+  }
+}

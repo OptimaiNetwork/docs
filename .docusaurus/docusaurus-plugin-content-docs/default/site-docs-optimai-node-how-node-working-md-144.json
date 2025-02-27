@@ -1,0 +1,27 @@
+{
+  "id": "optimai-node/how-node-working",
+  "title": "How OptimAI Node Works?",
+  "description": "Mining Data",
+  "source": "@site/docs/optimai-node/how-node-working.md",
+  "sourceDirName": "optimai-node",
+  "slug": "/optimai-node/how-node-working",
+  "permalink": "/docs/optimai-node/how-node-working",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/optimai-node/how-node-working.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "What is OptimAI Node?",
+    "permalink": "/docs/optimai-node/node-intro"
+  },
+  "next": {
+    "title": "How OptimAI Node Works?",
+    "permalink": "/docs/optimai-node/how-node-working"
+  }
+}

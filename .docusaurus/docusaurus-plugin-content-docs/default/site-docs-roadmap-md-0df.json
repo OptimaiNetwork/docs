@@ -1,0 +1,27 @@
+{
+  "id": "roadmap",
+  "title": "🛠️ Development Roadmap",
+  "description": "Stage 1: Laying the DePIN Data Network Foundation",
+  "source": "@site/docs/roadmap.md",
+  "sourceDirName": ".",
+  "slug": "/roadmap",
+  "permalink": "/docs/roadmap",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/roadmap.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🪙 The OPI Token",
+    "permalink": "/docs/opi-token"
+  },
+  "next": {
+    "title": "❓ FAQs",
+    "permalink": "/docs/faqs"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "introduction/The Key Problem",
+  "title": "The Key Problem",
+  "description": "",
+  "source": "@site/docs/introduction/The Key Problem.md",
+  "sourceDirName": "introduction",
+  "slug": "/introduction/The Key Problem",
+  "permalink": "/docs/introduction/The Key Problem",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/packages/create-docusaurus/templates/shared/docs/introduction/The Key Problem.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "OptimAI Network Introduction",
+    "permalink": "/docs/introduction/intro"
+  },
+  "next": {
+    "title": "Tutorial - Basics",
+    "permalink": "/docs/category/tutorial---basics"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "optimai-node/node-intro",
+  "title": "What is OptimAI Node?",
+  "description": "At the core of the OptimAI Network are the Nodes—essential elements that enhance the ecosystem’s functionality, security, and scalability. By engaging as node operators, both users and developers play pivotal roles in advancing the AI revolution, directly influencing the network’s expansion and effectiveness. The OptimAI Network provides a diverse array of node types, each designed for specific tasks and capabilities. This variety ensures inclusivity and optimizes the combined potential of all participants, offering opportunities for active involvement or even earning passive income through different levels of resource contribution.",
+  "source": "@site/docs/optimai-node/node-intro.md",
+  "sourceDirName": "optimai-node",
+  "slug": "/optimai-node/node-intro",
+  "permalink": "/docs/optimai-node/node-intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/optimai-node/node-intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "💻 OptimAI Node",
+    "permalink": "/docs/category/-optimai-node"
+  },
+  "next": {
+    "title": "How OptimAI Node Works?",
+    "permalink": "/docs/optimai-node/how-node-working"
+  }
+}

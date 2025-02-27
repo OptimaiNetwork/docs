@@ -1,0 +1,27 @@
+{
+  "id": "optimai-node/platforms-versions",
+  "title": "Supported Platforms and Versions",
+  "description": "Lite Node",
+  "source": "@site/docs/optimai-node/platforms-versions.md",
+  "sourceDirName": "optimai-node",
+  "slug": "/optimai-node/platforms-versions",
+  "permalink": "/docs/optimai-node/platforms-versions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/optimai-node/platforms-versions.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "OptimAI Node: Built-in Browser",
+    "permalink": "/docs/optimai-node/built-in-browser"
+  },
+  "next": {
+    "title": "Setup & Requirements",
+    "permalink": "/docs/optimai-node/setup-requirements"
+  }
+}

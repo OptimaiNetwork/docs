@@ -1,0 +1,27 @@
+{
+  "id": "optimai-node/setup-requirements",
+  "title": "Setup & Requirements",
+  "description": "System Requirements",
+  "source": "@site/docs/optimai-node/setup-requirements.md",
+  "sourceDirName": "optimai-node",
+  "slug": "/optimai-node/setup-requirements",
+  "permalink": "/docs/optimai-node/setup-requirements",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/optimai-node/setup-requirements.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Supported Platforms and Versions",
+    "permalink": "/docs/optimai-node/platforms-versions"
+  },
+  "next": {
+    "title": "🤖 OptimAI Intelligence Services",
+    "permalink": "/docs/services"
+  }
+}

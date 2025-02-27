@@ -1,0 +1,23 @@
+{
+  "id": "litepaper",
+  "title": "📄 OptimAI Network — Litepaper",
+  "description": "Mine Data. Fuel AI. Earn Rewards.",
+  "source": "@site/docs/litepaper.mdx",
+  "sourceDirName": ".",
+  "slug": "/litepaper",
+  "permalink": "/docs/litepaper",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/litepaper.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "sidebar_position": 15
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "❓ FAQs",
+    "permalink": "/docs/faqs"
+  }
+}

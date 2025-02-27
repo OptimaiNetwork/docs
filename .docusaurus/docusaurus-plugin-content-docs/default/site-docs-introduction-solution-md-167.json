@@ -1,0 +1,27 @@
+{
+  "id": "introduction/solution",
+  "title": "The OptimAI Solution",
+  "description": "What OptimAI Network resolve?",
+  "source": "@site/docs/introduction/solution.md",
+  "sourceDirName": "introduction",
+  "slug": "/introduction/solution",
+  "permalink": "/docs/introduction/solution",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/introduction/solution.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The Key Problem",
+    "permalink": "/docs/introduction/problem"
+  },
+  "next": {
+    "title": "🏗️ OptimAI Network Architecture",
+    "permalink": "/docs/architecture"
+  }
+}

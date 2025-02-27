@@ -1,0 +1,27 @@
+{
+  "id": "introduction/intro",
+  "title": "OptimAI Network Introduction",
+  "description": "What is OptimAI Network?",
+  "source": "@site/docs/introduction/intro.md",
+  "sourceDirName": "introduction",
+  "slug": "/introduction/intro",
+  "permalink": "/docs/introduction/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/introduction/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🌐 Overview",
+    "permalink": "/docs/category/-overview"
+  },
+  "next": {
+    "title": "The Key Problem",
+    "permalink": "/docs/introduction/problem"
+  }
+}

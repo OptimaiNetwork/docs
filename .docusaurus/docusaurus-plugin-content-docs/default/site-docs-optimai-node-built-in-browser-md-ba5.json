@@ -1,0 +1,27 @@
+{
+  "id": "optimai-node/built-in-browser",
+  "title": "OptimAI Node: Built-in Browser",
+  "description": "The Power of Built-in Browser in OptimAI DePIN Nodes",
+  "source": "@site/docs/optimai-node/built-in-browser.md",
+  "sourceDirName": "optimai-node",
+  "slug": "/optimai-node/built-in-browser",
+  "permalink": "/docs/optimai-node/built-in-browser",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/optimai-node/built-in-browser.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How OptimAI Node Works?",
+    "permalink": "/docs/optimai-node/how-node-working"
+  },
+  "next": {
+    "title": "Supported Platforms and Versions",
+    "permalink": "/docs/optimai-node/platforms-versions"
+  }
+}

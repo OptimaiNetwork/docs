@@ -1,0 +1,23 @@
+{
+  "id": "faq",
+  "title": "❓ FAQs",
+  "description": "Get answers to the most common questions about OptimAI Network as a whole.",
+  "source": "@site/docs/faq.md",
+  "sourceDirName": ".",
+  "slug": "/faq",
+  "permalink": "/docs/faq",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/faq.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "sidebar_position": 12
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "OptimAI Network — Litepaper",
+    "permalink": "/docs/litepaper"
+  }
+}

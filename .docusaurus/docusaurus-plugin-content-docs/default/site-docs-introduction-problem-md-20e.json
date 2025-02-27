@@ -1,0 +1,27 @@
+{
+  "id": "introduction/problem",
+  "title": "The Key Problem",
+  "description": "Artificial Intelligence (AI) holds transformative power across industries and global communities. Yet its progress is frequently stifled by key hurdles: limited access to high-quality datasets, centralized control by dominant tech entities, and the complexities of ethically obtaining and validating data. OptimAI Network emerges as a groundbreaking, decentralized solution to these challenges. It democratizes AI development by fostering a community-driven, privacy-centric data ecosystem that empowers everyone to contribute and benefit.",
+  "source": "@site/docs/introduction/problem.md",
+  "sourceDirName": "introduction",
+  "slug": "/introduction/problem",
+  "permalink": "/docs/introduction/problem",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/optimainetwork/docs/tree/main/docs/introduction/problem.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "OptimAI Network Introduction",
+    "permalink": "/docs/introduction/intro"
+  },
+  "next": {
+    "title": "The OptimAI Solution",
+    "permalink": "/docs/introduction/solution"
+  }
+}
