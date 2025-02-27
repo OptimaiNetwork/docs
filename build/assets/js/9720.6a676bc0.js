@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkoptimai_network_docs=self.webpackChunkoptimai_network_docs||[]).push([[9720],{9720:(e,c,t)=>{t.d(c,{createArchitectureServices:()=>r.S});var r=t(9936);t(9369)}}]);

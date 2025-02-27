@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkoptimai_network_docs=self.webpackChunkoptimai_network_docs||[]).push([[7723],{7723:(e,s,c)=>{c.d(s,{createPieServices:()=>i.f});var i=c(8685);c(9369)}}]);
