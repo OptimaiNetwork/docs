@@ -7,7 +7,7 @@ import rehypeKatex from 'rehype-katex';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'OptimAI Network',
+  title: 'OptimAI Network Docs',
   tagline: 'Mine Data. Fuel AI. Earn Rewards.',
   favicon: 'img/favicon.ico',
 
@@ -144,13 +144,13 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} OptimAI Network.`,
     },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-    },
-    mermaid: {
-      theme: {light: 'neutral', dark: 'forest'},
-    },
+    // prism: {
+    //   theme: prismThemes.github,
+    //   darkTheme: prismThemes.dracula,
+    // },
+    // mermaid: {
+    //   theme: {light: 'neutral', dark: 'forest'},
+    // },
   } satisfies Preset.ThemeConfig,
 };
 

@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+title: "What is OptimAI Node?"
 ---
 
-# What is OptimAI Node?
+# What is <span class="actual-font">OptimAI Node</span>?
 At the core of the OptimAI Network are the Nodes—essential elements that enhance the ecosystem’s functionality, security, and scalability. By engaging as node operators, both users and developers play pivotal roles in advancing the AI revolution, directly influencing the network’s expansion and effectiveness. The OptimAI Network provides a diverse array of node types, each designed for specific tasks and capabilities. This variety ensures inclusivity and optimizes the combined potential of all participants, offering opportunities for active involvement or even earning passive income through different levels of resource contribution.
 
 ## Node Tasks in OptimAI Node

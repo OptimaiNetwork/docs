@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+title: "Welcome to OptimAI Network"
 ---
 
-# Welcome to OptimAI Network
+# Welcome to <span class="actual-font">OptimAI Network</span>
 
 :::tip[**What is OptimAI Network?**]
 **OptimAI Network** is a **decentralized Reinforcement Data Network** that seamlessly integrates an **EVM Layer-2 blockchain, DePIN (Decentralized Physical Infrastructure Network), and a community-driven data mining and validation framework** to revolutionize the learning process of AI Agents. By leveraging a decentralized network of contributors, OptimAI enables real-time **data collection, validation, and reinforcement learning**, ensuring AI models evolve continuously with **high-quality, diverse, and contextually rich datasets**.
