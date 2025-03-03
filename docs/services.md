@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# 🤖 OptimAI Intelligence Services
+# OptimAI Intelligence Services
 The OptimAI Network Intelligence Services is a comprehensive suite of interconnected components designed to create a dynamic and robust environment for AI development. By seamlessly integrating data collection, processing, computation, and deployment, we provide a holistic platform that empowers users, developers, and organizations to harness the full potential of AI. This ecosystem not only addresses the current challenges in AI but also lays the groundwork for future advancements, making it a compelling proposition for our community and investors.
 
 :::tip[The key components of the OptimAI Intelligence Services includes]
