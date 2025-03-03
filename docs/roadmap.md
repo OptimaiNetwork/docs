@@ -2,7 +2,7 @@
 sidebar_position: 10
 ---
 
-# 🛠️ Development Roadmap
+# Development Roadmap
 
 ### Stage 1: Laying the DePIN Data Network Foundation
 *Power the DePIN Data Network*

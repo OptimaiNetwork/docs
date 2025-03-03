@@ -2,7 +2,7 @@
 sidebar_position: 11
 ---
 
-# ❓ FAQs
+# FAQs
 *Get answers to the most common questions about OptimAI Network as a whole.*
 
 ## General Questions

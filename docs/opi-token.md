@@ -2,7 +2,7 @@
 sidebar_position: 9
 ---
 
-# 🪙 The OPI Token
+# The OPI Token
 
 At the heart of the OptimAI Network is the **OPI Token**, a versatile utility token designed to drive the ecosystem's growth, incentivize active participation, and support decentralized governance. Its well-crafted tokenomics ensure a transparent, equitable, and sustainable economic framework that aligns the interests of users, developers, clients, and the network as a whole.
 
