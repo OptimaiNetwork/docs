@@ -1,8 +1,9 @@
 ---
 sidebar_position: 3
+title: "OptimAI Node: Built-in Browser"
 ---
 
-# OptimAI Node: Built-in Browser
+# <span class="actual-font">OptimAI</span> Node: Built-in Browser
 
 ## The Power of Built-in Browser in OptimAI DePIN Nodes
 At the heart of the OptimAI Network lies our revolutionary **Integrated Browser Node**—a fusion of a node and a built-in web browser designed to seamlessly support the **autonomous AI Agent revolution**. This integration transforms the way data is gathered, utilized, and continuously fed into AI models, paving the way for **truly self-improving AI systems accessible to everyone**.
