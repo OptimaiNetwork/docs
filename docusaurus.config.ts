@@ -37,7 +37,7 @@ const config: Config = {
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
-
+  
   presets: [
     [
       'classic',
@@ -74,9 +74,26 @@ const config: Config = {
     ],
   ],
 
-  themeConfig: {
-    // Replace with your project's social card
+  themeConfig: {    
     image: 'img/social-card.jpeg',
+    algolia: {      
+      appId: '21H8NIK27E',      
+      apiKey: '2764b00b42701493a032fe50aab6c8f4',
+      indexName: 'optimai',
+
+      contextualSearch: true,      
+      externalUrlRegex: 'external\\.com|domain\\.com',      
+      // replaceSearchResultPathname: {
+      //   from: '/docs/', // or as RegExp: /\/docs\//
+      //   to: '/',
+      // },
+
+      // Optional: Algolia search parameters
+      searchParameters: {},      
+      searchPagePath: 'search',      
+      insights: false,
+    },
+
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,
