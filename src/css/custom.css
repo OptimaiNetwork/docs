@@ -4,6 +4,8 @@
  * work well for content-centric websites.
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
@@ -15,7 +17,7 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-font-family-base: "Manrope", sans-serif;
+  --ifm-font-family-base: 'Plus Jakarta Sans', sans-serif;
   --ifm-font-size-base: 18px;
 }
 
@@ -44,18 +46,9 @@
   font-family: "Actual", sans-serif;
 }
 
-.menu__link {
-  font-family: "Actual", sans-serif;
-}
-
-
-/* h1 {
+/* .menu__link {
   font-family: "Actual", sans-serif;
 } */
-
-p, span, h1, h2, h3, h4, h5, h6 {
-  font-family: "Manrope", sans-serif;
-}
 
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);

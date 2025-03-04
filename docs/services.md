@@ -1,21 +1,22 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
+title: OptimAI Intelligence Services
 ---
 
-# OptimAI Intelligence Services
+# <span class="actual-font">OptimAI</span> Intelligence Services
 The OptimAI Network Intelligence Services is a comprehensive suite of interconnected components designed to create a dynamic and robust environment for AI development. By seamlessly integrating data collection, processing, computation, and deployment, we provide a holistic platform that empowers users, developers, and organizations to harness the full potential of AI. This ecosystem not only addresses the current challenges in AI but also lays the groundwork for future advancements, making it a compelling proposition for our community and investors.
 
 :::tip[The key components of the OptimAI Intelligence Services includes]
-1. OptimAI **Data Engine**
-2. OptimAI **Compute Engine**
-3. OptimAI **GenAI Agent Platform**
+1. <span class="actual-font">OptimAI</span> **Data Engine**
+2. <span class="actual-font">OptimAI</span> **Compute Engine**
+3. <span class="actual-font">OptimAI</span> **GenAI Agent Platform**
 :::
 
 Each component plays a crucial role in the ecosystem, and together, they form a synergistic whole that is greater than the sum of its parts.
 
 ![OptimAI Intelligence Services](./assets/images/services.png)
 
-## OptimAI Data Engine
+## <span class="actual-font">OptimAI</span> Data Engine
 *Harnessing the Power of Data for Superior AI*
 ### What is the OptimAI Data Engine?
 The OptimAI Data Engine is the core component responsible for managing the entire lifecycle of data within the network. It oversees data collection, processing, storage, and distribution, ensuring that high-quality, relevant data is available for AI model training and deployment.
@@ -36,7 +37,7 @@ The OptimAI Data Engine is the core component responsible for managing the entir
 - Efficiency: Automated data pipelines reduce time-to-insight, accelerating the development cycle.
 - Competitive Advantage: Unique data sources provide a strategic edge in the AI marketplace.
 
-## OptimAI Compute Engine
+## <span class="actual-font">OptimAI</span> Compute Engine
 *Unleashing Computational Power for AI Excellence*
 ### What is the OptimAI Compute Engine?
 The OptimAI Compute Engine is a decentralized computing platform that harnesses the collective processing power of the network's nodes. It enables distributed AI model training, inference, and other computational tasks, making high-performance computing accessible and cost-effective.
@@ -54,7 +55,7 @@ The OptimAI Compute Engine is a decentralized computing platform that harnesses 
 - Performance: Accelerates AI model training and inference times.
 - Accessibility: Democratizes access to high-performance computing resources, enabling broader participation in AI development.
 
-## OptimAI Network Engine
+## <span class="actual-font">OptimAI</span> Network Engine
 *Ensuring Seamless Connectivity and Security*
 ### What is the OptimAI Network Engine?
 The OptimAI Network Engine is the communication backbone of the ecosystem. It manages data transfer, synchronization, and security across all nodes and components, ensuring that the network operates smoothly and securely.
@@ -71,7 +72,7 @@ The OptimAI Network Engine is the communication backbone of the ecosystem. It ma
 - Security: Protects against cyber threats, safeguarding data and operations.
 - Efficiency: Optimizes data flow, reducing latency and improving user experience.
 
-## OptimAI GenAI Agent Platform
+## <span class="actual-font">OptimAI</span> GenAI Agent Platform
 *Catalyzing the Next Generation of AI Applications*
 ### What is the OptimAI GenAI Agent Platform?
 The OptimAI GenAI Platform is an advanced AI development environment that provides tools and infrastructure for creating, training, and deploying next-generation AI agents and models. It leverages the collective strengths of the ecosystem to push the boundaries of what's possible in AI.
