@@ -72,8 +72,12 @@
     height: 4.4rem;
     min-width: 4.4rem;
     justify-content: center;
+    border: 1px solid rgba($accent, 0.8);
     background-color: rgba($accent, 0.8);
     border-radius: 0.8rem;
+    transition-property: background-color, border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
 
     @include md {
       min-width: 20rem;
@@ -84,6 +88,14 @@
 
     @include xl {
       min-width: 40rem;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      border-color: rgba(white, 0.2);
+      background-color: rgba($accent, 0.9);
+      box-shadow: none;
     }
   }
 
