@@ -1,0 +1,84 @@
+@use './common/color.scss' as *;
+@use './common/media.scss' as *;
+
+.menu {
+  padding: 2rem 1.6rem 2rem 2.4rem !important;
+  background-color: rgba($secondary, 0.6);
+}
+
+.navbar-sidebar {
+  background-color: $secondary;
+}
+
+.navbar-sidebar__close {
+  width: 2.4rem;
+  height: 2.4rem;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+
+.menu__list-item {
+  &:not(:first-child) {
+    margin-top: 0.8rem;
+  }
+
+  .menu__link {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: white !important;
+  }
+
+  & > {
+    .menu__link,
+    .menu__list-item-collapsible {
+      padding: 0.8rem 1.6rem;
+      opacity: 0.5;
+      border-radius: 0.8rem;
+      border: 0.1rem solid transparent;
+      transition-property: opacity, background-color, border-color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+
+      &:hover {
+        opacity: 1;
+        background-color: rgba($accent, 0.5);
+        border-color: rgba(white, 0.04);
+      }
+    }
+
+    .menu__link--active,
+    .menu__list-item-collapsible--active {
+      opacity: 1;
+      background-color: $accent;
+      border-color: rgba(white, 0.1);
+
+      &:hover {
+        background-color: $accent;
+        border-color: rgba(white, 0.1);
+      }
+    }
+    .menu__list-item-collapsible:has(.menu__link--active) {
+      opacity: 1;
+      background-color: $accent;
+      border-color: rgba(white, 0.1);
+    }
+  }
+
+  .menu__list {
+    padding-left: 2.4rem;
+    .menu__link {
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+.menu__link--sublist {
+  padding: 0;
+}
