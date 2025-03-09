@@ -1,0 +1,124 @@
+@use './common/color.scss' as *;
+@use './common/media.scss' as *;
+
+.DocSearch-Container {
+  --docsearch-modal-background: #{$background};
+  --docsearch-muted-color: white;
+  --docsearch-highlight-color: #5eed87;
+  --docsearch-hit-height: 6rem;
+
+  background-color: rgba(black, 0.8) !important;
+
+  .DocSearch-SearchBar {
+    padding-bottom: 0.8rem;
+    background-color: $background;
+    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
+  }
+
+  .DocSearch-Modal {
+    background-color: $background;
+    box-shadow: none;
+  }
+
+  .DocSearch-Form {
+    height: 4.4rem;
+    background-color: rgba($accent, 0.8);
+    box-shadow: none;
+    padding: 0 1.6rem;
+    border-radius: 0.8rem;
+  }
+
+  .DocSearch-MagnifierLabel {
+    color: white;
+    width: 2.4rem;
+    height: 2.4rem;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .DocSearch-Input {
+    font-size: 1.6rem;
+    line-height: 1.63;
+    font-weight: 500;
+    color: white;
+
+    &::placeholder {
+      color: rgba(white, 0.5);
+    }
+  }
+
+  .DocSearch-Help {
+    font-size: 1.4rem;
+    line-height: 1.63;
+    color: rgba(white, 0.5);
+  }
+
+  .DocSearch-Hit {
+    scroll-margin-top: 6rem;
+    padding-bottom: 0.8rem;
+
+    a {
+      border: 0.1rem solid rgba($secondary, 0.6);
+      background-color: rgba($secondary, 0.6);
+      border-radius: 0.6rem;
+      padding-left: 1.2rem;
+    }
+
+    &[aria-selected='true'] {
+      a {
+        background-color: $secondary;
+        border-color: rgba(white, 0.12);
+      }
+      mark {
+        --docsearch-hit-active-color: #5eed87;
+      }
+    }
+  }
+
+  .DocSearch-Hit-Container,
+  .DocSearch-Hit-action,
+  .DocSearch-Hit-icon,
+  .DocSearch-Hit-Tree {
+    color: white;
+  }
+
+  .DocSearch-Hit-Tree {
+    opacity: 0.1;
+  }
+
+  .DocSearch-Hit-source {
+    background-color: $background;
+    font-size: 1.8rem;
+    padding: 1.2rem 0 0.8rem;
+    color: white;
+    margin: 0;
+  }
+
+  .DocSearch-Hit-title {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .DocSearch-Hit-path {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    opacity: 0.8;
+  }
+
+  .DocSearch-HitsFooter {
+    a {
+      border: none;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 150%;
+    }
+  }
+
+  .DocSearch-Footer {
+    display: none;
+  }
+}

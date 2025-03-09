@@ -2,7 +2,7 @@
 @use './common/media.scss' as *;
 
 :root {
-  --ifm-color-primary: #2e8555;
+  --ifm-color-primary: white;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -15,12 +15,10 @@
   --ifm-font-size-base: 10px;
   --ifm-navbar-height: 6.4rem;
 
-  --ifm-navbar-background-color: ${$secondary};
+  --ifm-navbar-background-color: #{$secondary};
   --doc-sidebar-width: 36rem !important;
-}
-
-[data-theme='dark'] {
-  --ifm-navbar-background-color: ${$secondary};
+  ---ifm-link-color: white;
+  --docsearch-highlight-color: #{$accent};
 }
 
 @include lg {
