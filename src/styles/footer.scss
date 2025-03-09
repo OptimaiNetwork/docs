@@ -1,0 +1,96 @@
+@use './common/color.scss' as *;
+@use './common/media.scss' as *;
+
+.footer {
+  background-color: $background;
+  padding: 2.4rem 2rem;
+
+  @include xl {
+    padding: 3.2rem 4rem;
+  }
+}
+
+.footer__inner {
+  display: grid;
+  gap: 2.4rem;
+
+  @include md {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20rem;
+  }
+
+  @include xl {
+    grid-template-columns: 1fr auto;
+    column-gap: 12rem;
+  }
+}
+
+.footer__logo {
+  height: 3.2rem;
+
+  @include xl {
+    height: 4rem;
+  }
+}
+
+.footer__links {
+  display: grid;
+  gap: 4rem;
+  grid-row-start: span 2;
+
+  @include xl {
+    grid-template-columns: repeat(3, 18.4rem);
+    column-gap: 12rem;
+  }
+}
+
+.footer__col {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer__title {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: white;
+  font-weight: 700;
+
+  @include xl {
+    font-size: 1.8rem;
+  }
+}
+
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer__link-item {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include xl {
+    font-size: 1.8rem;
+  }
+}
+
+.footer__copyright {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: white;
+  opacity: 0.5;
+
+  @include md {
+    align-content: end;
+  }
+}

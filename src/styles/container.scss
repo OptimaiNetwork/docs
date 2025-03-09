@@ -1,0 +1,10 @@
+@use './common/color.scss' as *;
+@use './common/media.scss' as *;
+
+.container {
+  padding: 0rem 2rem;
+
+  @include xl {
+    padding: 0rem 2.4rem;
+  }
+}

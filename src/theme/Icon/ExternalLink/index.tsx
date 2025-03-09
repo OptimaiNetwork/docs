@@ -3,7 +3,7 @@ import { type ReactNode } from 'react'
 
 import styles from './styles.module.css'
 
-export default function IconExternalLink({ width = 13.5, height = 13.5 }: Props): ReactNode {
+export default function IconExternalLink({ width = 18, height = 18 }: Props): ReactNode {
   return (
     <svg
       width={width}

@@ -50,21 +50,6 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/optimainetwork/docs/tree/main/',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   feedOptions: {
-        //     type: ['rss', 'atom'],
-        //     xslt: true,
-        //   },
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/optimainetwork/docs/tree/main/',
-        //   // Useful options to enforce blogging best practices
-        //   onInlineTags: 'warn',
-        //   onInlineAuthors: 'warn',
-        //   onUntruncatedBlogPosts: 'warn',
-        // },
         theme: {
           customCss: './src/styles/index.scss',
         },
@@ -101,7 +86,7 @@ const config: Config = {
     navbar: {
       logo: {
         alt: 'OptimAI Network Logo',
-        src: 'img/optimai-logo.svg',
+        src: 'img/branding/optimai-documentation-logo.svg',
       },
       items: [
         {
@@ -114,6 +99,11 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
+      logo: {
+        src: 'img/branding/optimai-documentation-logo.svg',
+        alt: 'OptimAI Network Logo',
+        href: 'https://optimai.network',
+      },
       links: [
         {
           title: 'Docs',
