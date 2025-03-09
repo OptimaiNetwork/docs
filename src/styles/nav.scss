@@ -62,6 +62,10 @@
       background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%),
         linear-gradient(90deg, #f6f655 0%, #5eed87 100%);
     }
+
+    @include xl {
+      width: 20rem;
+    }
   }
 }
 
