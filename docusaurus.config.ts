@@ -97,6 +97,7 @@ const config: Config = {
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
+
     navbar: {
       logo: {
         alt: 'OptimAI Network Logo',
