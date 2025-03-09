@@ -78,6 +78,11 @@
   align-items: center;
   justify-content: space-between;
 
+  &:hover {
+    color: #b9f167;
+    text-decoration: none;
+  }
+
   @include xl {
     font-size: 1.8rem;
   }
