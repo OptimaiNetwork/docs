@@ -1,0 +1,36 @@
+@use '@site/src/styles/common/color.scss' as *;
+
+.tocCollapsible {
+  background-color: rgba($secondary, 0.6);
+  border: 1px solid rgba($secondary, 0.6);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.tocCollapsibleExpanded {
+  border-color: rgba(white, 0.1);
+}
+
+.tocCollapsibleContent > ul {
+  border-left: none;
+  border-top: 1px solid rgba(white, 0.1);
+  padding: 1.2rem 1.6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.tocCollapsibleContent ul li {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: normal;
+  color: white;
+}
+
+.tocCollapsibleContent a {
+  display: block;
+  &:hover {
+    color: #f6f655;
+  }
+}
