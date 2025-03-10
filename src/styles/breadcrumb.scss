@@ -1,0 +1,63 @@
+@use './common/color.scss' as *;
+@use './common/media.scss' as *;
+
+.theme-doc-breadcrumbs {
+  @include xl {
+    --margin-bottom: 3.2rem;
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.breadcrumbs__item {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 1.2rem;
+}
+
+.breadcrumbs__item:not(:last-child):after {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M6.75 13.5L11.25 9L6.75 4.5" stroke="white" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  width: 1.6rem;
+  height: 1.6rem;
+  filter: none;
+}
+
+.breadcrumbs__item--home {
+  .breadcrumbs__link {
+    opacity: 1;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.breadcrumbs__item--active {
+  .breadcrumbs__link {
+    border-color: rgba(white, 0.1);
+    opacity: 1;
+    background-color: rgba($secondary, 0.6);
+  }
+}
+
+.breadcrumbs__link {
+  border-radius: 5.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.6rem;
+  padding: 0 1.2rem;
+  font-size: 1.4rem;
+  line-height: normal;
+  color: white;
+  border: 1px solid transparent;
+  background-color: rgba($secondary, 0.6);
+  opacity: 0.56;
+
+  &:hover {
+    --ifm-breadcrumb-item-background-active: #{rgba($secondary, 0.6)};
+  }
+}
