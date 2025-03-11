@@ -1,2 +1,64 @@
 @use './common/color.scss' as *;
 @use './common/media.scss' as *;
+
+.theme-doc-toc-desktop {
+  .table-of-contents {
+    width: 100%;
+    padding: 2rem;
+    background: $radial-05;
+    border-radius: 1.2rem;
+    border: 0.1rem solid rgba($color: white, $alpha: 0.1);
+
+    li {
+      margin: 0;
+      position: relative;
+
+      &:not(:first-child) {
+        margin-top: 1.2rem;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0.6rem;
+        left: 0;
+        width: 0.4rem;
+        height: 1.2rem;
+        background: #f6f655;
+        border-radius: 0.4rem;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+      }
+
+      &:has(> .table-of-contents__link--active) {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    a {
+      font-size: 1.6rem;
+      font-weight: normal;
+      line-height: normal;
+      color: white;
+      opacity: 0.5;
+      transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    ul {
+      margin-top: 1.2rem;
+      padding-left: 1.6rem;
+    }
+
+    .table-of-contents__link--active {
+      color: #f6f655;
+      opacity: 1;
+      transform: translateX(1.2rem);
+    }
+  }
+}

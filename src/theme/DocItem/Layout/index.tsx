@@ -13,7 +13,7 @@ import DocVersionBanner from '@theme/DocVersionBanner'
 import clsx from 'clsx'
 import { type ReactNode } from 'react'
 
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
@@ -40,11 +40,11 @@ export default function DocItemLayout({ children }: Props): ReactNode {
   const docTOC = useDocTOC()
   const { metadata } = useDoc()
   return (
-    <div className="row">
-      <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
+    <div className={styles.docItemWrapper}>
+      <div className={clsx(!docTOC.hidden && styles.docItemMain)}>
         <ContentVisibility metadata={metadata} />
         <DocVersionBanner />
-        <div className={styles.docItemContainer}>
+        <div>
           <article>
             <DocBreadcrumbs />
             <DocVersionBadge />
@@ -55,7 +55,7 @@ export default function DocItemLayout({ children }: Props): ReactNode {
           <DocItemPaginator />
         </div>
       </div>
-      {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}
+      {docTOC.desktop && <div className={styles.docItemTOC}>{docTOC.desktop}</div>}
     </div>
   )
 }
