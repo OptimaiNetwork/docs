@@ -3,7 +3,7 @@
 
 .theme-doc-breadcrumbs {
   @include xl {
-    --margin-bottom: 3.2rem;
+    --margin-bottom: 3.2rem !important;
   }
 }
 
@@ -29,17 +29,20 @@
 
 .breadcrumbs__item--home {
   .breadcrumbs__link {
-    opacity: 1;
     padding: 0;
     background-color: transparent;
+
+    &:hover {
+      background-color: transparent !important;
+    }
   }
 }
 
 .breadcrumbs__item--active {
   .breadcrumbs__link {
     border-color: rgba(white, 0.1);
-    opacity: 1;
     background-color: rgba($secondary, 0.6);
+    color: white;
   }
 }
 
@@ -52,12 +55,12 @@
   padding: 0 1.2rem;
   font-size: 1.4rem;
   line-height: normal;
-  color: white;
+  color: rgba(white, 0.5);
   border: 1px solid transparent;
   background-color: rgba($secondary, 0.6);
-  opacity: 0.56;
 
   &:hover {
-    --ifm-breadcrumb-item-background-active: #{rgba($secondary, 0.6)};
+    --ifm-breadcrumb-item-background-active: #{rgba($secondary, 0.8)};
+    color: white;
   }
 }
