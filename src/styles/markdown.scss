@@ -36,6 +36,10 @@
   li + li {
     margin-top: 0.4rem;
   }
+
+  p:has(+ h2) {
+    margin-bottom: 0;
+  }
 }
 
 @include xl {
