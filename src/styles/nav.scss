@@ -13,6 +13,11 @@
   align-items: center;
   backdrop-filter: blur(50px);
   background-color: rgba($background, 0.6);
+
+  @include xl {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
 }
 
 .navbar__toggle {

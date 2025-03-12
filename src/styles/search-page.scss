@@ -1,0 +1,26 @@
+@use '@site/src/styles/common/color.scss' as *;
+@use '@site/src/styles/common/media.scss' as *;
+
+.searchQueryColumn_RTkw {
+  .searchQueryInput_u2C7 {
+    font-size: 1.6rem;
+    line-height: 1.63;
+    font-weight: 500;
+    color: white;
+    height: 4.4rem;
+    background-color: rgba($accent, 0.8);
+    box-shadow: none;
+    padding: 0 1.6rem;
+    border-radius: 0.8rem;
+    border-width: 1px;
+    margin-bottom: 0.8rem;
+
+    &::placeholder {
+      color: rgba(white, 0.5);
+    }
+
+    &:focus {
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
