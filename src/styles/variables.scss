@@ -1,0 +1,29 @@
+@use './common/color.scss' as *;
+@use './common/media.scss' as *;
+
+:root {
+  --ifm-color-primary: white;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 160%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: 'Plus Jakarta Sans', sans-serif;
+  --ifm-font-size-base: 10px;
+  --ifm-navbar-height: 6.4rem;
+
+  --ifm-navbar-background-color: #{$secondary};
+  --doc-sidebar-width: 36rem !important;
+  ---ifm-link-color: white;
+  --docsearch-highlight-color: #{$accent};
+  --ifm-h1-font-size: 2.4rem;
+}
+
+@include lg {
+  :root {
+    --ifm-navbar-height: 8rem;
+  }
+}

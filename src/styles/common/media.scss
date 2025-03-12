@@ -1,0 +1,65 @@
+@use 'sass:map';
+@use 'sass:string';
+
+// Định nghĩa breakpoints với !default để có thể ghi đè nếu cần
+$breakpoints: (
+  md: 768px,
+  lg: 997px,
+  xl: 1280px,
+) !default;
+
+// Hàm lấy giá trị từ breakpoints
+@function get-breakpoint($key) {
+  @if map.has-key($breakpoints, $key) {
+    @return map.get($breakpoints, $key);
+  }
+  @return $key; // Nếu không tìm thấy, trả về giá trị raw (px, em, rem...)
+}
+
+// Mixin media query nâng cao
+@mixin media($queries...) {
+  $media-query: '';
+
+  @each $query in $queries {
+    $operator: string.slice($query, 1, 1);
+    $value: string.slice($query, 2);
+
+    @if $media-query == '' {
+      // First condition doesn't need the "and" prefix
+      @if $operator == '>' {
+        $media-query: '(min-width: #{get-breakpoint($value)})';
+      } @else if $operator == '<' {
+        $media-query: '(max-width: #{get-breakpoint($value) - 1px})';
+      }
+    } @else {
+      // Additional conditions need "and" prefix
+      @if $operator == '>' {
+        $media-query: '#{$media-query} and (min-width: #{get-breakpoint($value)})';
+      } @else if $operator == '<' {
+        $media-query: '#{$media-query} and (max-width: #{get-breakpoint($value) - 1px})';
+      }
+    }
+  }
+
+  @media #{$media-query} {
+    @content;
+  }
+}
+
+@mixin md {
+  @include media('>md') {
+    @content;
+  }
+}
+
+@mixin lg {
+  @include media('>lg') {
+    @content;
+  }
+}
+
+@mixin xl {
+  @include media('>xl') {
+    @content;
+  }
+}

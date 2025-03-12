@@ -1,0 +1,36 @@
+@media (min-width: 997px) {
+  .generatedIndexPage {
+    max-width: 75% !important;
+  }
+
+  .list article:nth-last-child(-n + 2) {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Duplicated from .markdown h1 */
+.title {
+  margin-bottom: 0.8rem;
+  font-size: 2.4rem;
+  color: white;
+
+  + p {
+    font-size: 1.6rem;
+    color: rgba(white, 0.8);
+  }
+}
+
+.article,
+.footer {
+  margin-top: 2rem;
+}
+
+.list article:last-child {
+  margin-bottom: 0 !important;
+}
+
+@include xl {
+  .title {
+    font-size: 3.2rem;
+  }
+}

@@ -1,0 +1,24 @@
+.tocCollapsibleButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  width: 100%;
+
+  span {
+    font-size: 1.6rem;
+    line-height: normal;
+    font-weight: 600;
+  }
+
+  svg {
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+.tocCollapsibleButtonExpanded {
+  svg {
+    transform: rotate(180deg);
+  }
+}

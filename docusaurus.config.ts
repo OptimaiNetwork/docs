@@ -1,8 +1,7 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+import type * as Preset from '@docusaurus/preset-classic'
+import type { Config } from '@docusaurus/types'
+import rehypeKatex from 'rehype-katex'
+import remarkMath from 'remark-math'
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -37,7 +36,7 @@ const config: Config = {
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
-  
+  plugins: ['docusaurus-plugin-sass'],
   presets: [
     [
       'classic',
@@ -49,48 +48,32 @@ const config: Config = {
           rehypePlugins: [rehypeKatex],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/optimainetwork/docs/tree/main/',
+          editUrl: 'https://github.com/optimainetwork/docs/tree/main/',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   feedOptions: {
-        //     type: ['rss', 'atom'],
-        //     xslt: true,
-        //   },
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/optimainetwork/docs/tree/main/',
-        //   // Useful options to enforce blogging best practices
-        //   onInlineTags: 'warn',
-        //   onInlineAuthors: 'warn',
-        //   onUntruncatedBlogPosts: 'warn',
-        // },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: './src/styles/index.scss',
         },
       } satisfies Preset.Options,
     ],
   ],
 
-  themeConfig: {    
+  themeConfig: {
     image: 'img/social-card.jpeg',
-    algolia: {      
-      appId: '21H8NIK27E',      
+    algolia: {
+      appId: '21H8NIK27E',
       apiKey: '2764b00b42701493a032fe50aab6c8f4',
       indexName: 'optimai',
 
-      contextualSearch: true,      
-      externalUrlRegex: 'external\\.com|domain\\.com',      
+      contextualSearch: true,
+      externalUrlRegex: 'external\\.com|domain\\.com',
       // replaceSearchResultPathname: {
       //   from: '/docs/', // or as RegExp: /\/docs\//
       //   to: '/',
       // },
 
       // Optional: Algolia search parameters
-      searchParameters: {},      
-      searchPagePath: 'search',      
+      searchParameters: {},
+      searchPagePath: 'search',
       insights: false,
     },
 
@@ -99,29 +82,28 @@ const config: Config = {
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
+
     navbar: {
-      title: 'OptimAI Network',
       logo: {
         alt: 'OptimAI Network Logo',
-        src: 'img/optimai-logo.svg',
+        src: 'img/branding/optimai-documentation-logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Documentation',
-        },
-        // {to: '/blog', label: 'Whitepaper', position: 'left'},
         {
           href: 'https://github.com/optimainetwork/docs',
           label: 'GitHub',
           position: 'right',
+          className: 'navbar__item--github',
         },
       ],
     },
     footer: {
       style: 'dark',
+      logo: {
+        src: 'img/branding/optimai-documentation-logo.svg',
+        alt: 'OptimAI Network Logo',
+        href: 'https://optimai.network',
+      },
       links: [
         {
           title: 'Docs',
@@ -161,14 +143,7 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} OptimAI Network.`,
     },
-    // prism: {
-    //   theme: prismThemes.github,
-    //   darkTheme: prismThemes.dracula,
-    // },
-    // mermaid: {
-    //   theme: {light: 'neutral', dark: 'forest'},
-    // },
   } satisfies Preset.ThemeConfig,
-};
+}
 
-export default config;
+export default config

@@ -1,0 +1,32 @@
+.admonition {
+  margin-bottom: 1.6rem;
+}
+
+.admonitionHeading {
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: white;
+  // text-transform: uppercase;
+}
+
+.admonitionHeading:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.admonitionHeading code {
+  text-transform: none;
+}
+
+.admonitionIcon svg {
+  display: block;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.admonitionContent > :last-child {
+  margin-bottom: 0;
+}

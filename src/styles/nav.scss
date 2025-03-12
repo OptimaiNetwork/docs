@@ -1,0 +1,126 @@
+@use './common/color.scss' as *;
+@use './common/media.scss' as *;
+
+.navbar {
+  height: var(--ifm-navbar-height);
+  padding: 0;
+  background-color: transparent;
+}
+
+.navbar__inner {
+  height: 100%;
+  padding: 0 1.6rem;
+  align-items: center;
+  backdrop-filter: blur(50px);
+  background-color: rgba($background, 0.6);
+
+  @include xl {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+.navbar__toggle {
+  margin-right: 1.6rem;
+
+  svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+.navbar-sidebar__brand {
+  padding: 2rem 1.6rem 0.4rem;
+}
+
+.navbar__logo {
+  height: 2.8rem;
+
+  @include lg {
+    height: 4rem;
+  }
+}
+
+.navbar__items--right {
+  gap: 0.8rem;
+}
+
+.navbar__item {
+  &.navbar__item--github {
+    display: block;
+    width: 12.6rem;
+    height: 4.4rem;
+    background-image: $gradient;
+    color: black;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 600;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    order: 1;
+    box-shadow: 0px -5px 10px 0px rgba(255, 255, 255, 0.3) inset;
+
+    &:hover {
+      background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%),
+        linear-gradient(90deg, #f6f655 0%, #5eed87 100%);
+    }
+
+    @include xl {
+      width: 20rem;
+    }
+  }
+}
+
+.navbarSearchContainer_Bca1 {
+  position: unset !important;
+
+  .DocSearch-Button {
+    height: 4.4rem;
+    min-width: 4.4rem;
+    justify-content: center;
+    border: 1px solid rgba($accent, 0.8);
+    background-color: rgba($accent, 0.8);
+    border-radius: 0.8rem;
+    transition-property: background-color, border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+
+    @include md {
+      min-width: 20rem;
+      justify-content: start;
+      gap: 1.2rem;
+      padding: 0 1.6rem;
+    }
+
+    @include xl {
+      min-width: 40rem;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      border-color: rgba(white, 0.2);
+      background-color: rgba($accent, 0.9);
+      box-shadow: none;
+    }
+  }
+
+  .DocSearch-Search-Icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .DocSearch-Button-Placeholder {
+    font-size: 1.6rem;
+    line-height: 1.63;
+    font-weight: 500;
+    color: $muted-background;
+  }
+
+  .DocSearch-Button-Keys {
+    display: none;
+  }
+}
