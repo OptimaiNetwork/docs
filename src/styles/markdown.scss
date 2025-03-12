@@ -1,0 +1,67 @@
+@use '@site/src/styles/common/color.scss' as *;
+@use '@site/src/styles/common/media.scss' as *;
+
+.markdown {
+  --ifm-heading-line-height: 1.5;
+  --ifm-leading-desktop: 1.5;
+  color: rgba(white, 0.8);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: white;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+  code {
+    font-size: 1.4rem;
+  }
+
+  li + li {
+    margin-top: 0.4rem;
+  }
+}
+
+@include xl {
+  .markdown {
+    h1 {
+      font-size: 3.2rem;
+    }
+
+    h2 {
+      font-size: 2.8rem;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    code {
+      font-size: 1.6rem;
+    }
+  }
+}

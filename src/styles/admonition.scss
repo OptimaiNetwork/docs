@@ -1,0 +1,51 @@
+@use '@site/src/styles/common/color.scss' as *;
+@use '@site/src/styles/common/media.scss' as *;
+
+.alert {
+  position: relative;
+  padding: 2rem 2rem 2rem 2.4rem;
+  border: none;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  color: rgba(white, 0.8);
+  --border-color: rgba(255, 255, 255, 0.3);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.4rem;
+    height: 100%;
+    background: var(--border-color);
+  }
+
+  strong {
+    color: white;
+  }
+}
+
+.alert--secondary {
+  --border-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.alert--success {
+  background-color: rgba($accent, 0.8);
+  --border-color: linear-gradient(90deg, #f6f655 0%, #5eed87 100%);
+}
+
+.alert--info {
+  background-color: rgba($background, 0.8);
+  --border-color: white;
+}
+
+.alert--warning {
+  background-color: rgba(205, 177, 80, 0.05);
+  --border-color: #cdb150;
+}
+
+.alert--danger {
+  background-color: rgba(241, 65, 88, 0.1);
+  --border-color: #f14158;
+}
