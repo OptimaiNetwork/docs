@@ -1,0 +1,33 @@
+@use '@site/src/styles/common/media.scss' as *;
+
+.docItemWrapper {
+  display: grid;
+}
+
+.docItemMain {
+  width: 100%;
+}
+
+.docItemContainer header + *,
+.docItemContainer article > *:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 1281px) {
+  .docItemWrapper {
+    grid-template-columns: 1fr 360px;
+    gap: 3.2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .docItemWrapper {
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .docItemWrapper {
+    gap: 5.2rem;
+  }
+}
