@@ -4,6 +4,7 @@
 .footer {
   background-color: $background;
   padding: 2.4rem 2rem;
+  position: relative;
 
   @include xl {
     padding: 3.2rem 4rem;
