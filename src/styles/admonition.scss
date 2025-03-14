@@ -9,6 +9,7 @@
   overflow: hidden;
   color: rgba(white, 0.8);
   --border-color: rgba(255, 255, 255, 0.3);
+  --ifm-heading-line-height: 1.63;
 
   &::before {
     content: '';
