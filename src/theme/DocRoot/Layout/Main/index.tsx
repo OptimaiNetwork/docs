@@ -11,6 +11,7 @@ export default function DocRootLayoutMain({ hiddenSidebarContainer, children }: 
     <main
       className={clsx(styles.docMainContainer, (hiddenSidebarContainer || !sidebar) && styles.docMainContainerEnhanced)}
     >
+      <div className={styles.docBackground} />
       <div className={clsx(styles.docItemWrapper)}>{children}</div>
     </main>
   )

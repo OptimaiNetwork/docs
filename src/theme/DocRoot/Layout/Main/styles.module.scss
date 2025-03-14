@@ -3,6 +3,26 @@
 .docMainContainer {
   display: flex;
   width: 100%;
+  position: relative;
+}
+
+.docBackground {
+  position: fixed;
+  top: var(--ifm-navbar-height);
+  left: var(--doc-sidebar-width);
+  width: calc(100vw - var(--doc-sidebar-width));
+  height: calc(100vh - var(--ifm-navbar-height));
+  opacity: 0.5;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
+    linear-gradient(
+      138deg,
+      rgba(90, 92, 10, 0.01) -22.01%,
+      rgba(113, 115, 13, 0.15) 10.21%,
+      rgba(94, 138, 133, 0.2) 39.44%,
+      rgba(12, 14, 11, 0.5) 111.64%
+    ),
+    radial-gradient(105.48% 59.33% at -6.41% 111.39%, rgba(246, 246, 85, 0.1) 0%, rgba(246, 246, 85, 0) 100%),
+    radial-gradient(108.78% 60.14% at 102.97% -4.95%, rgba(94, 237, 135, 0.1) 0%, rgba(94, 237, 135, 0) 100%);
 }
 
 .docItemWrapper {
@@ -10,6 +30,7 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 1.6rem;
+  position: relative;
 }
 
 @media (min-width: 997px) {

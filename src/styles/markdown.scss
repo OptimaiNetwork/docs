@@ -2,9 +2,10 @@
 @use '@site/src/styles/common/media.scss' as *;
 
 .markdown {
-  --ifm-heading-line-height: 1.5;
+  --ifm-heading-line-height: 2;
   --ifm-leading-desktop: 1.5;
   color: rgba(white, 0.8);
+  line-height: var(--ifm-heading-line-height);
 
   h1,
   h2,
@@ -12,6 +13,7 @@
   h4,
   h5 {
     color: white;
+    line-height: 1.5;
   }
 
   h1 {
@@ -34,7 +36,13 @@
   }
 
   li + li {
-    margin-top: 0.4rem;
+    margin-top: 0.6rem;
+  }
+
+  li {
+    ul {
+      margin-top: 0.4rem;
+    }
   }
 
   p:has(+ h2) {

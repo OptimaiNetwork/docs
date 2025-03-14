@@ -38,7 +38,7 @@
   .menu__link {
     font-size: 1.6rem;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 400;
     color: white !important;
   }
 
@@ -79,7 +79,22 @@
   }
 
   .menu__list {
+    position: relative;
     padding-left: 2.4rem;
+    margin: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 2.4rem;
+      transform: translateX(-100%);
+      background-color: rgba(white, 0.2);
+    }
+
     .menu__link {
       border: none;
       background-color: transparent;
