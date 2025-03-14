@@ -6,7 +6,7 @@
   width: 100%;
   font-size: 1.6rem;
   line-height: 1.63;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
   height: 4.4rem;
   background-color: rgba($accent, 0.8);
@@ -58,7 +58,7 @@
     color: rgba(white, 0.5);
     font-size: 1.6rem;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 300;
     gap: 0.4rem;
     &:after {
       margin: 0 !important;
@@ -68,7 +68,7 @@
 }
 
 .searchResultItemHeading {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2rem;
   line-height: 1.5;
   margin-bottom: 0;
