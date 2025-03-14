@@ -20,6 +20,11 @@
   ---ifm-link-color: white;
   --docsearch-highlight-color: #{$accent};
   --ifm-h1-font-size: 2.4rem;
+
+  --ifm-font-weight-light: 200;
+  --ifm-font-weight-normal: 300;
+  --ifm-font-weight-semibold: 500;
+  --ifm-font-weight-bold: 600;
 }
 
 @include lg {

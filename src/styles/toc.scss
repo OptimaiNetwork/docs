@@ -20,10 +20,11 @@
       &::before {
         content: '';
         position: absolute;
-        top: 0.6rem;
+        top: 1.3rem;
         left: 0;
         width: 0.4rem;
         height: 1.2rem;
+        transform: translateY(-50%);
         background: #f6f655;
         border-radius: 0.4rem;
         opacity: 0;
@@ -38,9 +39,9 @@
     }
 
     a {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       font-weight: normal;
-      line-height: normal;
+      line-height: 1.5;
       color: white;
       opacity: 0.5;
       transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
