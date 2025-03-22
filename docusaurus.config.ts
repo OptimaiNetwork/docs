@@ -36,7 +36,21 @@ const config: Config = {
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: [
+    'docusaurus-plugin-sass',
+    [
+      '@docusaurus/plugin-google-analytics',
+      {
+        trackingID: 'G-E46T1HJVX5'
+      },
+    ],
+    [
+      '@docusaurus/plugin-google-tag-manager',
+      {
+        containerId: 'GTM-WZVXXH7L'
+      },
+    ],
+  ],
   presets: [
     [
       'classic',
