@@ -1,12 +1,14 @@
 ---
 sidebar_position: 9
+title: "The OPI Token"
 ---
 
-# The OPI Token
-
+:::tip[Overview]
 At the heart of the OptimAI Network is the **OPI Token**, a versatile utility token designed to drive the ecosystem's growth, incentivize active participation, and support decentralized governance. Its well-crafted tokenomics ensure a transparent, equitable, and sustainable economic framework that aligns the interests of users, developers, clients, and the network as a whole.
+:::
 
 ## Key Roles of the OPI Token
+![OPI Token](./assets/images/opi-token.jpg)
 ### Incentivization of Contributions
 The OPI Token rewards participants for their efforts in maintaining and enhancing the network, fostering a collaborative ecosystem.
 
@@ -32,7 +34,7 @@ OPI Tokens are used as gas fees to facilitate transactions on the Layer-2 blockc
 ### Staking and Security
 Staking mechanisms encourage long-term engagement, reward participants, and enhance the network's security and stability.
 
-### OPI Token's Symbolic Journey: From 0 to 1 and Beyond
+## OPI Token's Symbolic Journey: From 0 to 1 and Beyond
 The OPI token isn't merely a digital asset; it encapsulates a profound journey, mirroring the essence of the OptimAI Network and the transformative power of AI. The token's name, "OPI", holds a multi-layered significance:
 
 ### Mathematical Resonance
