@@ -157,6 +157,17 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} OptimAI Network.`,
     },
+    metadata: [
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'OptimAI Network Docs' },
+      { name: 'twitter:description', content: 'Official documentation for the OptimAI Network.' },
+      { name: 'twitter:image', content: 'https://docs.optimai.network/img/social-card.png' },
+  
+      { property: 'og:title', content: 'OptimAI Network Docs' },
+      { property: 'og:description', content: 'Official documentation for the OptimAI Network.' },
+      { property: 'og:image', content: 'https://docs.optimai.network/img/social-card.png' },
+      { property: 'og:url', content: 'https://docs.optimai.network' },
+    ],
   } satisfies Preset.ThemeConfig,
 }
 
