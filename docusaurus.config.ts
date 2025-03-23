@@ -72,7 +72,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/social-card.jpeg',
+    image: 'img/social-card.png',
     algolia: {
       appId: '21H8NIK27E',
       apiKey: '2764b00b42701493a032fe50aab6c8f4',
