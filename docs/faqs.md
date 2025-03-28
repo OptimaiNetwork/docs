@@ -16,7 +16,7 @@ The OptimAI Network is a decentralized data network that transforms everyday int
 <details>
 <summary>How does OptimAI Network data mining differ from traditional data collection methods?</summary>
 
-Unlike traditional centralized data scraping, OptimAI utilizes integrated browser nodes that allow access to both public and closed-source data, including user interactions and behaviors. This decentralized approach ensures richer data collection while maintaining user privacy and security.
+Unlike traditional centralized data scraping, OptimAI utilizes integrated browser inside OptimAI Core Nodes that allow access to both public and closed-source data, including user interactions and behaviors. This decentralized approach ensures richer data collection while maintaining user privacy and security.
 </details>
 
 <details>
@@ -37,7 +37,7 @@ Participation is simple:
 
 ## Installation and Setup
 <details>
-<summary>What are the system requirements for running an OptimAI Node?</summary>
+<summary>What are the system requirements for running an OptimAI Core Node?</summary>
 
 - Minimum Requirements:
 
@@ -54,10 +54,10 @@ Participation is simple:
 </details>
 
 <details>
-<summary>How do I install the OptimAI Browser Extension Node?</summary>
+<summary>How do I install the OptimAI Lite Node (Browser Extension)?</summary>
 
 - Step 1: Visit your browser's extension store.
-- Step 2: Search for "OptimAI Node".
+- Step 2: Search for "OptimAI Lite Node".
 - Step 3: Click "Add to Browser" or "Install".
 - Step 4: Follow the prompts to complete the installation.
 - Step 5: Activate the node by clicking the OptimAI icon and logging in or creating an account.
@@ -89,7 +89,7 @@ OptimAI prioritizes privacy by:
 </details>
 
 <details>
-<summary>What kind of data does the node collect?</summary>
+<summary>What kind of data does the OptimAI Node collect?</summary>
 
 The node collects:
 - Public Data: From websites you visit.
