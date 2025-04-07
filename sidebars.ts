@@ -70,6 +70,11 @@ const sidebars: SidebarsConfig = {
           label: 'OptimAI Lite Node - Telegram Mini-App',
           href: 'https://t.me/OptimAI_Node_Bot',
         },
+        {
+          type: 'link',
+          label: 'OptimAI Whitepaper',
+          href: 'https://optimai.network/files/OptimAI-Whitepaper-v1.pdf',
+        },
       ],
     },
   ],
