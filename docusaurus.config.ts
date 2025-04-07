@@ -120,11 +120,15 @@ const config: Config = {
       },
       links: [
         {
-          title: 'Docs',
+          title: 'OptimAI Network',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Website',
+              href: 'https://optimai.network/',
+            },
+            {
+              label: 'Whitepaper',
+              href: 'https://optimai.network/files/OptimAI-Whitepaper-v1.pdf',
             },
           ],
         },
