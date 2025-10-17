@@ -8,7 +8,7 @@ import remarkMath from 'remark-math'
 const config: Config = {
   title: 'OptimAI Network Docs',
   tagline: 'Mine Data. Fuel AI. Earn Rewards.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
   url: 'https:/docs.optimai.network/',
@@ -41,13 +41,13 @@ const config: Config = {
     [
       '@docusaurus/plugin-google-analytics',
       {
-        trackingID: 'G-E46T1HJVX5'
+        trackingID: 'G-E46T1HJVX5',
       },
     ],
     [
       '@docusaurus/plugin-google-tag-manager',
       {
-        containerId: 'GTM-WZVXXH7L'
+        containerId: 'GTM-WZVXXH7L',
       },
     ],
   ],
@@ -166,7 +166,7 @@ const config: Config = {
       { name: 'twitter:title', content: 'OptimAI Network Docs' },
       { name: 'twitter:description', content: 'Official documentation for the OptimAI Network.' },
       { name: 'twitter:image', content: 'https://docs.optimai.network/img/social-card.png' },
-  
+
       { property: 'og:title', content: 'OptimAI Network Docs' },
       { property: 'og:description', content: 'Official documentation for the OptimAI Network.' },
       { property: 'og:image', content: 'https://docs.optimai.network/img/social-card.png' },
