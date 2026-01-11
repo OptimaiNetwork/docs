@@ -59,3 +59,4 @@ This documentation is automatically deployed to [docs.optimai.network](https://d
 If you have any questions or need assistance, please open an issue in this repository or reach out through our community channels.  
  
 Thank you for contributing to OptimAI Network's documentation!
+My first step into open-source: learning to work with GitHub. Many thanks to OptimAI!
