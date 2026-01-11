@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: "OptimAI Core Node"
 ---
 
@@ -9,9 +9,62 @@ title: "OptimAI Core Node"
 The **OptimAI Core Node** is the most comprehensive option for engaging with the OptimAI Network. It supports all available tasks and features, making it perfect for users who want to dive deep into the network’s capabilities. This node is designed for flexibility and power, catering to both general users and developers.
 :::
 
-## Installation (Coming soon)
+## Installation
 
-The OptimAI Core Node can be installed as a desktop application or accessed via a command-line interface (CLI). Choose the option that suits your needs.
+The OptimAI Core Node relies on Docker to run its workloads efficiently and securely. Before proceeding, ensure you have **Docker Desktop** installed and running on your machine.
+
+:::info[Prerequisite]
+Install Docker Desktop for your OS: [Download Docker](https://www.docker.com/products/docker-desktop/)
+:::
+
+### Option 1: Desktop App (Recommended)
+
+The Desktop App provides a user-friendly interface to manage your node, view earnings, and monitor performance.
+
+1.  **Download the Installer**
+    -   [Windows](https://optimai.network/download/core-node/win)
+    -   [MacOS](https://optimai.network/download/core-node/mac)
+    -   [Ubuntu (Linux)](https://optimai.network/download/core-node/linux)
+
+2.  **Install & Launch**
+    -   Run the installer for your platform.
+    -   On Windows, if you see a security warning, click "Run Anyway" (this is a known temporary issue).
+
+3.  **Log In**
+    -   Open the app and log in with your OptimAI credentials.
+
+4.  **Start Node**
+    -   The node will connect to the network. Ensure Docker is running in the background.
+
+### Option 2: CLI Node
+
+For advanced users or headless environments, the CLI Node offers a lightweight way to run the Core Node.
+
+1.  **Download the Binary**
+    -   [Windows](https://optimai.network/download/cli-node/win)
+    -   [MacOS](https://optimai.network/download/cli-node/mac)
+    -   [Ubuntu (Linux)](https://optimai.network/download/cli-node/linux)
+
+2.  **Setup (Mac/Linux)**
+    -   Open your terminal and navigate to the download location.
+    -   Make the binary executable (replace `node-cli` with your downloaded filename):
+        ```bash
+        chmod +x node-cli
+        ```
+
+3.  **Log In**
+    -   Authenticate with your OptimAI account:
+        ```bash
+        ./node-cli auth login
+        ```
+    -   Enter your email and password when prompted.
+
+4.  **Run the Node**
+    -   Start the node process:
+        ```bash
+        ./node-cli node start
+        ```
+    -   Keep the terminal window open or run in a background session (e.g., using `nohup` or `screen`) to maintain the connection.
 
 ## Available Tasks
 
