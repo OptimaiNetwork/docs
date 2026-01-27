@@ -41,6 +41,10 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'doc',
+      id: 'optimai-search',
+    },
+    {
+      type: 'doc',
       id: 'opi-token',
     },
     {
