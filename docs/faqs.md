@@ -40,17 +40,20 @@ Participation is simple:
 <summary>What are the system requirements for running an OptimAI Core Node?</summary>
 
 - Minimum Requirements:
-
-- CPU: Dual-core processor
+  - CPU: 2 cores
   - RAM: 4 GB
-  - Storage: 500 MB free space
-  - Operating Systems: Windows 10+, macOS 10.13+, Ubuntu 18.04+, iOS 12+, Android 7.0+
-  - Browsers: Latest versions of Chrome, Firefox, or Edge
+  - Storage: 15 GB free space
 
 - Recommended Requirements:
-  - CPU: Quad-core processor
+  - CPU: 4 cores
   - RAM: 8 GB
-  - Storage: 1 GB free spa
+  - Storage: 15 GB free space
+
+- Software:
+  - Docker Desktop (Windows/macOS) or Docker Engine (Linux) installed and running
+
+- Account: OptimAI account
+- Network: Active internet connection
 </details>
 
 <details>
