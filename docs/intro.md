@@ -54,7 +54,7 @@ OptimAI offers an innovative AI Agent Operating System (OS) that enables users t
 For developers and enterprises looking to leverage OptimAI’s data and AI infrastructure, the OptimAI SDK provides tools and incentives:
 
 - **Custom Data Collection APIs**: Offers tailored data pipelines that integrate seamlessly with OptimAI’s decentralized framework.
-- **Incentivized AI Innovation**: Developers earn OPI tokens for creating specialized data-mining strategies or AI agent enhancements.
+- **Incentivized AI Innovation**: Developers receive OPI tokens for creating specialized data-mining strategies or AI agent enhancements.
 - **Modular & Interoperable**: Built for adaptability across diverse AI models, blockchain integrations, and enterprise applications.
 
 ### 6. Privacy-Centric and Ethical Design

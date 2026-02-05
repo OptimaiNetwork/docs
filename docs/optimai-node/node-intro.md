@@ -18,7 +18,7 @@ Nodes manage the storage of distributed data, crucial for handling large data vo
 Nodes perform data scraping, collecting information from various sources. Network-Opeartion tasks like scraping improve data availability and freshness, optimize load balancing, and increase the robustness of the network infrastructure.
 
 ### Data-Operation Tasks
-Offer node operators the opportunity to earn OPI tokens for their contributions, with additional rewards available through specialized campaigns. Engaging in these tasks allows participants to enhance their data management and AI skills, increasing their expertise. This involvement not only advances personal development but also significantly improves the quality of AI models within the network, contributing to its overall enhancement.
+Offer node operators the opportunity to receive OPI tokens for their contributions, with additional rewards available through specialized campaigns. Engaging in these tasks allows participants to enhance their data management and AI skills, increasing their expertise. This involvement not only advances personal development but also significantly improves the quality of AI models within the network, contributing to its overall enhancement.
 #### Data Mining
 Leverage Browser Nodes to efficiently collect data during regular internet browsing sessions, even from authenticated platforms.
 #### Data Cleaning and Annotation 

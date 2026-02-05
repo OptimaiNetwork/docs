@@ -7,7 +7,7 @@ import remarkMath from 'remark-math'
 
 const config: Config = {
   title: 'OptimAI Network Docs',
-  tagline: 'Mine Data. Fuel AI. Earn Rewards.',
+  tagline: 'Mine Data. Fuel AI. Get Rewards.',
   favicon: 'img/favicon.svg',
 
   // Set the production url of your site here

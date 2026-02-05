@@ -10,7 +10,7 @@ sidebar_position: 11
 <details>
 <summary>What is OptimAI Network?</summary>
 
-The OptimAI Network is a decentralized data network that transforms everyday internet usage into a data mining process to fuel AI development. By leveraging a Layer 2 DePIN Blockchain and integrated browser nodes, users can contribute data, fuel AI innovation, and earn rewards in the form of OPI Tokens.
+The OptimAI Network is a decentralized data network that transforms everyday internet usage into a data mining process to fuel AI development. By leveraging a Layer 2 DePIN Blockchain and integrated browser nodes, users can contribute data, fuel AI innovation, and receive rewards in the form of OPI Tokens.
 </details>
 
 <details>
@@ -32,7 +32,7 @@ Participation is simple:
 - **Download** the OptimAI Node for your preferred platform (browser extension, desktop app, mobile app, CLI, or Telegram).
 - **Install and activate** the node.
 - **Use your device** as you normally would; the node operates in the background.
-- **Earn rewards** in OPI Tokens for your contributions.
+- **Receive rewards** in OPI Tokens for your contributions.
 </details>
 
 ## Installation and Setup
@@ -130,7 +130,7 @@ Rewards are based on:
 - Contribution Volume: The amount of data you provide.
 - Data Quality: Higher-quality data earns more rewards.
 - Participation in Tasks: Completing missions and quests boosts earnings.
-- Referral Bonuses: Earn a percentage from referrals' contributions.
+- Referral Bonuses: Receive a percentage from referrals' contributions.
 </details>
 
 <details>
