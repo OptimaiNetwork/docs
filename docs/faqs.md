@@ -39,6 +39,11 @@ Participation is simple:
 <details>
 <summary>What are the system requirements for running an OptimAI Core Node?</summary>
 
+- Supported Operating Systems (Desktop App & CLI Node):
+  - Windows 10/11
+  - macOS 12+ (Intel or Apple Silicon)
+  - Ubuntu 22.04+
+
 - Minimum Requirements:
   - CPU: 2 cores
   - RAM: 4 GB
