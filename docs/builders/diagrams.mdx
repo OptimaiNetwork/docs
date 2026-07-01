@@ -1,0 +1,150 @@
+---
+sidebar_position: 2
+title: "System Diagrams"
+---
+
+# System Diagrams
+
+This page collects the core OptimAI diagrams in one place. Use it when explaining the network to builders, partners, investors, contributors, and new team members.
+
+## OptimAI Network Flywheel
+
+```mermaid
+flowchart LR
+  A["Users run nodes"] --> B["More data, compute, and bandwidth"]
+  B --> C["Reinforcement Data Layer improves quality"]
+  C --> D["Search, Claw, and Persona get stronger"]
+  D --> E["More users, builders, and campaigns"]
+  E --> F["More OPI utility and contributor rewards"]
+  F --> A
+```
+
+## Product Stack
+
+```mermaid
+flowchart TB
+  subgraph P["Product Layer"]
+    S["OptimAI Search"]
+    C["OptimAI Claw"]
+    PA["Persona Agent"]
+    API["Builder APIs and SDKs"]
+  end
+
+  subgraph A["Agent and Intelligence Layer"]
+    ORCH["Task orchestration"]
+    MEM["Persona memory"]
+    RET["Retrieval and synthesis"]
+    EXT["Extraction workflows"]
+  end
+
+  subgraph N["Network Layer"]
+    DATA["Data Engine"]
+    COMP["Compute Engine"]
+    RDL["Reinforcement Data Layer"]
+    NODE["Lite, Core, and Edge Nodes"]
+  end
+
+  subgraph E["Economy Layer"]
+    OPI["OPI"]
+    CHAIN["OptimAI Chain"]
+    REP["Reputation and rewards"]
+  end
+
+  P --> A
+  A --> N
+  N --> E
+  E --> N
+```
+
+## Search Request Flow
+
+```mermaid
+sequenceDiagram
+  participant User
+  participant Search as OptimAI Search
+  participant Orchestrator
+  participant Nodes as OptimAI Nodes
+  participant RDL as Reinforcement Data Layer
+  participant Agent as Answer Agent
+
+  User->>Search: Submit query
+  Search->>Orchestrator: Create retrieval task
+  Orchestrator->>Nodes: Fetch or refresh sources
+  Nodes-->>Orchestrator: Return candidate sources
+  Orchestrator->>RDL: Score freshness, quality, and provenance
+  RDL-->>Agent: Ranked context
+  Agent-->>Search: Synthesized answer with citations
+  Search-->>User: Answer, sources, images, follow-ups
+```
+
+## Claw Extraction Flow
+
+```mermaid
+flowchart LR
+  A["Extraction request"] --> B["Source policy and permission check"]
+  B --> C["Browser or node execution"]
+  C --> D["Parse and extract fields"]
+  D --> E["Normalize and deduplicate"]
+  E --> F["Validate samples"]
+  F --> G["Package dataset or intelligence feed"]
+  G --> H["Search, agents, APIs, or marketplace"]
+```
+
+## Persona Agent Memory Loop
+
+```mermaid
+stateDiagram-v2
+  [*] --> Observe
+  Observe --> AskPermission
+  AskPermission --> StoreMemory: User approves
+  AskPermission --> Forget: User rejects
+  StoreMemory --> Retrieve
+  Retrieve --> Act
+  Act --> Feedback
+  Feedback --> UpdatePersona
+  UpdatePersona --> Retrieve
+  Forget --> [*]
+```
+
+## Node Task Lifecycle
+
+```mermaid
+flowchart LR
+  A["Campaign or product demand"] --> B["Task specification"]
+  B --> C["Node matching"]
+  C --> D["Execution"]
+  D --> E["Result submission"]
+  E --> F["Validation"]
+  F --> G["Reputation update"]
+  G --> H["Reward settlement"]
+```
+
+## OPI Utility Map
+
+```mermaid
+flowchart TB
+  OPI["OPI"] --> R["Contributor rewards"]
+  OPI --> F["Service fees"]
+  OPI --> C["Data campaigns"]
+  OPI --> M["Marketplace"]
+  OPI --> S["Staking"]
+  OPI --> G["Governance"]
+
+  F --> SEARCH["Search API"]
+  F --> CLAW["Claw jobs"]
+  F --> PERSONA["Persona Agent services"]
+  C --> DATA["Datasets and validation"]
+  M --> AGENTS["Agents, models, services"]
+```
+
+## Trust And Quality Model
+
+```mermaid
+flowchart LR
+  SRC["Source metadata"] --> SCORE["Quality score"]
+  FRESH["Freshness"] --> SCORE
+  NODE["Node reputation"] --> SCORE
+  VALID["Validator consensus"] --> SCORE
+  FB["User feedback"] --> SCORE
+  SCORE --> ROUTE["Ranking, rewards, and agent context"]
+```

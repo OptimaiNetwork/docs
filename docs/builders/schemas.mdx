@@ -1,0 +1,163 @@
+---
+sidebar_position: 5
+title: "Data Schemas"
+---
+
+# Data Schemas
+
+:::info[Preview schema]
+These schemas define the recommended shape for OptimAI data objects. They are intended for product, API, and integration alignment.
+:::
+
+Professional AI docs need predictable objects. The following schemas describe the key entities builders will work with across Search, Claw, Persona Agent, Campaigns, Nodes, and Rewards.
+
+## Source
+
+```json
+{
+  "id": "src_01JZ9K9B2MYYD2QJKF1EVW93X8",
+  "type": "web_page",
+  "url": "https://docs.optimai.network/",
+  "title": "OptimAI Network Docs",
+  "captured_at": "2026-06-22T08:20:00Z",
+  "freshness": "current",
+  "metadata": {
+    "domain": "docs.optimai.network",
+    "language": "en",
+    "content_type": "documentation"
+  },
+  "quality": {
+    "score": 0.91,
+    "signals": ["source_reputation", "freshness", "validator_sample"]
+  }
+}
+```
+
+## Citation
+
+```json
+{
+  "source_id": "src_01JZ9K9B2MYYD2QJKF1EVW93X8",
+  "title": "OptimAI Network Docs",
+  "url": "https://docs.optimai.network/",
+  "quote": "OptimAI Network is a decentralized intelligence network...",
+  "confidence": 0.89
+}
+```
+
+## Claw Record
+
+```json
+{
+  "id": "rec_01JZ9KP5CHQ5Q3T4WXSX0W8RZP",
+  "job_id": "claw_01JZ9KBC2HJ92A7BYGHDKZ7H01",
+  "data": {
+    "name": "Example Product",
+    "price": "$29",
+    "features": ["Semantic search", "Data extraction"],
+    "source_url": "https://example.com/products/example"
+  },
+  "provenance": {
+    "source_id": "src_01JZ9K9B2MYYD2QJKF1EVW93X8",
+    "node_id": "node_core_8f2a",
+    "captured_at": "2026-06-22T08:20:00Z"
+  },
+  "validation": {
+    "status": "sample_validated",
+    "quality_score": 0.87
+  }
+}
+```
+
+## Persona Memory
+
+```json
+{
+  "id": "mem_01JZ9KD0D1S1DFKHMG0JFSQQ9A",
+  "persona_id": "persona_founder_qt",
+  "type": "preference",
+  "content": "Prefers concise technical docs with diagrams and API examples.",
+  "visibility": "private",
+  "source": "user_approved",
+  "tags": ["docs", "style", "product"],
+  "created_at": "2026-06-22T08:20:00Z",
+  "updated_at": "2026-06-22T08:20:00Z"
+}
+```
+
+## Campaign
+
+```json
+{
+  "id": "camp_01JZ9KWBC5X2V1QV0C5K7EA4HF",
+  "name": "AI agent startup landscape",
+  "objective": "Create a structured dataset of AI agent startups, products, funding, and positioning.",
+  "status": "active",
+  "requirements": {
+    "sources": ["web", "social", "company_sites"],
+    "freshness": "14d",
+    "records_target": 500,
+    "require_citations": true
+  },
+  "reward_budget": {
+    "token": "OPI",
+    "amount": "25000"
+  },
+  "validation": {
+    "min_validators": 3,
+    "sample_rate": 0.2
+  }
+}
+```
+
+## Node Capability
+
+```json
+{
+  "node_id": "node_core_8f2a",
+  "type": "core",
+  "capabilities": {
+    "browser_execution": true,
+    "claw_extraction": true,
+    "embedding_tasks": true,
+    "bandwidth": true,
+    "storage_gb": 128,
+    "gpu": false
+  },
+  "health": {
+    "status": "online",
+    "uptime_24h": 0.98,
+    "latency_ms": 82
+  },
+  "reputation": {
+    "score": 0.93,
+    "completed_tasks": 1842,
+    "validation_accuracy": 0.96
+  }
+}
+```
+
+## Reward Event
+
+```json
+{
+  "id": "rew_01JZ9M0PXMQE7DEZ1RYCW8121P",
+  "account_id": "acct_01JZ9M12N0K0EQJZ7TE2S6MPQ4",
+  "node_id": "node_core_8f2a",
+  "task_id": "task_01JZ9M1KKR7YS4K7QGZV8G34MT",
+  "token": "OPI",
+  "amount": "42.50",
+  "reason": "validated_claw_extraction",
+  "quality_score": 0.91,
+  "status": "settled",
+  "created_at": "2026-06-22T08:20:00Z"
+}
+```
+
+## Schema Design Rules
+
+- Use stable IDs with prefixes such as `src_`, `claw_`, `mem_`, `camp_`, `node_`, and `rew_`.
+- Include `created_at` or `captured_at` timestamps for auditability.
+- Preserve provenance for all data used by agents.
+- Separate raw source metadata from validated quality signals.
+- Keep private Persona memory scoped to the user unless explicitly shared.

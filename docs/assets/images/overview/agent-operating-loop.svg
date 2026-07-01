@@ -1,0 +1,43 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">OptimAI agent operating loop</title>
+  <desc id="desc">A circular loop showing context retrieval, Claw execution, validation, Persona memory, and rewards.</desc>
+  <rect width="1200" height="720" rx="36" fill="#07110D"/>
+  <rect x="1" y="1" width="1198" height="718" rx="35" stroke="#1F3D31"/>
+  <text x="86" y="82" fill="#EAF7F0" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">Agent Operating Loop</text>
+  <text x="88" y="118" fill="#95B4A6" font-family="Inter, Arial, sans-serif" font-size="18">OptimAI connects retrieval, execution, verification, memory, and incentives into a repeatable agent workflow.</text>
+
+  <circle cx="600" cy="384" r="188" stroke="#173D2C" stroke-width="34"/>
+  <path d="M600 196A188 188 0 0 1 788 384" stroke="#0CE386" stroke-width="34" stroke-linecap="round"/>
+  <path d="M788 384A188 188 0 0 1 600 572" stroke="#2A8CFF" stroke-width="34" stroke-linecap="round"/>
+  <path d="M600 572A188 188 0 0 1 412 384" stroke="#8EEFBF" stroke-width="34" stroke-linecap="round"/>
+  <path d="M412 384A188 188 0 0 1 600 196" stroke="#3DDC97" stroke-width="34" stroke-linecap="round"/>
+
+  <circle cx="600" cy="384" r="112" fill="#0D1C15" stroke="#2E6B4D"/>
+  <text x="600" y="371" text-anchor="middle" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">Agent</text>
+  <text x="600" y="405" text-anchor="middle" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="16">Search + Claw + Persona</text>
+
+  <g>
+    <rect x="476" y="154" width="248" height="72" rx="18" fill="#102219" stroke="#2E6B4D"/>
+    <text x="600" y="185" text-anchor="middle" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">1. RETRIEVE</text>
+    <text x="600" y="207" text-anchor="middle" fill="#EAF7F0" font-family="Inter, Arial, sans-serif" font-size="16">Search live context</text>
+  </g>
+  <g>
+    <rect x="800" y="344" width="248" height="72" rx="18" fill="#102219" stroke="#2E6B4D"/>
+    <text x="924" y="375" text-anchor="middle" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">2. EXECUTE</text>
+    <text x="924" y="397" text-anchor="middle" fill="#EAF7F0" font-family="Inter, Arial, sans-serif" font-size="16">Claw runs workflow</text>
+  </g>
+  <g>
+    <rect x="476" y="588" width="248" height="72" rx="18" fill="#102219" stroke="#2E6B4D"/>
+    <text x="600" y="619" text-anchor="middle" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">3. VERIFY</text>
+    <text x="600" y="641" text-anchor="middle" fill="#EAF7F0" font-family="Inter, Arial, sans-serif" font-size="16">Score and validate</text>
+  </g>
+  <g>
+    <rect x="152" y="344" width="248" height="72" rx="18" fill="#102219" stroke="#2E6B4D"/>
+    <text x="276" y="375" text-anchor="middle" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">4. REMEMBER</text>
+    <text x="276" y="397" text-anchor="middle" fill="#EAF7F0" font-family="Inter, Arial, sans-serif" font-size="16">Persona stores approval</text>
+  </g>
+  <path d="M712 190L738 195L721 215" stroke="#0CE386" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M924 416L915 442L895 425" stroke="#2A8CFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M488 624L462 619L479 599" stroke="#8EEFBF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M276 344L285 318L305 335" stroke="#3DDC97" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

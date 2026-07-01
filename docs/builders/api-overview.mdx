@@ -1,0 +1,247 @@
+---
+sidebar_position: 3
+title: "API Overview"
+description: "Builder interfaces for OptimAI Search MCP, x402 SDK, Search API, Claw jobs, Persona memory, and campaigns."
+---
+
+# API Overview
+
+OptimAI builder interfaces are split into two groups:
+
+- **Available public integrations:** Search MCP and x402 SDK.
+- **Preview interfaces:** Claw jobs, Persona memory, Campaigns, Nodes, and Rewards.
+
+:::info[Preview interface]
+Sections marked preview describe intended interface shape. Confirm production endpoint names, fields, and authentication before building against them.
+:::
+
+## Interface Map
+
+| Interface | Status | Purpose |
+| --- | --- | --- |
+| **Search MCP** | Public | Expose OptimAI Search tools to MCP-compatible agents and coding environments. |
+| **Search API** | Public/controlled access | Create and poll source-backed OptimAI Search jobs. |
+| **x402 SDK** | Public | Handle paid search flows with HTTP 402-style payment challenges. |
+| **Claw API** | Preview | Create extraction, monitoring, and workflow jobs for Claw. |
+| **Persona API** | Preview | Store and retrieve user-approved memory. |
+| **Campaign API** | Preview | Fund and manage recurring extraction or validation work. |
+| **Node/Rewards API** | Preview | Register capabilities, submit results, and inspect rewards. |
+
+## Search MCP
+
+Use Search MCP when an agent host supports Model Context Protocol tools.
+
+### Tools
+
+| Tool | Purpose |
+| --- | --- |
+| `optimai_start_search` | Start a search and return an ID immediately. |
+| `optimai_get_search` | Fetch progress or result for a previous search. |
+| `optimai_search` | Convenience flow that starts a search and waits briefly. |
+| `optimai_list_searches` | List recent searches. |
+| `optimai_cancel_search` | Cancel a pending or running search. |
+
+### Configuration
+
+```json
+{
+  "mcpServers": {
+    "optimai-search": {
+      "command": "npx",
+      "args": ["-y", "@optimai-network/search-mcp"],
+      "env": {
+        "OPTIMAI_API_KEY": "sk-your-key-here"
+      }
+    }
+  }
+}
+```
+
+Create or manage API keys at `https://search.optimai.network/api-keys`.
+
+## Search API
+
+Search requests should be treated as asynchronous jobs. Start a search, store the ID, then poll for completion.
+
+```http
+POST /external/v1/search
+Content-Type: application/json
+X-API-Key: sk-your-key-here
+```
+
+```json
+{
+  "query": "What is OptimAI Claw and how does it relate to Search and Persona?"
+}
+```
+
+Expected response shape:
+
+```json
+{
+  "id": "srch_01JZ9K7K8VPF2Y4N4Y8X0W4P0Q",
+  "status": "running"
+}
+```
+
+Polling response shape:
+
+```json
+{
+  "id": "srch_01JZ9K7K8VPF2Y4N4Y8X0W4P0Q",
+  "status": "completed",
+  "result": {
+    "answer": "OptimAI Claw is the execution layer...",
+    "sources": [
+      {
+        "title": "OptimAI Network",
+        "url": "https://optimai.network/",
+        "quality_score": 0.91
+      }
+    ]
+  }
+}
+```
+
+## x402 SDK
+
+Use x402 when a search flow requires payment handling at request time.
+
+```ts
+import {
+  createOptimaiX402Client,
+  createViemPaymentHandler,
+} from "@optimai-network/x402-sdk";
+
+const paymentHandler = createViemPaymentHandler({
+  privateKey: process.env.X402_PAYER_PRIVATE_KEY!,
+  rpcUrls: {
+    "eip155:84532": "https://sepolia.base.org",
+  },
+});
+
+const client = createOptimaiX402Client({
+  baseUrl: "https://api-onchain.optimai.network",
+  paymentHandler,
+});
+
+const { search, paymentContext } = await client.createSearch({
+  query: "What is agent-native search?",
+});
+
+const completed = await client.waitForSearchCompletion(search.id, {
+  paymentContext,
+});
+```
+
+Keep `paymentContext` with the search ID when another process or agent needs to continue the same paid search.
+
+## Claw API
+
+:::info[Preview]
+The Claw API is shown as a proposed interface for extraction and workflow jobs.
+:::
+
+```http
+POST /v1/claw/jobs
+Content-Type: application/json
+Authorization: Bearer opai_live_xxxxxxxxx
+```
+
+```json
+{
+  "type": "extraction",
+  "source": {
+    "type": "url",
+    "url": "https://example.com/products"
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": { "type": "string" },
+      "price": { "type": "string" },
+      "features": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "source_url": { "type": "string" }
+    },
+    "required": ["name", "source_url"]
+  },
+  "validation": {
+    "sample_rate": 0.15,
+    "require_provenance": true
+  }
+}
+```
+
+## Persona API
+
+:::info[Preview]
+Persona APIs should require explicit user approval before storing personal memory.
+:::
+
+```http
+POST /v1/personas/{persona_id}/memory
+Content-Type: application/json
+Authorization: Bearer opai_live_xxxxxxxxx
+```
+
+```json
+{
+  "type": "preference",
+  "content": "Prefers concise technical docs with diagrams and concrete implementation notes.",
+  "source": "user_approved",
+  "visibility": "private",
+  "tags": ["docs", "style", "product"]
+}
+```
+
+## Campaign API
+
+:::info[Preview]
+Campaign APIs describe funded network work such as recurring monitoring, extraction, or validation.
+:::
+
+```json
+{
+  "name": "AI agent startup landscape",
+  "objective": "Create a structured dataset of AI agent startups, products, funding, and positioning.",
+  "data_requirements": {
+    "sources": ["web", "social", "company_sites"],
+    "freshness": "14d",
+    "records_target": 500
+  },
+  "reward_budget": {
+    "token": "OPI",
+    "amount": "25000"
+  },
+  "validation": {
+    "min_validators": 3,
+    "require_citations": true
+  }
+}
+```
+
+## Error Shape
+
+Use a consistent error object across APIs:
+
+```json
+{
+  "error": {
+    "code": "validation_failed",
+    "message": "The extraction schema is missing required field definitions.",
+    "request_id": "req_01JZ9KFRSXNHCGTWWRZVCQ7C73"
+  }
+}
+```
+
+## API Design Rules
+
+- Return request IDs.
+- Treat long-running jobs as asynchronous.
+- Preserve citations and provenance.
+- Keep private memory private by default.
+- Never log or expose API keys or wallet private keys.
+- Mark preview contracts clearly until production references are published.

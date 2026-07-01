@@ -1,56 +1,92 @@
 ---
 sidebar_position: 2
-title: "How OptimAI Node Works?"
+title: "How Nodes Work"
+description: "How OptimAI nodes receive tasks, process data, protect permissions, and earn rewards."
 ---
 
-# How OptimAI Node Works?
-## Mining Data
-### How It Works:
-- The integrated browser node collects data as you navigate the web.
-- It captures valuable insights, including:
-  - Content from public and authenticated websites.
-  - User interaction data (clicks, scrolls, navigation paths).
-  - Sequential actions for advanced AI training.
-### Your Role:
-- Simply use your device as you normally would.
-- Optionally participate in specific data collection tasks or missions.
-- Ensure your node remains active to maximize contributions.
+# How OptimAI Nodes Work
 
-### Earning Rewards (OPI Points)
-- Earning Mechanism:
-  - Rewards are based on the volume and quality of data contributed.
-  - Completing tasks and missions can grant you bonus OPI points.
-- Tracking Earnings:
-  - Use your dashboard to monitor accumulated OPI rewards.
-  - View detailed reports on your contributions and rewards.
+OptimAI Nodes turn user devices into network participants. They do not all perform the same work. A Lite Node may validate simple tasks; a Core Node may run Claw workflows and extraction jobs; an Edge Node may support mobile and local-context tasks.
+
+## Task Lifecycle
+
+```mermaid
+flowchart LR
+  A["Network demand"] --> B["Task policy"]
+  B --> C["Node matching"]
+  C --> D["Local execution"]
+  D --> E["Result submission"]
+  E --> F["Validation and scoring"]
+  F --> G["Reputation update"]
+  G --> H["Reward event"]
+```
+
+## What A Node Can Contribute
+
+| Contribution | Description |
+| --- | --- |
+| **Bandwidth** | Helps the network access, refresh, and route data. |
+| **Browser execution** | Allows approved browser-native tasks, especially on Core Node. |
+| **Validation** | Reviews or confirms data quality, labels, and relevance. |
+| **Compute** | Runs preprocessing, embeddings, extraction, or future inference support. |
+| **Storage** | Supports dataset and task-related persistence where enabled. |
+| **Feedback** | Provides human correction and approval signals. |
+
+## Permission Model
+
+Nodes should make task permissions visible before sensitive work runs.
+
+- Public sources can be processed as standard network tasks.
+- Authenticated or personal sources require user approval.
+- Resource usage should respect user-defined limits.
+- Sensitive raw data should stay local whenever possible.
+- Shared outputs should be anonymized, structured, or scoped to the task.
+
+## Rewards
+
+Rewards are based on useful contribution, not simply activity count. Inputs can include:
+
+- task completion
+- result quality
+- validation accuracy
+- uptime
+- resource contribution
+- campaign demand
+- node reputation
+
+Reward details may vary by task type and network policy.
+
+## Mining And Validation Example
+
+1. The network creates a source-refresh or validation task.
+2. Eligible nodes receive the task based on capability and availability.
+3. The node processes the task locally.
+4. The result is submitted with metadata.
+5. The Reinforcement Data Layer checks quality and freshness.
+6. The account receives a reward event if the contribution is accepted.
 
 import miningVideo from '@site/docs/assets/videos/lite-node-mining.mp4';
 
 <video controls width="400">
   <source src={miningVideo} type="video/mp4" />
-  OptimAI Lite Node: Mining & Earning process
+  OptimAI Lite Node mining and earning process
 </video>
 
 ## Node Management
-- Settings:
-  - Adjust data collection preferences.
-  - Set bandwidth and resource usage limits.
-- Updates:
-  - Keep your node software updated for optimal performance.
-  - Enable automatic updates if available.
-- Notifications:
-  - Receive alerts for important updates, tasks, or issues.
-- Security:
-  - Regularly check your account security settings.
-  - Update your password and 2FA as needed.
 
-## Common Tasks and Missions
-- Daily Tasks:
-  - Simple activities like visiting certain websites or engaging with content.
-- Missions:
-  - Longer-term tasks that may involve data labeling or validation.
-- Quests:
-  - Special events or challenges with higher reward potentials.
-- Participation:
-  - Opt-in to tasks that interest you.
-  - Complete tasks to receive additional rewards and bonuses.
+Use the node dashboard or CLI to:
+
+- sign in and connect your account
+- start or stop node participation
+- check status and uptime
+- view reward balance
+- adjust task and resource preferences
+- update node software
+
+## Operational Tips
+
+- Keep the node updated.
+- Keep Docker running for Core Node and CLI workflows that require it.
+- Use stable connectivity for higher reliability.
+- Review permissions before enabling authenticated or personal workflows.
+- Use Core Node for Claw and advanced task execution.

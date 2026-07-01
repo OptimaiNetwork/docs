@@ -1,33 +1,58 @@
 ---
 sidebar_position: 1
-title: "OptimAI Network Introduction"
+title: "Introduction"
+description: "A high-level introduction to OptimAI Network and the Search, Claw, Persona, Nodes, and OPI architecture."
 ---
 
-# <span class="actual-font">OptimAI Network</span> Introduction
+# Introduction
 
-:::tip[Overview]
-OptimAI Network is a revolutionary data network that transforms the way artificial intelligence is developed by redefining the concept of data mining on the web. By leveraging a Layer 2 Decentralized Physical Infrastructure Network (DePIN) Blockchain, OptimAI enables individuals to contribute to AI advancement by mining data through integrated browser nodes. Participants receive rewards in the form of OPI Tokens for their contributions, creating a decentralized, community-driven ecosystem that fuels next-generation AI agents.
-:::
+OptimAI Network is built for a specific shift in AI: agents are moving from answering questions to operating across workflows.
 
-## Key Features
-- Multi-Platform Availability: OptimAI Nodes are available as browser extensions, desktop applications, mobile apps, CLI tools, and even within Telegram.
-- Integrated Browser Nodes: Nodes with built-in browsers allow seamless data collection from both public and authenticated websites.
-- Data Mining Rewards: Participants receive OPI Tokens by mining data, completing tasks, and contributing to the network.
-- Privacy and Security: Data is processed locally and anonymized, ensuring compliance with global privacy regulations.
-- Developer Empowerment: An open SDK allows developers to build custom applications and enhance the network's capabilities.
+That shift requires infrastructure. Agents need current context, a runtime for execution, memory that users control, and a trust layer that can evaluate data quality. OptimAI organizes those requirements into one connected network.
 
-## How OptimAI Works
-OptimAI transforms everyday internet use into a powerful data mining operation:
-1. Installation: Users install the OptimAI Node on their preferred platform.
-2. Data Mining: As users browse the web, the integrated browser node collects valuable data, including user interactions and behaviors.
-3. Data Processing: Collected data is anonymized and processed locally to protect user privacy.
-4. Contribution: Processed data is securely transmitted to the OptimAI Network.
-5. AI Advancement: The network uses the data to train and improve AI models.
-6. Earning Rewards: Users receive OPI Tokens as compensation for their contributions.
+![OptimAI Network Introduction](../assets/images/overview/optimai-intro.png)
 
-## Why Choose OptimAI?
-- Rewards While You Browse: Turn your everyday internet activities into a source of token rewards.
-- Contribute to AI Innovation: Play a direct role in advancing artificial intelligence.
-- Flexible Participation: Choose from various node types and platforms to suit your preferences.
-- Secure and Private: Benefit from robust privacy measures and data security protocols.
-- Community-Driven: Join a global network of individuals collaborating to shape the future of AI.
+## The Core Model
+
+| Requirement | OptimAI component | What it provides |
+| --- | --- | --- |
+| **Live context** | Search | Source-backed retrieval from web, social, and network-indexed data. |
+| **Execution** | Claw | A node-resident runtime for research, extraction, monitoring, and workflows. |
+| **Memory** | Persona | User-approved preferences, projects, sources, decisions, and recurring tasks. |
+| **Trust** | Reinforcement Data Network | Provenance, freshness, validation, quality scoring, and feedback loops. |
+| **Infrastructure** | Nodes | Distributed browser access, compute, bandwidth, storage, validation, and execution. |
+| **Coordination** | OPI, Marketplace, Chain | Rewards, access, reputation, distribution, staking, and governance. |
+
+## What Makes OptimAI A Network
+
+OptimAI is not only a search product, an agent app, or a token system. The value comes from the connection between them:
+
+1. Users and builders create demand for context and execution.
+2. Nodes perform useful data, compute, validation, and workflow tasks.
+3. The data layer turns raw results into trusted context.
+4. Search, Claw, and Persona use that context in products.
+5. Feedback and rewards improve the next cycle.
+
+![OptimAI agent operating loop](../assets/images/overview/agent-operating-loop.svg)
+
+## The Product Stack
+
+### Search
+
+Search is the context layer. It helps humans and agents retrieve current information with citations, source links, and freshness signals.
+
+### Claw
+
+Claw is the execution layer. It turns a goal into steps: search, extract, compare, monitor, summarize, and produce an inspectable result.
+
+### Persona
+
+Persona is the memory layer. It gives agents continuity while keeping personal context explicit and user-controlled.
+
+### Nodes
+
+Nodes are the infrastructure layer. They make OptimAI decentralized by contributing browser execution, bandwidth, compute, storage, validation, and edge context.
+
+## The Practical Outcome
+
+OptimAI gives agents a better operating environment: they can retrieve current context, run workflows, validate outputs, remember approved decisions, and reward contributors who improve the network.

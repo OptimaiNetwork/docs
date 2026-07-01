@@ -7,7 +7,7 @@ import remarkMath from 'remark-math'
 
 const config: Config = {
   title: 'OptimAI Network Docs',
-  tagline: 'Mine Data. Fuel AI. Get Rewards.',
+  tagline: 'Your Data. Your Agent. Your Control.',
   favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
@@ -164,11 +164,11 @@ const config: Config = {
     metadata: [
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'OptimAI Network Docs' },
-      { name: 'twitter:description', content: 'Official documentation for the OptimAI Network.' },
+      { name: 'twitter:description', content: 'Documentation for OptimAI Network: Search for live context, Claw for execution, Persona for memory, nodes for distributed intelligence, and OPI for coordination.' },
       { name: 'twitter:image', content: 'https://docs.optimai.network/img/social-card.png' },
 
       { property: 'og:title', content: 'OptimAI Network Docs' },
-      { property: 'og:description', content: 'Official documentation for the OptimAI Network.' },
+      { property: 'og:description', content: 'Documentation for OptimAI Network: Search for live context, Claw for execution, Persona for memory, nodes for distributed intelligence, and OPI for coordination.' },
       { property: 'og:image', content: 'https://docs.optimai.network/img/social-card.png' },
       { property: 'og:url', content: 'https://docs.optimai.network' },
     ],

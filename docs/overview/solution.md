@@ -1,46 +1,69 @@
 ---
 sidebar_position: 3
 title: "The OptimAI Solution"
+description: "How OptimAI connects Search, Claw, Persona, nodes, reinforcement data, marketplace distribution, and OPI into one agent infrastructure stack."
 ---
 
 # The <span class="actual-font">OptimAI</span> Solution
 
-## What OptimAI Network resolve?
-The OptimAI Network presents a groundbreaking solution to the critical challenges hindering AI development. By leveraging innovative technology and a community-driven approach, we have created a decentralized ecosystem that fundamentally transforms how data is collected, processed, and utilized for AI. Our solution not only addresses the existing problems but also unlocks new possibilities for AI innovation, making it more accessible, efficient, and ethical.
+OptimAI connects the missing pieces of agent infrastructure into one operating system for decentralized intelligence.
 
-OptimAI addresses critical obstacles in AI development, providing innovative, privacy-centric solutions that unlock the potential of high-quality data for AI training.
+![OptimAI solution flywheel](../assets/images/overview/solution-flywheel.svg)
 
-### Data Scarcity and Quality
-- **Solutions:**
-  - Converts everyday browsing into a continuous data collection opportunity.
-  - Accesses diverse data from both public and private platforms.
-  - Ensures data accuracy and relevance with automated cleaning and community validation.
-- **Impact:**
-  - Boosts AI model performance with high-quality, diverse datasets.
-  - Accelerates innovation by reducing barriers to obtaining essential data.
+## The Solution Stack
 
-### Access to Private Data Sources
-- **Solutions:**
-  - Browser Nodes securely collect data from authenticated private platforms.
-  - Anonymization processes protect personal identifiers.
-- **Impact:**
-  - Enriches AI models with contextual, nuanced data from private platforms.
-  - Provides organizations with a competitive edge through unique insights.
+| Layer | Function | Product or system |
+| --- | --- | --- |
+| **Context** | Retrieve current source-backed information. | OptimAI Search |
+| **Execution** | Run research, extraction, monitoring, and workflows. | OptimAI Claw |
+| **Memory** | Preserve user-approved identity, preferences, and decisions. | Persona Agent |
+| **Trust** | Structure, validate, score, and improve data. | Reinforcement Data Network |
+| **Infrastructure** | Provide distributed browser access, compute, bandwidth, and validation. | OptimAI Nodes |
+| **Distribution** | Package and discover agents, workflows, datasets, and services. | OptimAI Marketplace |
+| **Coordination** | Align contribution, access, reputation, and governance. | OPI and OptimAI Chain |
 
-### Data Collection Complexity
-- **Solutions:**
-  - Simplifies user participation with an intuitive Browser Node interface.
-  - Automates data collection, cleaning, and validation workflows.
-  - Offers an SDK for developers to streamline custom data collection.
-- **Impact:**
-  - Enables small businesses and independent developers to engage in AI development.
-  - Frees resources for innovation and refining AI models.
+## How It Works
 
-### Privacy Concerns
-- **Solutions:**
-  - Processes data locally to safeguard user privacy.
-  - Adheres to global privacy laws (e.g., GDPR, CCPA).
-  - Provides users with tools to control their data sharing preferences.
-- **Impact:**
-  - Builds trust among users, increasing participation in the network.
-  - Minimizes legal and reputational risks for organizations.
+```mermaid
+flowchart LR
+  A["User or builder defines a task"] --> B["Search retrieves context"]
+  B --> C["Claw executes workflow"]
+  C --> D["Data layer validates output"]
+  D --> E["Persona stores approved memory"]
+  E --> F["Nodes and contributors earn rewards"]
+  F --> B
+```
+
+## What This Enables
+
+### Source-backed answers
+
+Search gives agents current context with citations and source signals. This makes answers easier to inspect and reuse.
+
+### Workflow execution
+
+Claw moves beyond response generation. It can gather information, extract structured records, compare changes, monitor sources, and return a workflow result.
+
+### User-owned personalization
+
+Persona makes personalization explicit. The user chooses what the agent can remember and apply in future tasks.
+
+### Verifiable data
+
+The Reinforcement Data Network keeps provenance, freshness, validation, feedback, and quality signals attached to useful data.
+
+### Network-aligned economics
+
+Nodes and validators contribute the infrastructure behind OptimAI. OPI connects useful work with rewards, access, campaigns, staking, marketplace activity, and governance.
+
+## The Flywheel
+
+1. More node participation increases coverage and execution capacity.
+2. Better coverage improves Search, Claw, and Persona.
+3. Better products create more user and builder demand.
+4. More demand funds higher-quality network contribution.
+5. Better contribution improves the next cycle.
+
+## End State
+
+OptimAI is designed to become infrastructure for the agent-native internet: a network where agents can search, verify, execute, remember, pay for services, and improve through feedback while contributors participate in the value they create.

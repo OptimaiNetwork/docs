@@ -1,110 +1,181 @@
 ---
-sidebar_position: 4
-title: "OptimAI Network Architecture"
+sidebar_position: 1
+title: "Architecture"
+description: "A system-level view of OptimAI: Search as context, Claw as execution, Persona as memory, nodes as infrastructure, and OPI as coordination."
 ---
 
 import ImageWithCaption from '@site/src/components/ImageWithCaption';
-
-# <span class="actual-font">OptimAI Network</span> Architecture
-
-:::tip[Overview]
-The OptimAI Network is an innovative **L2 DePIN Reinforcement Data Network for Agentic AI**, designed to empower users to **mine data, fuel AI, and receive rewards**. By transforming user-contributed data into the foundation for tomorrow’s AI agents, OptimAI creates a decentralized, scalable, and incentivized ecosystem. Its architecture revolves around four key pillars: the OptimAI DePIN Network, OptimAI Integrated Browser Nodes, OptimAI Reinforcement Data Layer, and OptimAI OP-Stack Layer 2 Blockchain.
-
-OptimAI redefines AI development by placing users at the center. Through intuitive tools, anyone can **mine data** and contribute to AI innovation, earning OPI tokens as rewards. This participatory model turns everyday data into powerful AI agents, driving a future where AI is collaborative, accessible, and community-powered.
-:::
-
 import architectureImage from './assets/images/architecture.png';
+import ecosystemImage from './assets/images/ecosystem.png';
+
+# <span class="actual-font">OptimAI</span> Architecture
+
+OptimAI is built around a simple product architecture:
+
+- **Search** provides live, source-backed context.
+- **Claw** turns context into execution.
+- **Persona Agent** gives agents user-approved memory and identity.
+- **Nodes** supply data access, validation, compute, bandwidth, and execution capacity.
+- **Marketplace, OPI, and OptimAI Chain** coordinate distribution, access, reputation, and rewards.
+
+This page explains how those parts fit together.
 
 <ImageWithCaption
   src={architectureImage}
-  alt="OptimAI Network Architecture"
-  caption="Hierarchical Overview of the OptimAI Network Architecture"
+  alt="OptimAI Network architecture"
+  caption="OptimAI architecture: products, services, data, nodes, and coordination."
 />
 
-## Architecture Overview
+## Architecture Summary
 
-The OptimAI Network Architecture is a robust, layered system engineered to support its mission of decentralized AI development. At the top, the **OptimAI Agent Platform** enables users to create and manage AI agents using their data. This is powered by **OptimAI Infrastructures**, which provide the computational backbone for AI operations. The **OptimAI Reinforcement Data Network** processes and refines user-contributed data, while the **DePIN and DeHIN Networks** supply decentralized resources and validation. **OptimAI Nodes** make participation seamless, and the **OptimAI Chain**, a Layer 2 blockchain, ensures secure, scalable transactions—allowing users to **mine data, fuel AI, and receive rewards**.
+OptimAI separates the system into three concerns:
 
-### OptimAI Agent Platform
+1. **Product composition:** Search, Claw, Persona, APIs, MCP, x402, and Marketplace.
+2. **Service execution:** Agent, Data, Compute, Network, and Trust engines.
+3. **Network coordination:** nodes, validators, reinforcement data, OPI, reputation, and governance.
 
-The entry point for users to **turn their data into tomorrow’s AI agents**:
-- **OptimAI Agent Studio**: A user-friendly toolset for designing and customizing AI agents with contributed data.
-- **OptimAI Agent Operator**: Manages the deployment and operation of AI agents across the network.
-- **OptimAI Agent Store**: A marketplace for sharing and monetizing AI agents, encouraging collaboration.
+This separation matters because agent systems become fragile when retrieval, execution, memory, data quality, and incentives are mixed together without clear boundaries.
 
-### OptimAI Infrastructures
+## Layer Model
 
-The operational core supporting AI development:
-- **OptimAI Compute Engine**: Harnesses decentralized computing power for AI tasks, scaling with user contributions.
-- **OptimAI Data Engine**: Processes and organizes user-mined data for AI training.
-- **OptimAI Agent OS**: Optimizes AI agent performance across the ecosystem.
+| Layer | Role | Main components |
+| --- | --- | --- |
+| **Product layer** | User and builder surfaces. | OptimAI Search, OptimAI Claw, Persona Agent, APIs, MCP, SDKs |
+| **Agent layer** | Plans, remembers, retrieves, extracts, acts, and learns from feedback. | task planners, memory, tool routing, workflow state |
+| **Service layer** | Turns product requests into data, compute, trust, and network tasks. | Agent Engine, Data Engine, Compute Engine, Network Engine, Trust Engine |
+| **Reinforcement data layer** | Converts raw signals into trusted AI context. | mining, parsing, validation, provenance, quality scoring, feedback |
+| **Node layer** | Runs distributed work. | Lite Node, Core Node, Edge Node, CLI Node, Telegram Node, validators |
+| **Coordination layer** | Tracks contribution, distribution, and value flow. | Marketplace, OptimAI Chain, OPI, rewards, staking, governance |
 
-### OptimAI Reinforcement Data Network
+## Architecture Planes
 
-The engine that refines data to **fuel AI**:
-- **Network Compute Layer**: Leverages edge computing, decentralized storage, and federated learning for efficient data processing.
-- **Reinforcement Data Layer**: Enhances data quality through mining, annotation, and reinforcement learning with human feedback (RLHF).
+A production-grade agent network needs clear separation between product experience, execution, trust, and value flow.
 
-### DePIN and DeHIN Networks
+| Plane | What it owns | Why it matters |
+| --- | --- | --- |
+| **Experience plane** | Search UI, Claw workflows, Persona profiles, builder tools. | Gives users and developers coherent product surfaces. |
+| **Execution plane** | Core Node runtime, CLI Node, task orchestration, Claw jobs, compute workloads. | Moves agents from responses to real workflow execution. |
+| **Data plane** | source ingestion, parsing, embeddings, extraction records, memory objects, datasets. | Keeps agent context structured and reusable. |
+| **Trust plane** | provenance, freshness, validation, reputation, feedback, permission rules. | Makes outputs inspectable instead of opaque. |
+| **Economic plane** | OPI rewards, marketplace payments, campaigns, staking, governance. | Aligns contributors, builders, users, and the protocol. |
 
-The decentralized foundation:
-- **DePIN (Decentralized Physical Infrastructure Network)**: Uses global hardware to support AI workloads, enabling users to **mine data**.
-- **DeHIN (Decentralized Human Intelligence Network)**: Incorporates human validation to ensure data accuracy and value.
+## Control Flow vs Data Flow
 
-### OptimAI Node
+OptimAI separates the **control flow** that decides what should happen from the **data flow** that carries source material, records, memory, and outputs.
 
-Browser-based nodes allow users to **mine data** effortlessly via Chrome, Firefox, or Safari, democratizing participation and reward-earning.
+| Flow | Description | Examples |
+| --- | --- | --- |
+| **Control flow** | Plans, policies, permissions, routing, retries, and settlement. | Agent Engine, Trust Engine, Network Engine, OPI reward events |
+| **Data flow** | Sources, chunks, embeddings, extracted fields, citations, memory, datasets. | Data Engine, Reinforcement Data Network, Persona memory, Claw records |
 
-### OptimAI Chain
+Keeping these separate makes the system easier to inspect. A user should be able to ask both “what did the agent use?” and “why was it allowed to use it?”
 
-A Layer 2 EVM-compatible blockchain built on OP-Stack, it ensures secure, low-cost transactions and governance, rewarding users with OPI tokens for their contributions.
+## End-To-End Flow
 
-## Core Pillars
+```mermaid
+flowchart LR
+  A["User or builder request"] --> B["Product surface"]
+  B --> C["Agent planner"]
+  C --> D["Search for context"]
+  C --> E["Claw for execution"]
+  C --> F["Persona memory"]
+  D --> G["Reinforcement Data Layer"]
+  E --> G
+  F --> G
+  G --> H["Node network"]
+  H --> I["Validated output"]
+  I --> J["Answer, dataset, workflow result, or agent action"]
+  J --> K["Feedback, reputation, rewards"]
+  K --> G
+```
 
-### OptimAI DePIN Network
+## Product Roles
 
-- **Description**: A decentralized network where users **mine data** and provide resources to power AI, forming the backbone of OptimAI’s ecosystem.
-- **Key Features**:
-  - **Global Participation**: Taps into user hardware worldwide for scalable AI computing.
-  - **Secure Design**: Employs cryptography and consensus for data and network integrity.
-  - **Rewards System**: Pays users in OPI tokens for data and resource contributions.
-- **Benefits**: Lowers costs, boosts resilience, and grows with user involvement.
+### Search: Context Layer
 
-### OptimAI Integrated Browser Nodes
+Search gives agents current context from the open web, social sources, indexed data, and network-refreshed sources. It is not only a search box; it is the retrieval surface that other OptimAI products can call when they need source-backed information.
 
-- **Description**: Simplifies data mining through browsers, enabling users to contribute and **receive rewards** without technical barriers.
-- **Key Features**:
-  - **Edge Processing**: Handles data locally for privacy and speed.
-  - **Data Capture**: Gathers consented data from platforms like Twitter, enriching AI datasets.
-  - **User Privacy**: Offers control and anonymization for secure contributions.
-- **Benefits**: Makes participation easy and secure, empowering users to shape AI.
+### Claw: Execution Layer
 
-### OptimAI Reinforcement Data Layer
+Claw is the native agent runtime inside the Core Node environment. It can take a goal, plan subtasks, gather context, extract structured records, generate reports, and carry a workflow closer to completion.
 
-- **Description**: Transforms mined data into high-quality inputs that **fuel AI** development.
-- **Key Features**:
-  - **Data Pipelines**: Automates cleaning, annotation, and validation.
-  - **RLHF Integration**: Improves data through human feedback and learning loops.
-  - **Community Input**: Leverages users for data validation.
-- **Benefits**: Speeds up AI training and enhances data value.
+### Persona Agent: Memory Layer
 
-### OptimAI OP-Stack Layer 2 Blockchain
+Persona Agent stores user-approved preferences, projects, workflows, source lists, and decisions. It gives agents continuity without forcing users to repeat the same context every session.
 
-- **Description**: A scalable blockchain enabling users to **receive rewards** for their contributions.
-- **Key Features**:
-  - **Layer 2 Scaling**: Cuts costs and boosts transaction speed.
-  - **Smart Contracts**: Automates rewards and governance.
-  - **Token Empowerment**: Gives OPI holders a voice in the network’s future.
-- **Benefits**: Ensures trust and efficiency in a user-driven ecosystem.
+### Nodes: Infrastructure Layer
 
-import ecosystemImage from './assets/images/ecosystem.png';
+Nodes provide the distributed network behind the products:
+
+- **Lite Node:** low-friction participation through browser extension and Telegram.
+- **Core Node:** desktop and CLI execution for Claw, browser-native workflows, extraction, compute, and campaign tasks.
+- **Edge Node:** mobile participation and future local-context workflows.
+
+## Service Responsibilities
+
+| Service | Responsibility |
+| --- | --- |
+| **Agent Engine** | Plan workflows, route tools, maintain state, and coordinate Search, Claw, Persona, and APIs. |
+| **Data Engine** | Parse, clean, normalize, embed, enrich, package, and route data for validation. |
+| **Compute Engine** | Assign processing, embeddings, inference support, and campaign workloads to eligible resources. |
+| **Network Engine** | Coordinate nodes, task routing, bandwidth, health, reliability, and secure communication. |
+| **Trust Engine** | Apply permission checks, provenance requirements, freshness thresholds, validation policy, and quality scoring. |
+
+For a deeper service-level breakdown, see [OptimAI Services](./services.md).
+
+## Builder Interfaces
+
+OptimAI exposes the network through developer surfaces that match the product stack:
+
+| Interface | Purpose |
+| --- | --- |
+| **Search MCP** | Let MCP-compatible agents use OptimAI Search as a live context tool. |
+| **Search API** | Add source-backed retrieval to products and backends. |
+| **x402 SDK** | Build paid, agent-native search flows with payment-aware requests. |
+| **Claw preview jobs** | Model extraction, monitoring, and workflow execution contracts. |
+| **Persona preview memory** | Model user-approved memory objects for agent personalization. |
+| **Schemas** | Standardize sources, citations, Claw records, Persona memory, campaigns, node capabilities, and reward events. |
+
+## Trust Model
+
+OptimAI should treat trust as a data property, not a marketing claim. Useful outputs need:
+
+- source URL or origin
+- capture timestamp
+- node or workflow metadata
+- extraction method
+- validation status
+- freshness score
+- quality score
+- user or validator feedback where relevant
+
+## Architecture Guarantees To Aim For
+
+These are design targets for a mature OptimAI system:
+
+| Guarantee | Meaning |
+| --- | --- |
+| **Inspectable output** | Users can see sources, citations, memory use, and validation status where relevant. |
+| **Permissioned execution** | Sensitive data and authenticated sources require explicit policy checks. |
+| **Portable context** | Search results, Claw records, Persona memories, and datasets use consistent object models. |
+| **Composable tools** | Search MCP, APIs, x402, Claw jobs, and Persona memory can be combined in agent workflows. |
+| **Rewardable contribution** | Accepted node and validator work can produce reputation and reward signals. |
+
+## Why The Architecture Matters
+
+Most AI products fail at the handoff: they can summarize, but not execute; retrieve, but not remember; answer, but not verify; personalize, but not give users control. OptimAI connects those missing parts into one network.
 
 <ImageWithCaption
   src={ecosystemImage}
-  alt="OptimAI Network Ecosystem"
-  caption="Comprehensive View of the OptimAI Network Ecosystem"
+  alt="OptimAI ecosystem"
+  caption="OptimAI ecosystem: node operators, validators, builders, users, products, and OPI incentives."
 />
 
-## Conclusion
+## Design Principles
 
-The OptimAI Network Architecture embodies its mission as an **L2 DePIN Reinforcement Data Network for Agentic AI**. By enabling users to **mine data, fuel AI, and receive rewards**, it transforms individual contributions into the building blocks of tomorrow’s AI agents. This decentralized, user-powered approach not only overcomes traditional AI development hurdles but also creates a future where AI is shaped by and for its community, delivering innovation that is equitable, transparent, and impactful.
+- **Current context:** Agents need live data, not stale snapshots.
+- **User control:** Permissioned sources and personal memory should stay under user control.
+- **Provenance by default:** Important outputs should show where they came from.
+- **Composable products:** Search, Claw, and Persona should work separately and together.
+- **Network-aligned incentives:** The people who contribute useful data, compute, and validation should be rewarded.
+- **Graceful maturity:** Production interfaces should be stable; preview interfaces should be clearly labeled until contracts are final.

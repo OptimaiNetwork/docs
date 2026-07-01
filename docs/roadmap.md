@@ -1,39 +1,64 @@
 ---
-sidebar_position: 10
+sidebar_position: 4
+title: "Roadmap"
+description: "OptimAI roadmap organized around product maturity, node scale, builder access, marketplace distribution, and governance."
 ---
 
-# Development Roadmap
+# Roadmap
 
-### Stage 1: Laying the DePIN Data Network Foundation
-*Power the DePIN Data Network*
-- Contribute to Massive Data Collection: Help gather valuable information from the web and crowdsourced sources.
-- Build a Global Knowledge Base: Your efforts will fuel intelligent AI systems with rich, diverse data.
-- Share, invite friends to accelerate your contribution and rewards (referral program)
+OptimAI’s roadmap should be read as a set of product tracks, not a list of disconnected features. The network becomes stronger when the tracks reinforce each other: better nodes improve data; better data improves Search and Claw; better products create more demand; demand creates more rewards and builder activity.
 
-### Stage 2: Expanding the DePIN Nodes
-*Grow the Network Across Platforms*
-- Run OptimAI Nodes Anywhere: Whether on your web browser, desktop, mobile device, or even Telegram, you can operate a node.
+## Product Tracks
 
-### Stage 3: Structuring the Reinforcement Data Layer
-*Build the Future of AI*
-- Structure the Web: Aid in constructing the Reinforcement Data Layer essential for future Generative AI Agents.
+| Track | Focus |
+| --- | --- |
+| **Search** | Live context layer for users, agents, APIs, MCP, and x402 flows. |
+| **Claw** | Core Node execution runtime for research, extraction, monitoring, and workflow automation. |
+| **Persona** | User-owned memory, identity, preferences, and portable agent profiles. |
+| **Nodes** | Lite, Core, Edge, CLI, and Telegram participation with stronger task routing and reputation. |
+| **Developer platform** | APIs, MCP, SDKs, schemas, examples, and agent integrations. |
+| **Marketplace** | Distribution layer for agents, datasets, workflows, and services. |
+| **Economy and governance** | OPI utility, rewards, staking, campaign settlement, and governance processes. |
 
-### Stage 4: Supercharging the Network Computing
-*Supercharge the Network*
-- Contribute Spare Resources: Offer your unused bandwidth and idle computing power.
-- Accelerate AI Development: Enhance edge computing capabilities to speed up AI advancements.
+## Current Priorities
 
-### Stage 5: Scaling and securing the Network
-*Secure and Scale the Network*
-- Leverage Blockchain Technology: Utilize the speed and security of the Layer 2 EVM blockchain.
-- Ensure Consensus and Growth: Support massive scalability while maintaining network integrity.
+- Improve the clarity and reliability of Search as an agent context layer.
+- Make Claw workflows more repeatable, inspectable, and easier to run from Core Node.
+- Strengthen Persona memory controls and user-approved context flows.
+- Expand developer access through MCP, API keys, x402 SDK, and examples.
+- Improve node reputation, reward accounting, and task transparency.
+- Prepare marketplace primitives for reusable agents, datasets, and workflows.
 
-### Stage 6: Building Next-Gen AI Agents
-*Drive Decentralized AI Learning*
-- Develop and Train AI Agents: Participate in creating AI that learns autonomously and adapts to complex problems.
-- Push the Boundaries of AI: Contribute to agents capable of unprecedented learning and problem-solving.
+## Milestone View
 
-### Stage 7: Embracing the OptimAI Ecosystem
-*Redefine DePIN AI as a Service*
-- Build a Global Ecosystem: Help establish a worldwide OptimAI network.
-- Democratize AI Access: Make advanced AI technologies accessible and beneficial for everyone.
+```mermaid
+gantt
+  title OptimAI Product Tracks
+  dateFormat  YYYY-MM
+  section Network
+  Lite and Telegram participation       :done, 2025-01, 2025-06
+  Core and CLI node operations          :active, 2026-01, 2026-08
+  Edge node expansion                   :active, 2026-03, 2026-09
+  section Products
+  OptimAI Search                        :active, 2026-03, 2026-09
+  Claw runtime in Core Node             :active, 2026-04, 2026-10
+  Persona Agent workflows               :active, 2026-05, 2026-11
+  section Builders
+  Search MCP and API access             :active, 2026-05, 2026-08
+  x402 SDK flows                        :active, 2026-05, 2026-09
+  Agent and marketplace APIs            :2026-08, 2026-12
+  section Ecosystem
+  Marketplace distribution layer        :2026-08, 2027-01
+  Governance alpha                      :2026-09, 2027-01
+```
+
+## Roadmap Notes
+
+- Dates are planning windows, not final launch commitments.
+- Developer interfaces should be marked preview until production contracts are stable.
+- Tokenomics should remain utility-focused until supply and allocation details are finalized.
+- Security, privacy, and permission controls should be reviewed before each major product expansion.
+
+## North Star
+
+OptimAI is moving toward a live intelligence network for the agent-native internet: agents that can search, verify, remember, execute, pay for services, and improve through feedback while users and contributors keep a stake in the network they power.

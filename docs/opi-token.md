@@ -1,47 +1,67 @@
 ---
-sidebar_position: 9
-title: "The OPI Token"
+sidebar_position: 2
+title: "OPI Token"
+description: "How OPI coordinates rewards, service access, campaigns, marketplace activity, and governance in OptimAI."
 ---
 
-:::tip[Overview]
-At the heart of the OptimAI Network is the **OPI Token**, a versatile utility token designed to drive the ecosystem's growth, incentivize active participation, and support decentralized governance. Its well-crafted tokenomics ensure a transparent, equitable, and sustainable economic framework that aligns the interests of users, developers, clients, and the network as a whole.
-:::
+# OPI Token
 
-## Key Roles of the OPI Token
+OPI is the coordination asset of OptimAI Network. Its job is to connect useful work with economic value: node operation, data contribution, validation, API usage, Claw jobs, marketplace activity, staking, and governance.
+
 ![OPI Token](./assets/images/opi-token.jpg)
-### Incentivization of Contributions
-The OPI Token rewards participants for their efforts in maintaining and enhancing the network, fostering a collaborative ecosystem.
 
-- Node Operation Tasks: Incentives for contributing computing power, storage, and network bandwidth.
-- Data Operation Tasks: Rewards for performing data mining, validation, and quality assurance.
-- Developers: Encourages the creation of data campaigns and AI solutions using the OptimAI SDK.
+## Utility Map
 
-### Decentralized Governance
-Token holders are empowered to influence the network's future by participating in governance decisions. This decentralized approach ensures the community plays an active role in shaping the platform's direction.
+| Utility | Description |
+| --- | --- |
+| **Rewards** | Compensates accepted node, validation, data, compute, and campaign contributions. |
+| **Service access** | Supports paid usage of premium network services, APIs, and agent workflows. |
+| **Campaign budgets** | Funds targeted data, extraction, monitoring, or validation requests. |
+| **Marketplace payments** | Enables future exchange of agents, datasets, workflows, and services. |
+| **Staking** | Can support reputation, validator roles, or access tiers. |
+| **Governance** | Gives contributors a path to influence protocol and ecosystem decisions. |
 
-### OptimAI Intelligence Service Fees
-Clients can access various OptimAI Intelligence Services, including dataset creation, computing power, and data validation, by paying fees in OPI Tokens. This utility strengthens the token's role in real-world applications.
+## Earn OPI
 
-### OptimAI Marketplace
-The OptimAI Marketplace is a decentralized platform enabling users, developers, and organizations to trade data, AI models, services, and computational resources. It fosters a dynamic ecosystem, driving innovation and incentivizing active participation. The OPI Token serves as the primary payment utility within the marketplace, facilitating seamless transactions across all exchanges.
+Participants may earn through:
 
-### GenAI Agents Platform
-The GenAI Agents Platform, powered by OPI Tokens, allows users to build, deploy, and monetize AI Agents. Users can also stake OPI Tokens to hire AI Agents through a subscription-based model, enabling seamless access to personalized AI solutions.
+- running Lite, Core, Edge, CLI, or Telegram Nodes
+- contributing bandwidth, compute, storage, or browser execution
+- completing Claw and data campaign tasks
+- validating or annotating records
+- providing high-quality feedback
+- maintaining reliable uptime
+- helping improve Search, Persona, and agent workflows
 
-### Layer-2 Blockchain Transaction Fees
-OPI Tokens are used as gas fees to facilitate transactions on the Layer-2 blockchain, ensuring efficient and cost-effective network operations.
+Reward policies should be quality-weighted. A high-quality validated contribution is more valuable than high-volume low-quality activity.
 
-### Staking and Security
-Staking mechanisms encourage long-term engagement, reward participants, and enhance the network's security and stability.
+## Use OPI
 
-## OPI Token's Symbolic Journey: From 0 to 1 and Beyond
-The OPI token isn't merely a digital asset; it encapsulates a profound journey, mirroring the essence of the OptimAI Network and the transformative power of AI. The token's name, "OPI", holds a multi-layered significance:
+OPI is designed to support:
 
-### Mathematical Resonance
-0^π to π^0: This mathematical expression represents a fascinating transition. 0 raised to the power of π (any number raised to the power of 0) equals 0, signifying a state of potentiality, a blank canvas awaiting creation. On the other hand, π raised to the power of 0 equals 1, symbolizing the realization of that potential, the birth of something meaningful from the void. Binary Representation: The range [0,1] is fundamental in binary code, the language of computers. Every piece of data, every image, every AI model is ultimately built from a sequence of 0s and 1s. OPI, through its name, evokes this core principle, hinting at the limitless possibilities that can emerge from the simplest of building blocks. Philosophical Underpinnings:
+- Search API and advanced retrieval usage
+- Claw extraction and workflow jobs
+- Persona Agent services
+- data campaign creation
+- marketplace purchases
+- network compute usage
+- staking and governance participation
 
-### Creation from Nothingness
-The transition from 0 to 1 mirrors the act of creation itself. In the realm of AI, this signifies the potential of AI agents to generate novel ideas, solutions, and even art from a seemingly blank slate. The Journey of Learning: Like an AI agent starting from a state of ignorance (0) and gradually acquiring knowledge and intelligence (1), the OPI token represents the continuous learning and evolution that are at the heart of the OptimAI Network. Empowerment & Potential: Just as binary code can represent anything, the OPI token empowers its holders to participate in and shape the future of AI. It's a symbol of potential, of the ability to contribute to something greater than oneself. OptimAI Network Connection:
+## Reward Inputs
 
-### Community-Driven Growth
-The OPI token fuels the network's growth, incentivizing users to contribute data, validate information, and run nodes. This collective effort mirrors the journey from 0 to 1, as the network evolves and expands through the contributions of its community. AI's Transformative Power: Just as 0 and 1 are the building blocks of the digital world, the OPI token and the OptimAI Network aim to be the foundation for a new era of AI, where artificial intelligence is accessible, beneficial, and truly empowering for all.
+OptimAI reward logic should consider:
+
+| Input | Meaning |
+| --- | --- |
+| **Quality** | Was the result useful, accurate, and properly structured? |
+| **Validation** | Did validators or automated checks accept it? |
+| **Difficulty** | Was the task simple validation or advanced execution? |
+| **Reliability** | Did the node maintain uptime and complete work consistently? |
+| **Demand** | Was the work tied to a funded campaign or active product need? |
+| **Reputation** | Has the participant historically produced accepted work? |
+
+## Tokenomics Status
+
+Detailed tokenomics should include supply, allocations, vesting, treasury usage, reward pools, staking rules, and governance rights. Until those figures are finalized, this page focuses on utility and economic design rather than inventing numbers.
+
+See [Governance & Tokenomics](./governance-tokenomics.md) for the fields that should be confirmed before publication.

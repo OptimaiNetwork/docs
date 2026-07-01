@@ -1,0 +1,45 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">OptimAI solution flywheel</title>
+  <desc id="desc">A flywheel showing how node participation improves coverage, validation, products, demand, rewards, and ecosystem growth.</desc>
+  <rect width="1200" height="720" rx="36" fill="#07110D"/>
+  <rect x="1" y="1" width="1198" height="718" rx="35" stroke="#1F3D31"/>
+  <text x="84" y="82" fill="#EAF7F0" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">OptimAI Network Flywheel</text>
+  <text x="86" y="118" fill="#96B5A6" font-family="Inter, Arial, sans-serif" font-size="18">A better network creates better products. Better products create more demand. Demand funds better contribution.</text>
+
+  <circle cx="600" cy="386" r="210" fill="#0D1B15" stroke="#24543B" stroke-width="2"/>
+  <circle cx="600" cy="386" r="118" fill="#0F2419" stroke="#0CE386" stroke-opacity="0.45" stroke-width="2"/>
+  <text x="600" y="370" text-anchor="middle" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">Network</text>
+  <text x="600" y="405" text-anchor="middle" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="16">data, compute, validation, rewards</text>
+
+  <g>
+    <rect x="478" y="164" width="244" height="78" rx="20" fill="#102219" stroke="#2E6B4D"/>
+    <text x="600" y="196" text-anchor="middle" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">1. NODES</text>
+    <text x="600" y="218" text-anchor="middle" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="16">More participation</text>
+  </g>
+  <g>
+    <rect x="820" y="300" width="244" height="78" rx="20" fill="#102219" stroke="#2E6B4D"/>
+    <text x="942" y="332" text-anchor="middle" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">2. COVERAGE</text>
+    <text x="942" y="354" text-anchor="middle" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="16">More context and capacity</text>
+  </g>
+  <g>
+    <rect x="754" y="540" width="244" height="78" rx="20" fill="#102219" stroke="#2E6B4D"/>
+    <text x="876" y="572" text-anchor="middle" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">3. PRODUCTS</text>
+    <text x="876" y="594" text-anchor="middle" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="16">Better Search, Claw, Persona</text>
+  </g>
+  <g>
+    <rect x="202" y="540" width="244" height="78" rx="20" fill="#102219" stroke="#2E6B4D"/>
+    <text x="324" y="572" text-anchor="middle" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">4. DEMAND</text>
+    <text x="324" y="594" text-anchor="middle" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="16">More users and builders</text>
+  </g>
+  <g>
+    <rect x="136" y="300" width="244" height="78" rx="20" fill="#102219" stroke="#2E6B4D"/>
+    <text x="258" y="332" text-anchor="middle" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">5. REWARDS</text>
+    <text x="258" y="354" text-anchor="middle" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="16">More useful contribution</text>
+  </g>
+
+  <path d="M722 205C817 230 888 264 930 300" stroke="#0CE386" stroke-width="4" stroke-linecap="round"/>
+  <path d="M963 378C959 444 928 502 876 540" stroke="#0CE386" stroke-width="4" stroke-linecap="round"/>
+  <path d="M754 594C625 654 489 650 446 594" stroke="#0CE386" stroke-width="4" stroke-linecap="round"/>
+  <path d="M324 540C272 502 241 444 237 378" stroke="#0CE386" stroke-width="4" stroke-linecap="round"/>
+  <path d="M258 300C312 245 380 214 478 203" stroke="#0CE386" stroke-width="4" stroke-linecap="round"/>
+</svg>

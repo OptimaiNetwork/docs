@@ -1,16 +1,49 @@
 ---
 sidebar_position: 2
+title: "The Problem"
+description: "Why agentic AI needs live context, execution, user-controlled memory, data trust, and contributor alignment."
 ---
 
-# The Key Problem
+# The Problem
 
-:::tip[Did you know...]
-Artificial Intelligence (AI) holds transformative power across industries and global communities. Yet its progress is frequently stifled by key hurdles: limited access to high-quality datasets, centralized control by dominant tech entities, and the complexities of ethically obtaining and validating data. **OptimAI Network** emerges as a groundbreaking, decentralized solution to these challenges. It democratizes AI development by fostering a community-driven, privacy-centric data ecosystem that empowers everyone to contribute and benefit.
-:::
+The next generation of AI is agentic: systems that search, reason, execute, remember, and improve. But most of today’s AI infrastructure was built for static chat, not autonomous work.
 
-## Key Challenges & Limitations of AI Development: Data Scarcity and Quality
-AI's transformative potential is hindered by a critical bottleneck: the scarcity of high-quality, relevant, and diverse data. Without robust datasets, AI models face limitations in performance, fairness, and reliability, impacting innovation, economic growth, and ethical development.
-- **Data Scarcity and Quality:** Publicly available data is often unstructured, outdated, or irrelevant, making it inadequate for domain-specific applications like healthcare or finance. Diverse, high-quality datasets are essential for effective, unbiased AI models.
-- **Access to Private Data:** Valuable data on private platforms (e.g., Twitter, Facebook) is difficult to access due to privacy regulations and authentication barriers, limiting personalization and innovation opportunities.
-- **Collection Complexity:** Traditional methods face technical hurdles, high costs, and require specialized expertise, creating barriers for small businesses and developers.
-- **Privacy Concerns:** Complying with regulations like GDPR and maintaining user trust is challenging but crucial for ethical and legal AI development.
+![Agent infrastructure problem map](../assets/images/overview/problem-map.svg)
+
+## The Five Gaps
+
+### 1. Context Becomes Stale
+
+Agents fail when they rely on outdated context. Markets change, codebases change, policies change, product pages change, communities change. A useful agent needs live retrieval and source refresh before it acts.
+
+### 2. Execution Breaks At The Handoff
+
+Many assistants can summarize a topic. Fewer can complete a workflow: gather sources, extract fields, compare changes, prepare a report, preserve decisions, and repeat the process next week.
+
+### 3. Memory Is Not User-Owned
+
+Personalization is often hidden inside a platform. Users need explicit control over what an agent remembers: preferences, projects, trusted sources, prior decisions, and workflow patterns.
+
+### 4. Data Quality Is Hard To Inspect
+
+Raw text is not enough. Agents need provenance, freshness, validation status, source quality, and confidence signals. Without those, they cannot reliably separate current evidence from stale or low-quality data.
+
+### 5. Contributors Are Not Aligned
+
+Useful intelligence depends on data, validation, feedback, bandwidth, compute, and workflow execution. Centralized systems capture most of that value. Network infrastructure should reward useful contribution.
+
+## Why This Matters
+
+If these gaps are not solved, agents remain impressive demos but unreliable operators. They can answer, but they cannot consistently act with current context, trusted data, user-approved memory, and accountable execution.
+
+## OptimAI’s Position
+
+OptimAI addresses the full operating loop:
+
+| Gap | OptimAI response |
+| --- | --- |
+| Stale context | Search retrieves live, source-backed information. |
+| Broken execution | Claw runs research, extraction, monitoring, and workflow tasks. |
+| Weak memory | Persona stores user-approved context and preferences. |
+| Unclear quality | Reinforcement Data Network validates and scores data. |
+| Misaligned contribution | Nodes and OPI connect useful work with rewards. |

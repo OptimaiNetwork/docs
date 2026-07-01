@@ -1,0 +1,76 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">OptimAI services topology</title>
+  <desc id="desc">A topology diagram showing OptimAI product surfaces, agent orchestration, service engines, reinforcement data, node runtime, and coordination layer.</desc>
+  <rect width="1200" height="760" rx="36" fill="#07110D"/>
+  <rect x="1" y="1" width="1198" height="758" rx="35" stroke="#1F3D31"/>
+  <circle cx="1014" cy="112" r="260" fill="#0CE386" opacity="0.07"/>
+  <circle cx="158" cy="684" r="260" fill="#2A8CFF" opacity="0.06"/>
+
+  <text x="84" y="82" fill="#EAF7F0" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">OptimAI Services Topology</text>
+  <text x="86" y="118" fill="#96B5A6" font-family="Inter, Arial, sans-serif" font-size="18">Product requests become orchestrated service calls, validated data, node tasks, and rewardable contributions.</text>
+
+  <g>
+    <rect x="82" y="162" width="1036" height="82" rx="24" fill="#0E1C16" stroke="#2E6B4D"/>
+    <text x="118" y="196" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">PRODUCT SURFACES</text>
+    <text x="118" y="224" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Search · Claw · Persona · APIs · MCP · x402 · Marketplace</text>
+  </g>
+
+  <g>
+    <rect x="392" y="282" width="416" height="94" rx="26" fill="#102219" stroke="#0CE386" stroke-opacity="0.58" stroke-width="2"/>
+    <text x="600" y="320" text-anchor="middle" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">ORCHESTRATION</text>
+    <text x="600" y="354" text-anchor="middle" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Agent Engine</text>
+  </g>
+
+  <g>
+    <rect x="92" y="428" width="232" height="126" rx="24" fill="#101C16" stroke="#315E48"/>
+    <text x="124" y="466" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">DATA</text>
+    <text x="124" y="500" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700">Data Engine</text>
+    <text x="124" y="528" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="14">parse · normalize · embed</text>
+  </g>
+
+  <g>
+    <rect x="364" y="428" width="232" height="126" rx="24" fill="#101C16" stroke="#315E48"/>
+    <text x="396" y="466" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">COMPUTE</text>
+    <text x="396" y="500" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700">Compute Engine</text>
+    <text x="396" y="528" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="14">schedule · process · scale</text>
+  </g>
+
+  <g>
+    <rect x="636" y="428" width="232" height="126" rx="24" fill="#101C16" stroke="#315E48"/>
+    <text x="668" y="466" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">NETWORK</text>
+    <text x="668" y="500" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700">Network Engine</text>
+    <text x="668" y="528" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="14">route · health · reputation</text>
+  </g>
+
+  <g>
+    <rect x="908" y="428" width="232" height="126" rx="24" fill="#101C16" stroke="#315E48"/>
+    <text x="940" y="466" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">POLICY</text>
+    <text x="940" y="500" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700">Trust Engine</text>
+    <text x="940" y="528" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="14">permissions · validation · scoring</text>
+  </g>
+
+  <g>
+    <rect x="82" y="618" width="332" height="74" rx="22" fill="#0D1914" stroke="#264C3A"/>
+    <text x="118" y="663" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">OptimAI Nodes</text>
+    <text x="274" y="663" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="14">runtime and contribution</text>
+  </g>
+  <g>
+    <rect x="434" y="618" width="332" height="74" rx="22" fill="#0D1914" stroke="#264C3A"/>
+    <text x="470" y="663" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Reinforcement Data</text>
+    <text x="674" y="663" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="14">quality loop</text>
+  </g>
+  <g>
+    <rect x="786" y="618" width="332" height="74" rx="22" fill="#0D1914" stroke="#264C3A"/>
+    <text x="822" y="663" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Marketplace · OPI · Chain</text>
+  </g>
+
+  <path d="M600 244V282" stroke="#0CE386" stroke-opacity="0.62" stroke-width="3"/>
+  <path d="M520 376L208 428" stroke="#0CE386" stroke-opacity="0.48" stroke-width="3"/>
+  <path d="M560 376L480 428" stroke="#0CE386" stroke-opacity="0.48" stroke-width="3"/>
+  <path d="M640 376L752 428" stroke="#0CE386" stroke-opacity="0.48" stroke-width="3"/>
+  <path d="M680 376L1024 428" stroke="#0CE386" stroke-opacity="0.48" stroke-width="3"/>
+  <path d="M208 554L248 618" stroke="#0CE386" stroke-opacity="0.42" stroke-width="3"/>
+  <path d="M480 554L600 618" stroke="#0CE386" stroke-opacity="0.42" stroke-width="3"/>
+  <path d="M752 554L600 618" stroke="#0CE386" stroke-opacity="0.42" stroke-width="3"/>
+  <path d="M1024 554L952 618" stroke="#0CE386" stroke-opacity="0.42" stroke-width="3"/>
+</svg>

@@ -1,0 +1,58 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Agent infrastructure problem map</title>
+  <desc id="desc">A map of five agent infrastructure problems: stale context, broken execution, shallow personalization, unclear data quality, and misaligned contributors.</desc>
+  <rect width="1200" height="720" rx="36" fill="#07110D"/>
+  <rect x="1" y="1" width="1198" height="718" rx="35" stroke="#1F3D31"/>
+  <text x="84" y="82" fill="#EAF7F0" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">Why Agents Need New Infrastructure</text>
+  <text x="86" y="118" fill="#96B5A6" font-family="Inter, Arial, sans-serif" font-size="18">The bottleneck is not only model quality. It is context, execution, memory, data trust, and incentives.</text>
+
+  <g>
+    <rect x="82" y="176" width="320" height="150" rx="24" fill="#101C16" stroke="#315E48"/>
+    <text x="118" y="222" fill="#FFCF6B" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">01</text>
+    <text x="162" y="222" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Stale context</text>
+    <text x="118" y="264" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="15">
+      <tspan x="118" dy="0">Models need current web, social,</tspan>
+      <tspan x="118" dy="24">product, policy, and codebase data.</tspan>
+    </text>
+  </g>
+  <g>
+    <rect x="440" y="176" width="320" height="150" rx="24" fill="#101C16" stroke="#315E48"/>
+    <text x="476" y="222" fill="#FFCF6B" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">02</text>
+    <text x="520" y="222" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Broken execution</text>
+    <text x="476" y="264" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="15">
+      <tspan x="476" dy="0">Agents need a runtime for extraction,</tspan>
+      <tspan x="476" dy="24">monitoring, reporting, and workflows.</tspan>
+    </text>
+  </g>
+  <g>
+    <rect x="798" y="176" width="320" height="150" rx="24" fill="#101C16" stroke="#315E48"/>
+    <text x="834" y="222" fill="#FFCF6B" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">03</text>
+    <text x="878" y="222" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Shallow memory</text>
+    <text x="834" y="264" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="15">
+      <tspan x="834" dy="0">Personalization needs explicit,</tspan>
+      <tspan x="834" dy="24">portable, user-approved memory.</tspan>
+    </text>
+  </g>
+  <g>
+    <rect x="262" y="398" width="320" height="150" rx="24" fill="#101C16" stroke="#315E48"/>
+    <text x="298" y="444" fill="#FFCF6B" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">04</text>
+    <text x="342" y="444" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Unclear quality</text>
+    <text x="298" y="486" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="15">
+      <tspan x="298" dy="0">Agents need provenance, freshness,</tspan>
+      <tspan x="298" dy="24">validation, and confidence signals.</tspan>
+    </text>
+  </g>
+  <g>
+    <rect x="620" y="398" width="320" height="150" rx="24" fill="#101C16" stroke="#315E48"/>
+    <text x="656" y="444" fill="#FFCF6B" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">05</text>
+    <text x="700" y="444" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Misaligned rewards</text>
+    <text x="656" y="486" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="15">
+      <tspan x="656" dy="0">Data, validation, compute, and feedback</tspan>
+      <tspan x="656" dy="24">create value that should be aligned.</tspan>
+    </text>
+  </g>
+  <path d="M402 251H440" stroke="#244934" stroke-width="2"/>
+  <path d="M760 251H798" stroke="#244934" stroke-width="2"/>
+  <path d="M600 326V398" stroke="#244934" stroke-width="2"/>
+  <path d="M582 473H620" stroke="#244934" stroke-width="2"/>
+</svg>

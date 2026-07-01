@@ -1,0 +1,168 @@
+---
+sidebar_position: 4
+title: "SDK Quickstart"
+description: "Code examples for OptimAI Search MCP, x402 SDK, and preview Claw and Persona patterns."
+---
+
+# SDK Quickstart
+
+This page shows how to add OptimAI to agents and applications.
+
+## Search MCP
+
+Search MCP is the fastest path when your host supports Model Context Protocol.
+
+```bash
+export OPTIMAI_API_KEY="sk-..."
+
+codex mcp add optimai-search \
+  --env OPTIMAI_API_KEY="$OPTIMAI_API_KEY" \
+  -- npx -y @optimai-network/search-mcp
+```
+
+Generic MCP host configuration:
+
+```json
+{
+  "mcpServers": {
+    "optimai-search": {
+      "command": "npx",
+      "args": ["-y", "@optimai-network/search-mcp"],
+      "env": {
+        "OPTIMAI_API_KEY": "sk-your-key-here"
+      }
+    }
+  }
+}
+```
+
+Recommended flow:
+
+1. Call `optimai_start_search`.
+2. Store the returned search ID.
+3. Call `optimai_get_search` until the result is complete.
+4. Use citations in the final user-facing answer.
+
+## x402 SDK
+
+Install:
+
+```bash
+pnpm add @optimai-network/x402-sdk
+```
+
+Create a paid search:
+
+```ts
+import {
+  createOptimaiX402Client,
+  createViemPaymentHandler,
+} from "@optimai-network/x402-sdk";
+
+const paymentHandler = createViemPaymentHandler({
+  privateKey: process.env.X402_PAYER_PRIVATE_KEY!,
+  rpcUrls: {
+    "eip155:8453": "https://mainnet.base.org",
+    "eip155:84532": "https://sepolia.base.org",
+  },
+});
+
+const client = createOptimaiX402Client({
+  baseUrl: process.env.OPTIMAI_X402_BASE_URL ?? "https://api-onchain.optimai.network",
+  paymentHandler,
+});
+
+const { search, paymentContext } = await client.createSearch({
+  query: "Explain the role of live context in agentic AI.",
+});
+
+const completed = await client.waitForSearchCompletion(search.id, {
+  paymentContext,
+});
+
+console.log(completed.result?.answer);
+```
+
+Security note: `X402_PAYER_PRIVATE_KEY` is a wallet private key. Use it only in a secure local or server environment you control.
+
+## Preview: Claw Extraction Pattern
+
+The Claw runtime is broader than extraction, but extraction is the simplest builder contract to model.
+
+```ts
+const clawJob = await optimai.claw.jobs.create({
+  type: "extraction",
+  source: {
+    type: "url",
+    url: "https://example.com/products",
+  },
+  schema: {
+    type: "object",
+    properties: {
+      name: { type: "string" },
+      price: { type: "string" },
+      features: {
+        type: "array",
+        items: { type: "string" },
+      },
+      source_url: { type: "string" },
+    },
+    required: ["name", "source_url"],
+  },
+  validation: {
+    requireProvenance: true,
+    sampleRate: 0.15,
+  },
+});
+```
+
+## Preview: Persona Memory Pattern
+
+Only store user-approved memory.
+
+```ts
+await optimai.personas.memory.create("persona_founder", {
+  type: "preference",
+  content: "Prefers concise technical briefs with tables, citations, and clear action items.",
+  visibility: "private",
+  source: "user_approved",
+  tags: ["briefing", "format", "research"],
+});
+```
+
+## Agent Tool Pattern
+
+```ts
+export const optimaiSearchTool = {
+  name: "optimai_search",
+  description: "Search live, source-backed intelligence from OptimAI Network.",
+  inputSchema: {
+    type: "object",
+    properties: {
+      query: { type: "string" },
+    },
+    required: ["query"],
+  },
+  execute: async ({ query }) => {
+    const search = await optimai.search.start({ query });
+    return optimai.search.wait(search.id);
+  },
+};
+```
+
+## Environment Variables
+
+```bash
+OPTIMAI_API_KEY=sk-your-key-here
+OPTIMAI_X402_BASE_URL=https://api-onchain.optimai.network
+X402_PAYER_PRIVATE_KEY=0x...
+```
+
+## Production Checklist
+
+- Keep API keys and wallet private keys out of client-side code.
+- Use async job polling for long-running searches and extraction tasks.
+- Render citations and source links.
+- Preserve `paymentContext` for x402 searches that continue across agents.
+- Ask for permission before saving Persona memory.
+- Treat preview API examples as design references until production contracts are published.

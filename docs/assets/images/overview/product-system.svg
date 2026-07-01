@@ -1,0 +1,67 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">OptimAI product system</title>
+  <desc id="desc">A system diagram showing OptimAI Search, Claw, Persona, Nodes, Marketplace, and developer interfaces connected through the reinforcement data layer.</desc>
+  <rect width="1200" height="720" rx="36" fill="#07110D"/>
+  <rect x="1" y="1" width="1198" height="718" rx="35" stroke="#1F3D31"/>
+  <circle cx="1000" cy="110" r="240" fill="#0CE386" opacity="0.07"/>
+  <circle cx="220" cy="640" r="260" fill="#2A8CFF" opacity="0.06"/>
+
+  <text x="84" y="82" fill="#EAF7F0" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">OptimAI Product System</text>
+  <text x="86" y="118" fill="#96B5A6" font-family="Inter, Arial, sans-serif" font-size="18">A connected product ecosystem for agents that search, execute, remember, publish, and pay for useful work.</text>
+
+  <g>
+    <rect x="446" y="286" width="308" height="150" rx="28" fill="#102219" stroke="#0CE386" stroke-opacity="0.62" stroke-width="2"/>
+    <text x="600" y="340" text-anchor="middle" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">Reinforcement</text>
+    <text x="600" y="377" text-anchor="middle" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">Data Layer</text>
+    <text x="600" y="410" text-anchor="middle" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="15">provenance · validation · scoring · feedback</text>
+  </g>
+
+  <g>
+    <rect x="96" y="188" width="276" height="116" rx="24" fill="#0E1C16" stroke="#2E6B4D"/>
+    <text x="128" y="228" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">CONTEXT</text>
+    <text x="128" y="264" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Search</text>
+    <text x="128" y="289" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="14">live sources, citations, MCP, x402</text>
+  </g>
+
+  <g>
+    <rect x="462" y="128" width="276" height="116" rx="24" fill="#0E1C16" stroke="#2E6B4D"/>
+    <text x="494" y="168" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">EXECUTION</text>
+    <text x="494" y="204" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Claw</text>
+    <text x="494" y="229" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="14">agent runtime, extraction, workflows</text>
+  </g>
+
+  <g>
+    <rect x="828" y="188" width="276" height="116" rx="24" fill="#0E1C16" stroke="#2E6B4D"/>
+    <text x="860" y="228" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">MEMORY</text>
+    <text x="860" y="264" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Persona</text>
+    <text x="860" y="289" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="14">identity, preferences, projects</text>
+  </g>
+
+  <g>
+    <rect x="96" y="500" width="276" height="116" rx="24" fill="#0E1C16" stroke="#2E6B4D"/>
+    <text x="128" y="540" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">INFRASTRUCTURE</text>
+    <text x="128" y="576" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Nodes</text>
+    <text x="128" y="601" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="14">Lite, Core, CLI, Edge, Telegram</text>
+  </g>
+
+  <g>
+    <rect x="462" y="524" width="276" height="116" rx="24" fill="#0E1C16" stroke="#2E6B4D"/>
+    <text x="494" y="564" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">BUILDERS</text>
+    <text x="494" y="600" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">APIs + MCP</text>
+    <text x="494" y="625" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="14">SDKs, schemas, agent tools</text>
+  </g>
+
+  <g>
+    <rect x="828" y="500" width="276" height="116" rx="24" fill="#0E1C16" stroke="#2E6B4D"/>
+    <text x="860" y="540" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">DISTRIBUTION</text>
+    <text x="860" y="576" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Marketplace</text>
+    <text x="860" y="601" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="14">agents, datasets, workflows, OPI</text>
+  </g>
+
+  <path d="M372 246L446 326" stroke="#0CE386" stroke-opacity="0.6" stroke-width="3"/>
+  <path d="M600 244V286" stroke="#0CE386" stroke-opacity="0.6" stroke-width="3"/>
+  <path d="M828 246L754 326" stroke="#0CE386" stroke-opacity="0.6" stroke-width="3"/>
+  <path d="M372 558L446 410" stroke="#0CE386" stroke-opacity="0.6" stroke-width="3"/>
+  <path d="M600 524V436" stroke="#0CE386" stroke-opacity="0.6" stroke-width="3"/>
+  <path d="M828 558L754 410" stroke="#0CE386" stroke-opacity="0.6" stroke-width="3"/>
+</svg>

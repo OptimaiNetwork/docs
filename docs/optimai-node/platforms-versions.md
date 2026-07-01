@@ -1,58 +1,53 @@
 ---
 sidebar_position: 3
+title: "Supported Platforms"
 ---
 
-# Supported Platforms and Versions
+# Supported Platforms
 
-OptimAI Network provides multiple node types to engage with our decentralized data network. This section outlines the supported platforms and versions for each node, including installation instructions for available nodes and planned platforms for those in development.
+OptimAI supports several node clients. Each client is designed for a different level of participation, from lightweight validation to Core Node execution.
 
-## OptimAI Lite Node
+## Platform Matrix
 
-The OptimAI Lite Node is a browser extension currently supported on Google Chrome, Opera, and Brave browsers.
+| Node | Platforms | Best for | Status |
+| --- | --- | --- | --- |
+| **Lite Node** | Chrome, Brave, Opera | Lightweight validation, bandwidth, and onboarding | Available |
+| **Telegram Node** | Telegram Mini App | Mobile-friendly participation and community onboarding | Available |
+| **Core Node Desktop** | Windows, macOS, Ubuntu Linux | Browser-native tasks, Claw runtime, extraction, compute, and storage | Available |
+| **Core Node CLI** | Windows, macOS, Ubuntu Linux, servers | Headless or advanced node operation | Available |
+| **Edge Node** | iOS, Android | Mobile participation and edge context | Available |
+| **IoT Edge Node** | Raspberry Pi, Jetson Nano, similar devices | Sensor and local edge workflows | Planned |
 
-### Installation Steps
+## Lite Node
 
-1. **Download the Extension:**
-   - Visit the Chrome Web Store: [OptimAI Lite Node](https://chromewebstore.google.com/detail/optimai-lite-node/njlfcjdojmopagogfpjgcbnpmiknapnd)
+Install the browser extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/optimai-lite-node/njlfcjdojmopagogfpjgcbnpmiknapnd). Chrome-compatible browsers such as Brave and Opera are supported.
 
-2. **Install the Extension:**
-   - Click "Add to Chrome" and follow the on-screen prompts to install.
+See [OptimAI Lite Node](./lite-node.mdx) for setup steps.
 
-3. **Activate the Node:**
-   - Click the OptimAI icon in your browser toolbar.
-   - Create an account via the OptimAI Dashboard or log in if you already have one.
-   - Customize your settings and start mining data.
+## Telegram Node
 
-## Telegram DePIN Node
+Open [@OptimAI_Node_Bot](https://t.me/OptimAI_Node_Bot) in Telegram and follow the setup prompts.
 
-The Telegram DePIN Node operates as a bot within the Telegram platform.
+## Core Node
 
-### Setup Steps
+Core Node is available as a desktop app and CLI for Windows, macOS, and Ubuntu Linux. It supports deeper participation, including Claw runtime workflows, extraction jobs, compute tasks, and campaign execution.
 
-1. **Find the OptimAI Bot:**
-   - Open Telegram and search for "@OptimAI_Node_Bot".
-   - Alternatively, click [here](https://t.me/OptimAI_Node_Bot) to access the bot directly.
+See [OptimAI Core Node](./core-node.mdx) for installation instructions.
 
-2. **Start the Bot:**
-   - Click "Start" to initiate the bot.
+Core Node CLI supports `auth login`, `node start`, `node status`, `rewards balance`, and `update` commands.
 
-3. **Activate Your Node:**
-   - Follow the bot’s instructions to set up your node and account.
+## Edge Node
 
-## OptimAI Core Node (Coming Soon)
+Edge Node is available for iOS and Android.
 
-The OptimAI Core Node will be available on the following platforms:
+- [App Store](https://apps.apple.com/us/app/optimai-edge-node/id6746382051)
+- [Google Play](https://play.google.com/store/apps/details?id=network.optimai.edgenode)
 
-- Windows
-- Linux
-- MacOS
-- Command-Line Interface (CLI) for Servers
+See [OptimAI Edge Node](./edge-node.mdx) for requirements and setup details.
 
-## OptimAI Edge Node (Coming Soon)
+## Versioning Guidance
 
-The OptimAI Edge Node will be supported on:
-
-- Mobile OS: iOS and Android
-- IoT devices: Raspberry Pi and NVIDIA Jetson Nano
-
-**Note:** For the latest updates on the release of Core and Edge Nodes, refer to the official OptimAI website or community groups.
+- Keep node clients updated to receive new task types and security fixes.
+- Use Core Node for Claw and advanced network workloads.
+- Use Lite Node or Telegram Node when you want the lowest-friction entry point.
+- Use Edge Node for mobile participation and future local-context workflows.

@@ -1,0 +1,59 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">OptimAI stack map</title>
+  <desc id="desc">A layered diagram showing OptimAI Search as context, Claw as execution, Persona as memory, Nodes as infrastructure, and OPI as coordination.</desc>
+  <rect width="1200" height="720" rx="36" fill="#07110D"/>
+  <rect x="1" y="1" width="1198" height="718" rx="35" stroke="#1F3D31"/>
+  <circle cx="1010" cy="80" r="210" fill="#0CE386" opacity="0.08"/>
+  <circle cx="116" cy="640" r="240" fill="#2A8CFF" opacity="0.07"/>
+  <path d="M120 138H1080" stroke="#173D2C" stroke-width="1"/>
+  <text x="84" y="82" fill="#EAF7F0" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">OptimAI Network Stack</text>
+  <text x="86" y="118" fill="#96B5A6" font-family="Inter, Arial, sans-serif" font-size="18">Search gives agents context. Claw gives agents execution. Persona gives agents memory. Nodes and OPI coordinate the network.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="188" width="312" height="154" rx="24" fill="#0E1C16" stroke="#2E6B4D"/>
+    <text x="124" y="232" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">CONTEXT</text>
+    <text x="124" y="270" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Search</text>
+    <text x="124" y="306" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="16">Live web, social, citations, freshness, source quality</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="444" y="188" width="312" height="154" rx="24" fill="#0E1C16" stroke="#2E6B4D"/>
+    <text x="476" y="232" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">EXECUTION</text>
+    <text x="476" y="270" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Claw</text>
+    <text x="476" y="306" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="16">Node-resident agent runtime for workflows and extraction</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="796" y="188" width="312" height="154" rx="24" fill="#0E1C16" stroke="#2E6B4D"/>
+    <text x="828" y="232" fill="#0CE386" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">MEMORY</text>
+    <text x="828" y="270" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Persona</text>
+    <text x="828" y="306" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="16">User-approved identity, preferences, projects, decisions</text>
+  </g>
+
+  <path d="M248 354V412" stroke="#0CE386" stroke-width="2" stroke-linecap="round"/>
+  <path d="M600 354V412" stroke="#0CE386" stroke-width="2" stroke-linecap="round"/>
+  <path d="M952 354V412" stroke="#0CE386" stroke-width="2" stroke-linecap="round"/>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="412" width="1016" height="116" rx="26" fill="#102219" stroke="#27583F"/>
+    <text x="124" y="458" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Reinforcement Data Network</text>
+    <text x="124" y="493" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="17">Collect, structure, validate, score, package, and improve data through feedback and reputation.</text>
+    <circle cx="1004" cy="470" r="28" fill="#0CE386" opacity="0.16"/>
+    <path d="M992 471L1001 480L1018 459" stroke="#0CE386" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="568" width="488" height="86" rx="24" fill="#0D1914" stroke="#264C3A"/>
+    <text x="124" y="602" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">OptimAI Nodes</text>
+    <text x="124" y="631" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="16">Lite, Core, CLI, Edge, Telegram, validators</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="620" y="568" width="488" height="86" rx="24" fill="#0D1914" stroke="#264C3A"/>
+    <text x="652" y="602" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Marketplace, Chain, OPI</text>
+    <text x="652" y="631" fill="#9EB8AB" font-family="Inter, Arial, sans-serif" font-size="16">Distribution, rewards, access, reputation, governance</text>
+  </g>
+
+  <defs>
+    <filter id="shadow" x="52" y="148" width="1096" height="546" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+</svg>

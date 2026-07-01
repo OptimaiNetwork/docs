@@ -5,215 +5,218 @@ title: "Litepaper"
 
 import 'katex/dist/katex.min.css'
 
-# OptimAI Network: Litepaper
+# OptimAI Network Litepaper
 
-**Mine Data. Fuel AI. Get Rewards.**
-
----
-
-## Introduction
-
-**OptimAI Network** is a revolutionary **Decentralized Data Network** built to power the next generation of AI applications. It combines **Layer-2 blockchain** scalability, **DePIN (Decentralized Physical Infrastructure)** resource sharing, **Generative AI** capabilities, and **reinforcement-based data validation** to continuously improve data quality. Through **OptimAI Nodes**, users from all walks of life can contribute data, processing power, and bandwidth in return for tokenized rewards—all while maintaining control over their personal environment.
+**Decentralized intelligence for the agentic web.**
 
 ---
 
-## Core Objectives
+## Abstract
 
-1. **Democratize Data Collection**  
-   - Unlock previously inaccessible or private data sources, thanks to embedded browser environments and secure extension-based mining.  
-   - Reward contributors for sharing unique data and verifying its authenticity.
+OptimAI Network is a decentralized AI intelligence network that combines browser-native nodes, DePIN compute, human validation, reinforcement data pipelines, OptimAI Chain, and the OPI token economy.
 
-2. **Leverage Collective Compute**  
-   - Tap into an ever-growing community of devices (desktops, servers, mobile, IoT) to form a highly scalable, cost-effective AI infrastructure.  
-   - Distribute intensive tasks like model training, inference, and data labeling across a network of incentivized node operators.
+The network powers a growing product suite:
 
-3. **Reinforce Data Quality**  
-   - Use reinforcement learning to continually rank, validate, and refine incoming data.  
-   - Encourage community-driven annotation campaigns to enrich datasets for specialized AI needs.
+- **OptimAI Search:** AI-native Web3 search with live sources and citations.
+- **OptimAI Claw:** structured extraction and intelligence capture from web, social, documents, and workflows.
+- **OptimAI Persona Agent:** a user-owned personal AI layer with memory, tools, and permissioned context.
 
-4. **Accelerate AI Innovation**  
-   - Provide a decentralized marketplace where developers, businesses, and researchers can access fresh, curated datasets, robust compute power, and pre-trained AI models.  
-   - Support real-time, edge-based analytics for high-speed or low-latency scenarios.
+OptimAI’s thesis is simple: the next generation of AI agents will be limited not by model access alone, but by the quality, freshness, provenance, and ownership of their data. OptimAI builds the decentralized supply chain for that intelligence.
 
 ---
 
-## Node Architecture Overview
+## 1. The Problem
 
-At the heart of OptimAI’s ecosystem is the **OptimAI Node**—software that can run on different types of devices with varying capabilities. Each node type plays a distinct role, collectively forming a resilient, decentralized network.
+AI is becoming agentic. It can search, plan, write, extract, compare, and automate. But most AI systems still depend on centralized indexes, static datasets, closed APIs, and incomplete context.
 
-### 1. Lite Nodes
-Designed for simplicity and low resource usage, **Lite Nodes** are perfect for users who want to contribute to the network without dedicating powerful hardware or constant uptime.
+This creates five major constraints:
 
-- **Browser Extension**  
-  - **Seamless Integration**: Runs as an extension in popular browsers.  
-  - **Data Validation**: Allows users to receive rewards by labeling, tagging, or voting on small data snippets.  
-  - **Passive Data Capture**: Collects public browsing insights (with user consent) and relays them to the network in anonymized form.
-
-- **Telegram Mini-App**  
-  - **Chat-Based Interaction**: Operates inside Telegram as a mini-app, making it easy to validate data or perform annotation tasks within a familiar interface.  
-  - **Lightweight Contributions**: No advanced hardware needed—just occasional engagement to confirm data or provide feedback.
-
-**Use Cases for Lite Nodes**  
-- Individuals looking to receive tokens by casually validating AI training data.  
-- Users wanting a simple entry point into a decentralized AI ecosystem.
-
-### 2. Core Nodes
-For those with more robust hardware or a desire to contribute substantial resources, **Core Nodes** offer advanced capabilities, including an **integrated (built-in) browser environment** for comprehensive data mining from both public and authenticated sites.
-
-- **Built-In Browser**  
-  - **Authenticated Crawling**: Securely fetch data from sites requiring login credentials, such as subscription-based platforms or specialized forums.  
-  - **Configurable Scripts**: Automate data-collection rules—deciding which pages to visit, when to crawl, and how to parse data fields.  
-  - **High-Volume Data Mining**: Ideal for large-scale or domain-specific campaigns requiring frequent, targeted scraping.
-
-- **Resource Powerhouse**  
-  - **Advanced Hardware**: Utilize CPUs, GPUs, or large storage volumes for tasks like distributed AI training, big data processing, or advanced indexing.  
-  - **Bandwidth Sharing**: Relay large datasets within the network to balance loads and prevent bottlenecks.  
-  - **Continuous Operation**: Often run 24/7, receiving elevated rewards commensurate with their higher contribution.
-
-**Use Cases for Core Nodes**  
-- AI developers or data analysts who require deeper data access and can commit their machine(s) to continuous network operations.  
-- Organizations seeking large-scale data pipelines and robust compute for specialized AI research.
-
-### 3. Edge Nodes
-**Edge Nodes** extend the OptimAI Network into mobile devices and IoT hardware, also featuring an **embedded browser environment** for data gathering—especially useful in on-the-go scenarios or IoT-driven platforms.
-
-- **Real-Time Data**  
-  - **Sensor Streams**: Capture time-sensitive info like location, temperature, user interactions, or environment metrics directly on the device.  
-  - **Local Inference**: Perform quick AI tasks (e.g., object detection in camera feeds) without relying on external servers.
-
-- **Built-In Browser for Mobile**  
-  - **Context-Aware**: Mobile browsing can yield region-specific or scenario-specific data often missed by conventional approaches.  
-  - **Adaptive Usage**: Functions at variable connection speeds, caching data for sync when stable bandwidth is available.
-
-- **Low Latency Processing**  
-  - **On-Device AI**: Running certain inference tasks locally improves speed and privacy.  
-  - **Partial Updates**: Periodically send aggregated data or model adjustments back to the network, contributing to global AI improvements.
-
-**Use Cases for Edge Nodes**  
-- IoT deployments requiring real-time analytics with minimal latency (smart cities, industrial IoT, etc.).  
-- Mobile-first users who want to capture unique, location-based data streams.
+1. **Freshness:** models and datasets lag behind the live internet.
+2. **Access:** high-value context often lives inside dynamic interfaces, social systems, logged-in tools, or workflows.
+3. **Trust:** agents need provenance, source quality, and validation, not only generated text.
+4. **Personalization:** personal agents need user-owned memory and permissioned context.
+5. **Ownership:** the people who create useful data and feedback rarely participate in the value it creates.
 
 ---
 
-## Reinforcement Data Flow
+## 2. The OptimAI Solution
 
-1. **Data Ingestion**  
-   - Core Nodes scrape large volumes of domain-specific or gated content.  
-   - Lite and Edge Nodes contribute partial data streams (public browsing data, sensor metrics) and help annotate new data.
+OptimAI creates a decentralized intelligence stack with three connected layers.
 
-2. **Validation & Rewards**  
-   - Multiple nodes cross-check each data piece. If consensus is reached, data is approved and integrated into the global dataset.  
-   - **Reinforcement Learning** techniques fine-tune how data is accepted or rejected, continually raising quality standards.
+### Network Layer
 
-3. **Reward Function**  
-   - Each node earns OPI tokens based on factors like data contribution, validation consistency, and resource provision.  
-   - For instance, if $ P_i $ denotes processing power, $ B_i $ the bandwidth contribution, and $ D_i $ the amount of validated data for node $ i $, one simplified reward model could be:
+Lite, Core, and Edge Nodes contribute data, bandwidth, compute, storage, validation, and edge context. Core Nodes add integrated browser capabilities for deeper web and workflow intelligence.
 
-   $$
-   R_i = \alpha \cdot \bigl(P_i + B_i + D_i\bigr)
-   $$
+### Reinforcement Data Layer
 
-   Where $ \alpha $ is a scaling parameter reflecting the overall network demand at a given time.
+Raw inputs are mined, cleaned, structured, embedded, validated, scored, and improved through human feedback. The layer tracks provenance, freshness, quality, and reputation.
 
-4. **Iterative Quality Gains**  
-   - Feedback loops update data confidence scores and node reputations.  
-   - Over time, the dataset evolves to retain only the most accurate, diverse, and context-rich entries.
+### Product Layer
+
+OptimAI products make the network useful:
+
+- Search answers questions using live, source-backed retrieval.
+- Claw extracts structured intelligence from messy digital surfaces.
+- Persona Agent remembers user context and acts across workflows.
 
 ---
 
-## OPI Token: The Economic Driver
+## 3. Network Architecture
 
-### Earning OPI
-1. **Data Contributions**  
-   - Scraping authenticated content (Core Node) or ambient data (Edge Node).  
-   - Passive browser extension data mining (Lite Node).
-2. **Validation & Annotation**  
-   - Confirm or label data samples.  
-   - Conduct specialized domain-specific tasks (image bounding boxes, text sentiment, etc.).
-3. **Infrastructure Sharing**  
-   - Provide CPU, GPU, or storage to assist others’ training, inference, or indexing tasks.  
-   - Offer bandwidth for distributing large datasets.
+```mermaid
+flowchart LR
+  A["Users and builders"] --> B["Search, Claw, Persona Agent"]
+  B --> C["Agent and service orchestration"]
+  C --> D["Data Engine"]
+  C --> E["Compute Engine"]
+  D --> F["Reinforcement Data Layer"]
+  E --> F
+  F --> G["OptimAI Nodes"]
+  G --> H["OptimAI Chain and OPI"]
+  H --> G
+```
 
-### Spending OPI
-1. **Marketplace Transactions**  
-   - Purchase premium datasets.  
-   - Acquire pre-trained AI models or advanced analytics modules.  
-   - Commission specialized scrapers or data labelers.
-2. **Rent Compute Power**  
-   - Scale your AI projects by accessing high-throughput, GPU-equipped Core Nodes.  
-   - Pay only for the resources you utilize—perfect for short-term model training spikes.
-3. **Network Governance**  
-   - Stake OPI to propose or vote on protocol changes, funding allocations, and new ecosystem initiatives.  
-   - The staking rewards for participant $ i $ at time $ t $ might follow:
+### OptimAI Nodes
 
-   $$
-   R_i(t) \;=\; k \cdot \frac{\,S_i\,}{S_\text{total}} \,\cdot\, T(t)
-   $$
+- **Lite Node:** lightweight participation through browser extension and Telegram.
+- **Core Node:** advanced desktop/CLI node for browser, extraction, compute, storage, and campaign workloads.
+- **Edge Node:** mobile and future IoT node for local, contextual, and edge participation.
 
-   Where $ S_i $ is the tokens staked by participant $ i $, $ S_\text{total} $ the total staked by all participants, and $ T(t) $ the total reward pool allocated at time $ t $.
+### OptimAI Chain
+
+OptimAI Chain coordinates rewards, service fees, reputation, staking, campaign settlement, marketplace transactions, and governance.
+
+### OPI Token
+
+OPI aligns contribution and usage across the ecosystem. It rewards useful network work and supports payments for services such as Search, Claw, Persona Agent, APIs, campaigns, and marketplace activity.
 
 ---
 
-## Marketplace & Collaboration
+## 4. Reinforcement Data
 
-The **OptimAI Marketplace** is where data, compute, and models meet:
+OptimAI’s core innovation is the reinforcement data loop.
 
-- **Data Campaigns**  
-  - Users fund campaigns seeking specific datasets or annotations.  
-  - Contributors submit matching data or labeled samples; successful deliveries are rewarded with OPI bounties.
+```mermaid
+flowchart LR
+  A["Mine"] --> B["Structure"]
+  B --> C["Validate"]
+  C --> D["Score"]
+  D --> E["Use in products"]
+  E --> F["Feedback"]
+  F --> A
+```
 
-- **AI Model Exchange**  
-  - Developers can list models—chatbots, image generators, language processors—for lease or sale in OPI.  
-  - Researchers can crowdsource model improvement by incentivizing bug fixes, refinements, or domain-specific expansions.
+### Data Sources
 
-- **Microservices & Plug-Ins**  
-  - Technical contributors offer node-level plug-ins, such as advanced scraping bots or specialized data processing pipelines.  
-  - This modular approach keeps the network evolving with user-driven enhancements.
+- public web
+- social and community platforms
+- documents and knowledge bases
+- extraction campaigns
+- permissioned browser sessions
+- mobile and edge contexts
+- human validation and feedback
 
----
+### Quality Signals
 
-## Technical Highlights
-
-1. **Layer-2 Blockchain**  
-   - A high-throughput environment that minimizes transaction costs for data validations, token rewards, and governance actions.  
-   - Achieves near-instant finality, crucial for micro-rewards and fast data lifecycles.
-
-2. **DePIN Resource Allocation**  
-   - Distributes tasks to nodes with optimal availability, guided by real-time metrics.  
-   - Another possible formula for node task assignment is a weighted approach:
-
-   $$
-   \text{Minimize:} \quad \sum_{i=1}^{n} w_i \,\left(\frac{L_i}{C_i}\right)
-   $$
-
-   Where $ L_i $ is the current workload of node $ i $, $ C_i $ its capacity, and $ w_i $ a priority weight (e.g., reliability, uptime).
-
-3. **Edge Computing**  
-   - Streamlined inference and data pre-processing at the source, reducing latency.  
-   - Periodic aggregation of local model updates improves the global AI model pool, fostering a continuous loop of distributed learning.
+- provenance
+- timestamp and freshness
+- source reputation
+- node reputation
+- validator consensus
+- duplication and anomaly checks
+- user feedback
+- downstream product usefulness
 
 ---
 
-## Vision and Impact
+## 5. Product Suite
 
-By fusing **Lite Nodes**, **Core Nodes**, and **Edge Nodes** into a **reinforcement-driven** ecosystem, OptimAI aims to:
+### OptimAI Search
 
-- **Unlock Previously Hidden Data**  
-  Authenticated gateways, mobile contexts, and sensor-driven streams ensure AI has richer, more diverse input.  
-- **Scale AI at Lower Cost**  
-  Idle computing resources are monetized, driving more node operators to join, which in turn fosters a robust, perpetually growing infrastructure.  
-- **Engage a Global Community**  
-  From tech-savvy developers to casual annotators, everyone has a role—and a reward stream—in shaping AI’s future.  
-- **Continuously Improve**  
-  Reinforcement learning frameworks ensure that data quality and model outputs keep getting better as the network matures.
+OptimAI Search is the network’s first broad user product. It retrieves current sources, applies semantic ranking and reinforcement scoring, then synthesizes useful answers with citations and visual context.
+
+### OptimAI Claw
+
+OptimAI Claw is the extraction layer. It can transform websites, documents, social surfaces, feeds, and workflows into structured data for datasets, dashboards, agents, and APIs.
+
+### OptimAI Persona Agent
+
+Persona Agent is the personal AI layer. It learns from permissioned user context, saves useful memory, calls Search and Claw as tools, and helps users complete personalized research and automation tasks.
+
+---
+
+## 6. Economic Model
+
+OptimAI creates demand for OPI through useful network services.
+
+### Contributors earn by providing:
+
+- data mining
+- Claw extraction results
+- validation and annotation
+- bandwidth
+- compute
+- storage
+- uptime
+- human feedback
+- campaign completion
+
+### Users and builders spend OPI for:
+
+- premium search and APIs
+- extraction jobs
+- data campaigns
+- Persona Agent capabilities
+- marketplace services
+- compute workloads
+- staking and governance
+
+Reward models should evolve toward quality-weighted contribution. A simplified reward signal can be represented as:
+
+$$
+R_i = \alpha(Q_i + V_i + C_i + U_i)
+$$
+
+Where:
+
+- $Q_i$ is contribution quality.
+- $V_i$ is validation accuracy.
+- $C_i$ is compute, bandwidth, or storage contribution.
+- $U_i$ is observed usefulness or campaign demand.
+- $\alpha$ is a dynamic scaling factor based on network conditions.
+
+---
+
+## 7. Network Flywheel
+
+OptimAI is designed around compounding network effects:
+
+1. More users run nodes.
+2. More nodes increase data coverage and compute capacity.
+3. Better data improves Search, Claw, and Persona Agent.
+4. Better products create more demand.
+5. More demand increases rewards and builder activity.
+6. More builders create more agents, campaigns, and services.
+
+---
+
+## 8. Roadmap Themes
+
+- Expand Lite, Core, and Edge Node adoption.
+- Improve data validation, provenance, and reputation.
+- Scale OptimAI Search as the first mass-market intelligence product.
+- Build OptimAI Claw into the programmable extraction layer.
+- Launch Persona Agent as the user-owned personal AI layer.
+- Expand OPI utility across services and marketplace demand.
+- Open APIs and SDKs for builders.
+- Grow the OptimAI ecosystem into decentralized intelligence as a service.
 
 ---
 
 ## Conclusion
 
-**OptimAI Network** heralds a new era of **decentralized AI**—where data gathering, validation, and computation become collaborative, transparent, and self-sustaining. Whether you’re casually running a Lite Node, scraping authenticated sites via a powerful Core Node, or capturing mobile data through an Edge Node, your contributions **matter** and are **rewarded**.
+OptimAI Network is building the missing data and coordination layer for AI agents.
 
-Take part in building a more inclusive, resource-efficient AI landscape. Embrace OptimAI’s **“Mine Data. Fuel AI. Get Rewards.”** mantra, and help shape tomorrow’s AI—one validated data chunk at a time.
+The internet is becoming programmable through agents. Those agents need fresh context, trusted data, structured extraction, personal memory, decentralized compute, and aligned incentives. OptimAI brings these pieces into one network and one product ecosystem.
 
-**Get started** or learn more at:  
-[**optimai.network**](https://optimai.network)
+**Mine data. Fuel AI. Build the agentic web.**

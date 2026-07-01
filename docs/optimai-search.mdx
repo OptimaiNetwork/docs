@@ -1,103 +1,114 @@
 ---
-sidebar_position: 8
-title: OptimAI Search
+sidebar_position: 2
+title: "OptimAI Search"
+description: "OptimAI Search is the live context layer for agents and builders."
 ---
 
 # <span class="actual-font">OptimAI</span> Search
 
-OptimAI Search is OptimAI’s Web3 search engine: a decentralized, community-powered way to explore the open web and social sources. Core Nodes continuously crawl, clean, and vectorize public data across web pages, forums, and social platforms to build an open, real-time, machine-readable knowledge layer with semantic embeddings, metadata, and freshness/provenance tracking. When you search, a global network of nodes gathers and verifies sources in parallel, then the AI agent synthesizes them into a clear, useful response with supporting images for visual context.
+OptimAI Search is the context layer of the OptimAI stack. It gives users and agents a way to retrieve current information from web, social, and network-indexed sources, then return a synthesized answer with supporting sources.
 
-:::tip[Try it now]
+:::tip[Try it]
 [Open OptimAI Search](https://search.optimai.network/)
-:::
-
-:::tip[Quick idea]
-Think of OptimAI Search as a pipeline: **query → network nodes → AI analysis → answer + sources + images**.
 :::
 
 ![OptimAI Search UI](./assets/images/optimai-search/search-ui.jpeg)
 
-## What you get
-- A synthesized answer backed by sources from the web and social platforms.
-- Visual context with related images when available.
-- Fast, structured results from a decentralized network of nodes that scales as more Core Nodes join.
+## What Search Does
 
-## Why it’s different
-OptimAI Search is built on open, community-owned infrastructure:
-- **Decentralized and distributed**: A global network of nodes crawls and validates data for faster, more resilient search.
-- **Deep, adaptive context**: The system focuses on intent and meaning to surface answers that match what you’re looking for.
-- **Boundless results**: Search across a large, DePIN-powered source set for deeper, more accurate insights.
-- **Social + web access**: Find information from the open web and major social platforms in one experience.
-- **Community compute**: The Web3 Compute Engine turns community GPUs into a distributed AI cloud so models run closer to the data.
+Search turns a question into usable context:
 
-## How OptimAI Search works
-1) You enter a query.
-2) OptimAI Network nodes collect and verify relevant sources from the web and social data.
-3) The AI agent filters for relevance and clarity, then synthesizes the submissions.
-4) You receive an answer, citations, and images.
+```mermaid
+flowchart LR
+  A["Query"] --> B["Source discovery"]
+  B --> C["Semantic ranking"]
+  C --> D["Freshness and quality scoring"]
+  D --> E["Answer synthesis"]
+  E --> F["Citations, images, follow-ups"]
+```
 
-## The power behind every search
-- **Ignite the query**: Type freely or choose a signal. OptimAI turns curiosity into real-time research across the web and social data.
-- **Nodes in motion**: Your query activates a global network of nodes. Each one crawls sources and verifies results simultaneously.
-- **Delivering the best**: OptimAI compiles everything into a single, precise result filtered for relevance and clarity.
+## Why It Exists
 
-## How to use OptimAI Search
-1) Open OptimAI Search.
-2) Type a question or topic and run the search.
-3) Review the answer, sources, and images.
-4) (Optional) Connect your wallet for a Web3-native experience.
+Agents need current grounding. A model can reason well and still fail if its context is stale, incomplete, or unverifiable. Search gives OptimAI agents a retrieval layer they can call before they answer, extract, or act.
 
-:::note[Images in results]
-OptimAI Search returns images when they add visual context. Some queries may not have strong visual matches—try adding keywords like “diagram”, “example”, or “architecture”.
-:::
+## Position In The Stack
+
+| Layer | Search relationship |
+| --- | --- |
+| **Claw** | Supplies the sources Claw needs before execution. |
+| **Persona** | Refreshes context while applying user-approved memory. |
+| **Nodes** | Expand source discovery, refresh capacity, and network coverage. |
+| **Reinforcement Data Network** | Adds freshness, quality, and provenance signals. |
+| **Builder interfaces** | Exposes live context through API, MCP, and x402 flows. |
+
+## Capabilities
+
+- natural-language search
+- source-backed answer synthesis
+- web and social context when available
+- related images for visual context
+- semantic matching beyond keyword search
+- freshness and provenance signals
+- developer access through API and MCP workflows
+
+## Product Relationships
+
+| Product | How it uses Search |
+| --- | --- |
+| **Claw** | Finds current sources before executing a research, extraction, or monitoring workflow. |
+| **Persona Agent** | Retrieves updated context while applying user-approved memory and preferences. |
+| **Data campaigns** | Uses Search to discover candidate sources and define extraction targets. |
+| **Builder tools** | Use the Search API, MCP server, and x402 SDK to bring live context into external agents. |
+
+## Search Flow
+
+1. A user or agent submits a query.
+2. Search routes the request through retrieval and source discovery.
+3. Candidate sources are ranked by relevance, freshness, and quality.
+4. The answer layer synthesizes a response.
+5. Citations and follow-up paths are returned.
+6. Feedback can improve future retrieval and ranking.
 
 ![OptimAI Search results](./assets/images/optimai-search/search-results.jpeg)
 
-## Tips for better results
-- Ask specific questions (include time range, location, or domain if relevant).
-- Use natural language (e.g., “Compare X vs Y” or “Summarize the latest on Z”).
-- For deeper results, run a follow-up query to narrow the scope.
+## Developer Access
 
-## Key capabilities
-- Crawls and indexes the open web and social platforms.
-- Generates semantic embeddings and metadata for retrieval.
-- Tracks source provenance, freshness, and quality.
-- Expands automatically as more Core Nodes join the network.
+OptimAI Search is available through several builder paths:
 
-## Developer ecosystem (Search APIs and SDKs)
-OptimAI provides builders with open interfaces to tap directly into search:
+| Interface | Use case |
+| --- | --- |
+| **Search API** | Direct server-side integration for applications and workflows. |
+| **Search MCP** | Add OptimAI Search as a tool inside MCP-compatible coding agents or desktop AI hosts. |
+| **x402 SDK** | Build paid, agent-native search flows using HTTP 402-style payment requests. |
+| **Search Skill** | Installable guidance for AI coding agents that need to use OptimAI Search integrations correctly. |
 
-- **Search API (coming soon)**: Query the Web3 Search Engine with semantic, vector, or keyword filters.
-- **Agent SDKs (coming soon)**: Build autonomous agents that search, learn, and act across the OptimAI ecosystem.
+Start with [Developer Get Started](./builders/get-started.mdx) or [API Overview](./builders/api-overview.mdx).
 
-**Example use cases**
-- Real-time AI search assistants and dashboards.
-- Social trend trackers and intelligence agents.
-- Research and knowledge retrieval systems.
+## Output Quality
 
-## Example searches
-- “What is OptimAI Network?”
-  - You will see: a concise summary, key sources, and related images.
-- “Best practices for securing smart contracts in DeFi”
-  - You will see: a synthesized checklist with citations.
-- “Compare carbon capture methods: direct air capture vs point-source”
-  - You will see: a side-by-side overview with sources.
-- “How do decentralized identity wallets work?”
-  - You will see: a step-by-step explanation with references.
-- “What are common failure modes in large language models?”
-  - You will see: an analysis with cited sources and visuals.
+A high-quality Search result should be:
 
-## Troubleshooting
-- **I do not see images**: Some topics do not have strong visual matches. Try a more specific query.
-- **My search did not run**: Try again in a moment or refresh the page.
-- **Results feel too broad**: Narrow the query by adding a timeframe, industry, or location.
+- grounded in sources
+- clear about uncertainty
+- current for the requested timeframe
+- easy for Claw or another agent to reuse
+- transparent enough for a user to inspect
+
+## Query Tips
+
+- Ask complete questions.
+- Include timeframes when recency matters.
+- Name the source type, market, chain, country, product, or audience.
+- Ask for a comparison, checklist, timeline, or risk analysis when you need structure.
+- Use follow-up queries to narrow scope.
 
 ## FAQ
-**Is OptimAI Search centralized?**
-No. OptimAI Search uses decentralized nodes in the OptimAI Network to gather sources, then the AI agent synthesizes results.
 
-**Do I need a wallet to search?**
-No. A wallet is optional for search. You can use OptimAI Search without connecting one.
+**Do I need a wallet to search?**  
+No. Basic product usage can be separate from wallet-connected or x402 flows.
 
-**Where do the answers come from?**
-Sources are gathered from across the Internet, then analyzed and summarized by our AI agent. You can review citations to verify details.
+**Is Search only for humans?**  
+No. Search is also designed as a context layer for agents, APIs, and MCP-compatible tools.
+
+**Where do answers come from?**  
+Answers are generated from retrieved or indexed sources. Citations help users inspect the context behind the answer.

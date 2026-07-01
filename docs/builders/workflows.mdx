@@ -1,0 +1,146 @@
+---
+sidebar_position: 6
+title: "Builder Workflows"
+---
+
+# Builder Workflows
+
+This page shows how OptimAI products compose into practical builder workflows.
+
+## Workflow 1: Source-Backed Research Assistant
+
+```mermaid
+flowchart LR
+  A["User asks research question"] --> B["Search API"]
+  B --> C["Ranked sources and answer"]
+  C --> D["Claw extracts structured facts"]
+  D --> E["Persona stores approved findings"]
+  E --> F["Assistant returns brief, table, and citations"]
+```
+
+### Steps
+
+1. Use Search API to retrieve fresh context.
+2. Use Claw API to extract structured facts from top sources.
+3. Save approved insights into Persona memory.
+4. Return a cited brief with tables and follow-up questions.
+
+### Output
+
+```json
+{
+  "brief": "The market is moving toward agent-native data infrastructure...",
+  "table": [
+    {
+      "company": "Example AI",
+      "category": "agent tooling",
+      "evidence_url": "https://example.com"
+    }
+  ],
+  "memory_suggestions": [
+    "User is researching decentralized AI data networks."
+  ]
+}
+```
+
+## Workflow 2: Claw-Powered Market Monitor
+
+```mermaid
+flowchart LR
+  A["Campaign created"] --> B["Recurring Claw jobs"]
+  B --> C["Node execution"]
+  C --> D["Validation sample"]
+  D --> E["Dataset refresh"]
+  E --> F["Alerts and dashboard"]
+```
+
+### Steps
+
+1. Create a campaign for a market or narrative.
+2. Schedule recurring Claw extraction jobs.
+3. Validate a sample through the reinforcement layer.
+4. Refresh the dataset and trigger alerts when signals change.
+
+### Best for
+
+- crypto narratives
+- competitor tracking
+- product pricing changes
+- social sentiment
+- ecosystem mapping
+
+## Workflow 3: Personal Founder Agent
+
+```mermaid
+sequenceDiagram
+  participant Founder
+  participant Persona as Persona Agent
+  participant Search as OptimAI Search
+  participant Claw as OptimAI Claw
+  participant Memory as Persona Memory
+
+  Founder->>Persona: Track competitors and weekly changes
+  Persona->>Memory: Load preferences and watchlist
+  Persona->>Search: Find current updates
+  Persona->>Claw: Extract pricing, positioning, launches
+  Claw-->>Persona: Structured records
+  Persona->>Memory: Save approved insights
+  Persona-->>Founder: Weekly intelligence brief
+```
+
+### Steps
+
+1. Store the founder’s watchlist, competitors, and preferred format.
+2. Search for recent activity.
+3. Extract structured updates.
+4. Save approved conclusions.
+5. Deliver a concise weekly brief.
+
+## Workflow 4: Data Campaign For Builders
+
+```mermaid
+flowchart TB
+  A["Builder defines dataset"] --> B["Campaign API"]
+  B --> C["OPI reward budget"]
+  C --> D["Node task distribution"]
+  D --> E["Submissions"]
+  E --> F["Validation"]
+  F --> G["Dataset delivery"]
+  G --> H["Reward settlement"]
+```
+
+### Steps
+
+1. Define the dataset objective and schema.
+2. Fund the campaign with an OPI reward budget.
+3. Route extraction or validation tasks to eligible nodes.
+4. Validate submissions.
+5. Deliver the dataset and settle rewards.
+
+## Workflow 5: Agent Toolchain
+
+```mermaid
+flowchart LR
+  A["Agent planner"] --> B["Search tool"]
+  A --> C["Claw tool"]
+  A --> D["Persona memory tool"]
+  A --> E["Campaign tool"]
+  B --> F["Cited context"]
+  C --> G["Structured data"]
+  D --> H["Personal preferences"]
+  E --> I["Network tasks"]
+  F --> J["Final action"]
+  G --> J
+  H --> J
+  I --> J
+```
+
+### Pattern
+
+Agents should treat OptimAI as a tool layer:
+
+- Search for live context.
+- Claw for structured data.
+- Persona for memory.
+- Campaigns for large or recurring jobs.
+- Rewards and reputation for network accountability.
