@@ -7,6 +7,8 @@ title: "FAQs"
 
 Common questions about OptimAI Network, products, nodes, privacy, and OPI.
 
+For a longer message about TGE preparation, long-term building, and appreciation for the community, read [A Letter To The OptimAI Community](./community-letter.md).
+
 ## General
 
 <details>
@@ -123,6 +125,26 @@ Rewards are expected to consider useful contribution, task type, data quality, v
 <summary>What can I use OPI for?</summary>
 
 OPI can support OptimAI services such as Search, Claw, Persona Agent, APIs, data campaigns, marketplace services, compute usage, staking, and governance.
+</details>
+
+<details>
+<summary>When is TGE?</summary>
+
+We understand why the community asks this. TGE is an important milestone, but OptimAI does not treat it as the finish line. Our focus is to build a resilient network with real products, real usage, and real value before moving into a public token launch.
+
+A healthy TGE should benefit long-term contributors, users, builders, node operators, and the wider community. That requires strong preparation: product delivery, adoption, security, reward design, utility, market readiness, and clear communication. Launching too early, or launching into poor market conditions, can hurt the community instead of helping it.
+
+OptimAI is here to build for the long term. We believe strong products, consistent execution, and real impact create the best foundation for a successful TGE. When real value is delivered, stronger results can follow.
+</details>
+
+<details>
+<summary>When will detailed tokenomics be released?</summary>
+
+Detailed tokenomics will be released when the TGE plan is ready to be announced. At that time, OptimAI will share the full schedule and key details clearly so the community can evaluate them fairly.
+
+For now, we are keeping the detailed plan confidential to avoid unnecessary hype, speculation, or confusion. The current docs focus on OPI utility and economic design principles. Before public release, the detailed tokenomics should cover fields such as supply, allocations, reward pools, treasury usage, vesting, unlocks, staking, governance rights, and launch schedule.
+
+The goal is fairness, clarity, and long-term alignment rather than short-term noise.
 </details>
 
 ## Builders
