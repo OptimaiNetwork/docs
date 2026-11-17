@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: "Products Overview"
-description: "A connected view of OptimAI Search, Claw, Persona, Nodes, Marketplace, and builder interfaces."
+description: "A connected view of OptimAI Search, Claw, Persona, Router, Studio, Nodes, Marketplace, and builder interfaces."
 ---
 
 # Products Overview
@@ -17,6 +17,8 @@ OptimAI products are designed to work as one agent infrastructure stack. Each pr
 | **OptimAI Search** | Context layer for live, source-backed retrieval. | users, agents, developers |
 | **OptimAI Claw** | Execution layer for research, extraction, monitoring, and workflows. | users, operators, builders |
 | **Persona Agent** | Memory and identity layer for user-approved context. | users, agent builders |
+| **OptimAI Router** | Model-access layer for open models through one OpenAI-compatible API. | developers, agents, builders |
+| **OptimAI Studio** | Creativity layer for agent-built websites, launch videos, and campaign assets. | users, builders, teams |
 | **Agent Platform** | Composition layer for building reusable agent workflows. | builders, teams, marketplace creators |
 | **OptimAI Nodes** | Infrastructure layer for data, compute, bandwidth, validation, and runtime capacity. | contributors, operators |
 | **Marketplace** | Distribution layer for agents, datasets, workflows, and services. | users, builders, ecosystem partners |
@@ -26,9 +28,11 @@ OptimAI products are designed to work as one agent infrastructure stack. Each pr
 1. **Search** retrieves current context and source evidence.
 2. **Claw** turns the goal into a workflow and executes the steps.
 3. **Persona** applies approved memory, preferences, and previous decisions.
-4. **Nodes** provide execution capacity, data access, validation, and reputation.
-5. **Marketplace** makes useful agents, workflows, and datasets reusable.
-6. **OPI** connects contribution, access, and governance.
+4. **Router** provides open-model access that Search, Claw, and Persona call through one API.
+5. **Studio** turns agent output into production-ready websites, videos, and campaign assets.
+6. **Nodes** provide execution capacity, data access, validation, and reputation.
+7. **Marketplace** makes useful agents, workflows, and datasets reusable.
+8. **OPI** connects contribution, access, and governance.
 
 ## Example: Market Intelligence Workflow
 
@@ -56,3 +60,5 @@ flowchart LR
 - [OptimAI Search](./optimai-search.mdx)
 - [Persona Agent](./persona-agent.mdx)
 - [Agent Platform](./optimai-agent.mdx)
+- [OptimAI Router docs](https://router.optimai.network/docs) (external)
+- [OptimAI Studio](https://optimai.studio) (external)
